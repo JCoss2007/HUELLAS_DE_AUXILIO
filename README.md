@@ -11,7 +11,7 @@ Huellas de Auxilio es una plataforma digital enfocada en facilitar el reporte, s
 ## Segmentos Objetivo
 - Ciudadanos que presencian casos de maltrato, abandono o descuido animal y necesitan una plataforma sencilla para reportar el caso, adjuntar evidencia y realizar seguimiento del estado de atención.
 
-- Entidades de apoyo animal, como refugios, veterinarias, municipalidades u organizaciones animalistas, encargadas de revisar reportes, atender casos, gestionar adopciones y coordinar acciones de ayuda.
+- Entidades de apoyo animal, como refugios y organizaciones animalistas, encargadas de revisar reportes, atender casos, gestionar adopciones y coordinar acciones de ayuda.
 
 ## Principales Características
 
