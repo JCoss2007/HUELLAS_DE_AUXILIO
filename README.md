@@ -1,5 +1,4 @@
 # Trabajo grupal de IHC sobre nuestro proyecto Huellas de Auxilio
-=======
 Created with Visual Studio Code
 Huellas de Auxilio es una plataforma digital enfocada en facilitar el reporte, seguimiento y atención de casos de maltrato, abandono o descuido animal. El proyecto busca conectar a ciudadanos con entidades de apoyo animal, como refugios, veterinarias, municipalidades u organizaciones aliadas, para brindar una respuesta más organizada y accesible ante situaciones de riesgo animal.
 ## Miembros del equipo
