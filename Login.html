@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Huellas de Auxilio - Login</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="HE_Login.css" />
+  <link rel="stylesheet" href="HE_Footer.css" />
+
+  <!-- Fuente Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+
+  <!-- HEADER CON IMAGEN DE FONDO -->
+  <header class="header-login">
+    <a href="Landing_general.html" class="back-btn" aria-label="Volver al inicio">
+      <img src="Imagenes/flecha.png" alt="Volver" />
+    </a>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main class="login-container">
+
+    <!-- CARD LOGIN -->
+    <section class="login-card">
+
+      <img
+        src="Imagenes/Logo.png"
+        alt="Huellas de Auxilio"
+        class="login-logo"
+      />
+
+      <h1 class="login-title">Bienvenido de vuelta</h1>
+
+      <form class="login-form" action="Home_Ciudadano.html">
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+
+          <div class="input-box">
+            <img
+              src="Iconos/email2.png"
+              alt="Correo"
+              class="input-icon"
+            />
+
+            <input
+              type="email"
+              id="email"
+              placeholder="ejemplo@correo.com"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+
+          <div class="input-box">
+            <img
+              src="Iconos/candado.png"
+              alt="Contraseña"
+              class="input-icon"
+            />
+
+            <input
+              type="password"
+              id="password"
+              placeholder="********"
+              required
+            />
+          </div>
+        </div>
+
+        <a href="recuperar.html" class="forgot-password">
+          ¿Olvidaste tu contraseña?
+        </a>
+
+        <button type="submit" class="login-btn">Ingresar</button>
+
+        <div class="separator">
+          <span></span>
+          <p>o</p>
+          <span></span>
+        </div>
+
+        <p class="create-account">
+          ¿No tienes una cuenta?
+          <a href="Crear_Cuenta.html">Crear cuenta</a>
+        </p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+        <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+  <img src="Imagenes/Logo2.png" alt="Logo Huellas de Auxilio" />
+  <p>© 2026 Huellas de Auxilio.<br />Todos los derechos reservados.</p>
+
+  <div class="footer-social">
+    <a href="#"><img src="Iconos/facebook.png" alt="Facebook" /></a>
+    <a href="#"><img src="Iconos/twiter.png" alt="X" /></a>
+    <a href="#"><img src="Iconos/instagram.png" alt="Instagram" /></a>
+  </div>
+</div>
+
+<div class="footer-links">
+  <h4>Legal</h4>
+  <a href="documentos/politica-privacidad.pdf">Política de privacidad</a>
+  <a href="documentos/terminos-condiciones.pdf">Términos y condiciones</a>
+  <a href="documentos/libro-reclamaciones.pdf">Libro de Reclamaciones</a>
+</div>
+
+<div class="footer-contacto">
+  <h4>Contáctanos</h4>
+
+  <div class="contacto-item">
+    <img src="Iconos/email.png" alt="Correo" />
+    <span>hola@huellasdeauxilio.pe</span>
+  </div>
+
+  <div class="contacto-item">
+    <img src="Iconos/llamar.png" alt="Teléfono" />
+    <span>+51 987 654 321 Lima, Perú</span>
+  </div>
+
+  <div class="contacto-item">
+    <img src="Iconos/map.png" alt="Ubicación" />
+    <span>Lima, Perú</span>
+  </div>
+</div>
+      </div>
+    </footer>
+</body>
+</html>
