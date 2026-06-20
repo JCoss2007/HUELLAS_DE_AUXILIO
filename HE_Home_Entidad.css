@@ -630,7 +630,6 @@ body {
   line-height: 1.5;
   /* Trunca el texto a 2 líneas si es muy largo */
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
