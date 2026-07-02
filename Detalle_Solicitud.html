@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de solicitud - Huellas de Auxilio</title>
+  <link rel="stylesheet" href="Detalle_Solicitud.css">
+</head>
+<body>
+  
+  <header class="navbar">
+    <div class="navbar-content max-width-container">
+      <a href="#" class="logo">
+        <img src="IMG/ICONO.png" alt="Huellas de Auxilio" class="logo-img" />
+      </a>
+      <nav class="nav-links">
+        <a href="#">Inicio</a>
+        <a href="#">Mis reportes</a>
+        <a href="#">Directorio</a>
+        <a href="#" class="active">Adopciones</a>
+        <a href="#">Ayuda</a>
+      </nav>
+      <div class="user-actions">
+        <button class="btn-reportar">Reportar</button>
+        <span class="notification-icon">
+          <img src="IMG/Vector.png" alt="Notificaciones" />
+        </span>
+        <button class="btn-account">
+          <img src="IMG/CUENTA.png" alt="Cuenta" /> Mi cuenta
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-width-container">
+    
+    <div class="page-header">
+      <button class="btn-back">
+        <span class="arrow-left">←</span>
+      </button>
+      <h1>Detalle de solicitud</h1>
+    </div>
+
+    <section class="summary-card">
+      <div class="summary-item">
+        <span class="summary-label">Código de solicitud</span>
+        <strong class="summary-value">SOL-2026-0234</strong>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">Fecha de solicitud</span>
+        <strong class="summary-value">26 may 2026</strong>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">Entidad</span>
+        <strong class="summary-value">Refugio Patitas</strong>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">Estado actual</span>
+        <span class="badge badge-review">En revision</span>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      
+      <div class="pet-profile-card">
+        <img src="IMG/luna.png" alt="Luna" class="pet-large-img" />
+        <div class="pet-info-wrapper">
+          <h2>Luna</h2>
+          
+          <div class="pet-details-table">
+            <div class="detail-row">
+              <span class="detail-label">Especie</span>
+              <span class="detail-value">Gato</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Edad</span>
+              <span class="detail-value">2 años</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Sexo</span>
+              <span class="detail-value">Hembra</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Distrito</span>
+              <span class="detail-value">San Miguel</span>
+            </div>
+          </div>
+
+          <div class="pet-description">
+            <h3>Descripción</h3>
+            <p>Luna es una gatita cariñosa, curiosa y tranquila. Le encantan las siestas al sol y jugar con juguetes interactivos. Se lleva bien con personas y otros gatos. Ideal para un hogar que brinde amor, paciencia y un espacio seguro.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="status-col">
+        
+        <div class="status-card">
+          <h3>Estado de la solicitud</h3>
+          
+          <div class="stepper-container">
+            <div class="step completed">
+              <div class="step-circle">✓</div>
+              <span class="step-label">Solicitud<br>enviada</span>
+            </div>
+            
+            <div class="step-line active-line"></div>
+            
+            <div class="step current">
+              <div class="step-circle">2</div>
+              <span class="step-label">En revisión</span>
+            </div>
+            
+            <div class="step-line"></div>
+            
+            <div class="step pending">
+              <div class="step-circle">3</div>
+              <span class="step-label">Aprobada /<br>Rechazada</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="status-card">
+          <h3>Mensaje de la entidad</h3>
+          <p class="entity-message">
+            Hemos recibido tu solicitud de adopción. Nuestro equipo está revisando la información que nos proporcionaste. Te notificaremos pronto sobre los siguientes pasos.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="bottom-action">
+      <button class="btn-return">Volver a mis solicitudes</button>
+    </div>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="max-width-container footer-content">
+      <p>© 2026 Huellas de Auxilio. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Política de privacidad</a>
+        <span>|</span>
+        <a href="#">Términos y condiciones</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

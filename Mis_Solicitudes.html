@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Solicitudes - Huellas de Auxilio</title>
+  <link rel="stylesheet" href="Mis_Solicitudes.css">
+</head>
+<body>
+  
+  <header class="navbar">
+    <div class="navbar-content max-width-container">
+      <a href="#" class="logo">
+        <img src="IMG/ICONO.png" alt="Huellas de Auxilio" class="logo-img" />
+      </a>
+      <nav class="nav-links">
+        <a href="#">Inicio</a>
+        <a href="#">Mis reportes</a>
+        <a href="#">Directorio</a>
+        <a href="#" class="active">Adopciones</a>
+        <a href="#">Ayuda</a>
+      </nav>
+      <div class="user-actions">
+        <button class="btn-reportar">Reportar</button>
+        <span class="notification-icon">
+          <img src="IMG/Vector.png" alt="Notificaciones" />
+        </span>
+        <button class="btn-account">
+          <img src="IMG/CUENTA.png" alt="Cuenta" /> Mi cuenta
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-width-container">
+    
+    <section class="hero-banner">
+      <img src="IMG/adopciones-left.png" alt="Ilustración mascotas" class="hero-img-left" />
+      <div class="hero-text">
+        <h1>Mis solicitudes</h1>
+        <p>Conoce el estado de tus postulaciones de adopción</p>
+      </div>
+      <img src="IMG/FLOR.png" alt="Hojas decorativas" class="hero-img-right" />
+    </section>
+
+    <section class="tabs-container">
+      <div class="tab-item">
+        <img src="IMG/huella-gris.png" alt="Huella" /> Mascotas disponibles
+      </div>
+      <div class="tab-item active">
+        <img src="IMG/solicitud-verde.png" alt="Solicitud" /> Mis solicitudes
+      </div>
+    </section>
+
+    <section class="filters-bar">
+      <div class="search-box">
+        <img src="IMG/lupa.png" alt="Buscar" />
+        <input type="text" placeholder="Buscar mascota" />
+      </div>
+      <div class="select-box">
+        <select>
+          <option value="" disabled selected hidden>Estado</option>
+          <option value="revision">En revisión</option>
+          <option value="aprobado">Aprobado</option>
+          <option value="rechazado">Rechazado</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="table-section">
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Mascota</th>
+            <th>Código</th>
+            <th>Entidad</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="pet-cell">
+                <img src="IMG/luna.png" alt="Luna" class="pet-avatar" />
+                <span class="pet-name">LUNA</span>
+              </div>
+            </td>
+            <td class="code-text">SOL-2026-0234</td>
+            <td>Refugio Patitas</td>
+            <td>26 may 2026</td>
+            <td><span class="badge badge-review">En revisión</span></td>
+            <td><button class="btn-table-action">Ver detalle ›</button></td>
+          </tr>
+          
+          <tr>
+            <td>
+              <div class="pet-cell">
+                <img src="IMG/toby.png" alt="Toby" class="pet-avatar" />
+                <span class="pet-name">Toby</span>
+              </div>
+            </td>
+            <td class="code-text">SOL-2026-0134</td>
+            <td>Huella de Auxilio</td>
+            <td>12 may 2026</td>
+            <td><span class="badge badge-rejected">Rechazado</span></td>
+            <td><button class="btn-table-action">Ver detalle ›</button></td>
+          </tr>
+          
+          <tr>
+            <td>
+              <div class="pet-cell">
+                <img src="IMG/rocky.png" alt="Rocky" class="pet-avatar" />
+                <span class="pet-name">Rocky</span>
+              </div>
+            </td>
+            <td class="code-text">SOL-2026-0534</td>
+            <td>Hogar seguro</td>
+            <td>8 may 2026</td>
+            <td><span class="badge badge-approved">Aprobado</span></td>
+            <td><button class="btn-table-action">Ver detalle ›</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="info-alert">
+      <div class="alert-icon">!</div>
+      <p>Desde esta sección puedes revisar el avance de tu solicitud de adopción.</p>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="max-width-container footer-content">
+      <p>© 2026 Huellas de Auxilio. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Política de privacidad</a>
+        <span>|</span>
+        <a href="#">Términos y condiciones</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
