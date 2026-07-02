@@ -1,0 +1,226 @@
+/* ========================================================
+   ESTILOS ESPECÍFICOS: CENTRO DE AYUDA
+   ======================================================== */
+
+.help-section {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.help-section-title {
+  font-size: 18px;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Fila de dos columnas */
+.help-grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.help-accent-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.help-accent-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.help-card-icon-circle {
+  width: 64px;
+  height: 64px;
+  background-color: #edf5f4; /* Variación suave del verde menta */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.help-card-icon-circle img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.help-card-body h3 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.help-card-body p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.help-card-arrow {
+  position: absolute;
+  right: 25px;
+  color: var(--primary);
+  font-size: 18px;
+}
+
+/* --- SECCIÓN TUTORIAL (TARJETA HORIZONTAL) --- */
+.tutorial-horizontal-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  display: flex;
+  overflow: hidden;
+}
+
+.tutorial-video-thumbnail {
+  width: 400px;
+  background: linear-width, url('IMG/tutorial-bg.png'); /* Fallback de degradado simulando la onda visual de tu UI */
+  background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  min-height: 160px;
+}
+
+.video-play-btn {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(1, 102, 108, 0.3);
+}
+
+/* Triángulo del botón play */
+.video-play-btn::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 15px solid var(--white);
+}
+
+.tutorial-card-body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tutorial-card-body h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: var(--text-dark);
+}
+
+.tutorial-card-body p {
+  margin: 0 0 15px 0;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+  max-width: 650px;
+}
+
+.tutorial-duration {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #666;
+}
+
+.tutorial-duration img {
+  width: 14px;
+  height: 14px;
+}
+
+/* --- ACORDEÓN DE PREGUNTAS FRECUENTES --- */
+.faq-accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-header {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-header h4 {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.faq-icon {
+  font-size: 11px;
+  color: #666;
+}
+
+.faq-content {
+  padding: 0 24px 20px 24px;
+  border-top: none;
+}
+
+.faq-content p {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* --- RESPONSIVE CENTRO DE AYUDA --- */
+@media (max-width: 768px) {
+  .help-grid-two {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .tutorial-horizontal-card {
+    flex-direction: column;
+  }
+
+  .tutorial-video-thumbnail {
+    width: 100%;
+    height: 180px;
+  }
+
+  .tutorial-card-body {
+    padding: 20px;
+  }
+}
+.logo-img {
+  width: 160px;        /* Incrementamos el ancho para que se lea perfecto */
+  height: auto;        /* Hace que la altura se adapte sola sin deformarse */
+  display: block;      /* Elimina espacios fantasmas debajo de la imagen */
+  object-fit: contain;
+}
