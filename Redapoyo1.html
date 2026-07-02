@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio · Red de apoyo</title>
+    <link rel="stylesheet" href="Redcss1.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="brand" href="#">
+          <img
+            src="Img/Logo Huellas.png"
+            alt="Huellas de Auxilio"
+            class="brand__logo"
+          />
+        </a>
+
+        <nav class="mainnav">
+          <a href="#">Inicio</a>
+          <a href="#">Reportes</a>
+          <a href="#">Adopciones</a>
+          <a href="#" class="mainnav__active">Red de apoyo</a>
+          <a href="#">Ayuda</a>
+        </nav>
+
+        <div class="topbar__actions">
+          <button class="icon-btn" aria-label="Notificaciones">
+            <img src="Img/bell.png" alt="" class="icon icon-18" />
+          </button>
+          <button class="account-btn">
+            <img src="Img/user.png" alt="" class="icon icon-20" />
+            <span>Mi cuenta</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <img
+          src="Img/Casita.png"
+          alt="Ilustración de un perro y un gato junto a una casita"
+          class="hero__image"
+        />
+        <div class="hero__text">
+          <h1>Red de apoyo</h1>
+          <p>
+            Encuentra entidades aliadas para coordinar apoyo, derivar casos y
+            fortalecer la atención
+          </p>
+        </div>
+      </section>
+
+      <section class="toolbar">
+        <label class="searchbox">
+          <img src="Img/search.png" alt="" class="icon icon-16" />
+          <input type="text" placeholder="Buscar entidades aliadas" />
+        </label>
+
+        <div class="filters">
+          <button class="pill pill--active">Todos</button>
+          <button class="pill">Refugios</button>
+          <button class="pill">Veterinarias</button>
+          <button class="pill">Municipalidades</button>
+          <button class="pill">Asociaciones</button>
+        </div>
+
+        <button class="district">
+          <img
+            src="images/icons/map-pin-dark.svg"
+            alt=""
+            class="icon icon-16"
+          />
+          <span>Distrito</span>
+          <img
+            src="images/icons/caret-down-muted.svg"
+            alt=""
+            class="icon icon-14"
+          />
+        </button>
+      </section>
+
+      <section class="content">
+        <div class="cards">
+          <article class="card">
+            <div class="card__avatar"></div>
+            <h3 class="card__name">Refugio Esperanza Animal</h3>
+            <span class="badge badge--refugio">Refugio</span>
+            <p class="card__row">
+              <img src="Img/map-pin-muted.png" alt="" class="icon icon-16" />
+              San Miguel
+            </p>
+            <p class="card__row">
+              <img src="Img/phone-call.png" alt="" class="icon icon-16" />
+              987 654 321
+            </p>
+            <p class="card__desc">
+              Refugio dedicado al rescate, recuperación y adopción responsable
+              de perros y gatos en situación de abandono
+            </p>
+            <div class="card__actions">
+              <button class="btn btn--outline">
+                Ver detalle
+                <img src="Img/right-arrow.png" alt="" class="icon icon-16" />
+              </button>
+              <button class="btn btn--filled">Derivar caso</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__avatar"></div>
+            <h3 class="card__name">Veterinaria San Marcos</h3>
+            <span class="badge badge--veterinaria">Veterinaria</span>
+            <p class="card__row">
+              <img src="Img/map-pin-muted.png" alt="" class="icon icon-16" />
+              San Miguel
+            </p>
+            <p class="card__row">
+              <img src="Img/phone-call.png" alt="" class="icon icon-16" />
+              987 654 321
+            </p>
+            <p class="card__desc">
+              Atención veterinaria general, urgencias, vacunas y esterilización
+              a precios solidarios
+            </p>
+            <div class="card__actions">
+              <button class="btn btn--outline">
+                Ver detalle
+                <img src="Img/right-arrow.png" alt="" class="icon icon-16" />
+              </button>
+              <button class="btn btn--filled">Derivar caso</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__avatar"></div>
+            <h3 class="card__name">Municipalidad de San Miguel</h3>
+            <span class="badge badge--municipalidad">Municipalidad</span>
+            <p class="card__row">
+              <img src="Img/map-pin-muted.png" alt="" class="icon icon-16" />
+              San Miguel
+            </p>
+            <p class="card__row">
+              <img src="Img/phone-call.png" alt="" class="icon icon-16" />
+              987 654 321
+            </p>
+            <p class="card__desc">
+              Entidad pública que promueve el bienestar animal y coordinar
+              campañas de esterilización y rescate
+            </p>
+            <div class="card__actions">
+              <button class="btn btn--outline">
+                Ver detalle
+                <img src="Img/right-arrow.png" alt="" class="icon icon-16" />
+              </button>
+              <button class="btn btn--filled">Derivar caso</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__avatar"></div>
+            <h3 class="card__name">Asociación Patitas Unidas</h3>
+            <span class="badge badge--asociacion">Asociación</span>
+            <p class="card__row">
+              <img src="Img/map-pin-muted.png" alt="" class="icon icon-16" />
+              San Miguel
+            </p>
+            <p class="card__row">
+              <img src="Img/phone-call.png" alt="" class="icon icon-16" />
+              987 654 321
+            </p>
+            <p class="card__desc">
+              Organización sin fines de lucro que rescata, rehabilita y busca
+              hogares responsables para animales
+            </p>
+            <div class="card__actions">
+              <button class="btn btn--outline">
+                Ver detalle
+                <img src="Img/right-arrow.png" alt="" class="icon icon-16" />
+              </button>
+              <button class="btn btn--filled">Derivar caso</button>
+            </div>
+          </article>
+        </div>
+
+        <aside class="sidebar">
+          <h3 class="sidebar__title">Coordinación rápida</h3>
+
+          <div class="sidebar__item">
+            <span class="sidebar__icon">
+              <img src="Img/plane.png" alt="" class="icon icon-18" />
+            </span>
+            <div>
+              <p class="sidebar__item-title">Deriva con confianza</p>
+              <p class="sidebar__item-desc">
+                Envía casos a entidades verificadas
+              </p>
+            </div>
+          </div>
+
+          <div class="sidebar__item">
+            <span class="sidebar__icon">
+              <img src="Img/map-pin-muted.png" alt="" class="icon icon-18" />
+            </span>
+            <div>
+              <p class="sidebar__item-title">Filtra por distrito</p>
+              <p class="sidebar__item-desc">
+                Encuentra aliados cercanos a tu zona
+              </p>
+            </div>
+          </div>
+
+          <div class="sidebar__item">
+            <span class="sidebar__icon">
+              <img src="Img/global-access.png" alt="" class="icon icon-18" />
+            </span>
+            <div>
+              <p class="sidebar__item-title">Trabajo en red</p>
+              <p class="sidebar__item-desc">
+                Juntos logramos más por los animales
+              </p>
+            </div>
+          </div>
+
+          <button class="btn btn--guide">Ver guía de derivación</button>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Huellas de Auxilio. Todos los derechos reservados.</p>
+      <p class="site-footer__links">
+        <a href="#">Política de privacidad</a>
+        <span>|</span>
+        <a href="#">Términos y condiciones</a>
+      </p>
+    </footer>
+  </body>
+</html>
