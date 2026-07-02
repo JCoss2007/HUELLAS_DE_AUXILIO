@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adopciones - Huellas de Auxilio</title>
+    <link rel="stylesheet" href="HE_Home_Entidad.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+
+  </head>
+  <body>
+    <!-- TOP NAVIGATION BAR -->
+    <header class="navbar container-fluid">
+      <div class="navbar-content max-width-container">
+        <div class="logo">
+          <img src="IMG/ICONO.png" alt="logo" class="logo-img" />
+        </div>
+
+        <nav class="nav-links">
+          <a href="Home_Entidad.html">Inicio</a>
+          <a href="#">Reportes</a>
+          <a href="Adopciones.html" class="active">Adopciones</a>
+          <a href="#">Red de apoyo</a>
+          <a href="#">Ayuda</a>
+        </nav>
+        <div class="user-actions">
+          <span class="notification-icon">
+            <img src="IMG/Vector.png" alt="campanita" />
+          </span>
+          <button class="btn-account">
+            <img src="IMG/CUENTA.png" alt="Cuenta" /> Mi Cuenta
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-width-container">
+      
+      <!-- HERO BANNER (Adopciones) -->
+      <section class="hero-banner">
+        <img src="IMG/adopciones-left.png" alt="Ilustración" class="hero-img-left" />
+        
+        <div class="hero-text">
+          <h1>Adopciones</h1>
+          <p>Gestiona las mascotas publicadas y revisa las solicitudes recibidas.</p>
+        </div>
+        
+        <img src="IMG/FLOR.png" alt="Decoración de hojas" class="hero-img-right" />
+      </section>
+
+      <!-- TABS Y BOTÓN PRINCIPAL -->
+      <section class="tabs-container">
+        <div class="tabs-list">
+          <div class="tab-item active">
+            <img src="IMG/huella-tab.png" alt="huella" /> Mascotas publicadas
+          </div>
+          <div class="tab-item">
+            <img src="IMG/solicitud-tab.png" alt="solicitud" /> Solicitudes de adopción
+          </div>
+        </div>
+        <button class="btn-primary">Publicar mascota</button>
+      </section>
+
+      <!-- BARRA DE FILTROS -->
+      <section class="filters-bar">
+        <div class="search-input-group">
+          <img src="IMG/lupa.png" alt="buscar" />
+          <input type="text" placeholder="Buscar mascota" />
+        </div>
+        
+        <select class="filter-select">
+          <option value="" disabled selected hidden>Especie</option>
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+        </select>
+        
+        <select class="filter-select">
+          <option value="" disabled selected hidden>Edad</option>
+          <option value="cachorro">Cachorro / Gatito</option>
+          <option value="adulto">Adulto</option>
+        </select>
+        
+        <a href="#" class="clear-filters">Limpiar filtros</a>
+      </section>
+
+      <!-- GRID DE MASCOTAS PUBLICADAS -->
+      <section class="pet-grid">
+        
+        <!-- Mascota 1: Max (Perro) -->
+        <article class="pet-card">
+          <img src="IMG/max1.png" alt="Max" class="pet-card-img" />
+          <div class="pet-card-content">
+            <div>
+              <div class="pet-card-header">
+                <h3 class="pet-name">Max</h3>
+                <span class="pet-badge dog">Perro</span>
+              </div>
+              <div class="pet-info-row">
+                <div class="pet-info-item">
+                  <img src="IMG/calendario.png" alt="edad" /> 2 años
+                </div>
+                <div class="pet-info-item">
+                  <img src="IMG/ubicacion.png" alt="ubicacion" /> Miraflores
+                </div>
+              </div>
+              <p class="pet-desc">Cariñoso y juguetón, le encanta correr y recibir caricias.</p>
+            </div>
+            <div class="pet-card-actions">
+              <button class="btn-sm-outline">Editar</button>
+              <button class="btn-sm-filled">Ver solicitudes</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mascota 2: Max (Gato) -->
+        <article class="pet-card">
+          <img src="IMG/max2.png" alt="Max Gato" class="pet-card-img" />
+          <div class="pet-card-content">
+            <div>
+              <div class="pet-card-header">
+                <h3 class="pet-name">Max</h3>
+                <span class="pet-badge cat">Gato</span>
+              </div>
+              <div class="pet-info-row">
+                <div class="pet-info-item">
+                  <img src="IMG/calendario.png" alt="edad" /> 1 año
+                </div>
+                <div class="pet-info-item">
+                  <img src="IMG/ubicacion.png" alt="ubicacion" /> San Borja
+                </div>
+              </div>
+              <p class="pet-desc">Tranquila y observadora, ideal para un hogar calmado</p>
+            </div>
+            <div class="pet-card-actions">
+              <button class="btn-sm-outline">Editar</button>
+              <button class="btn-sm-filled">Ver solicitudes</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mascota 3: Simba (Perro) -->
+        <article class="pet-card">
+          <img src="IMG/simba.png" alt="Simba" class="pet-card-img" />
+          <div class="pet-card-content">
+            <div>
+              <div class="pet-card-header">
+                <h3 class="pet-name">Simba</h3>
+                <span class="pet-badge dog">Perro</span>
+              </div>
+              <div class="pet-info-row">
+                <div class="pet-info-item">
+                  <img src="IMG/calendario.png" alt="edad" /> 6 meses
+                </div>
+                <div class="pet-info-item">
+                  <img src="IMG/ubicacion.png" alt="ubicacion" /> Surco
+                </div>
+              </div>
+              <p class="pet-desc">Cachorro lleno de energía, busca una familia activa.</p>
+            </div>
+            <div class="pet-card-actions">
+              <button class="btn-sm-outline">Editar</button>
+              <button class="btn-sm-filled">Ver solicitudes</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mascota 4: Max 2 (Gato) -->
+        <article class="pet-card">
+          <img src="IMG/max3.png" alt="Max Gato" class="pet-card-img" />
+          <div class="pet-card-content">
+            <div>
+              <div class="pet-card-header">
+                <h3 class="pet-name">Max</h3>
+                <span class="pet-badge cat">Gato</span>
+              </div>
+              <div class="pet-info-row">
+                <div class="pet-info-item">
+                  <img src="IMG/calendario.png" alt="edad" /> 2 años
+                </div>
+                <div class="pet-info-item">
+                  <img src="IMG/ubicacion.png" alt="ubicacion" /> Jesús María
+                </div>
+              </div>
+              <p class="pet-desc">Muy afectuosa y sociable, le encantan las siestas al sol.</p>
+            </div>
+            <div class="pet-card-actions">
+              <button class="btn-sm-outline">Editar</button>
+              <button class="btn-sm-filled">Ver solicitudes</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mascota 5: Toby (Perro) -->
+        <article class="pet-card">
+          <img src="IMG/toby.png" alt="Toby" class="pet-card-img" />
+          <div class="pet-card-content">
+            <div>
+              <div class="pet-card-header">
+                <h3 class="pet-name">Toby</h3>
+                <span class="pet-badge dog">Perro</span>
+              </div>
+              <div class="pet-info-row">
+                <div class="pet-info-item">
+                  <img src="IMG/calendario.png" alt="edad" /> 3 años
+                </div>
+                <div class="pet-info-item">
+                  <img src="IMG/ubicacion.png" alt="ubicacion" /> Pueblo Libre
+                </div>
+              </div>
+              <p class="pet-desc">Pequeño y leal, siempre listo para acompañarte.</p>
+            </div>
+            <div class="pet-card-actions">
+              <button class="btn-sm-outline">Editar</button>
+              <button class="btn-sm-filled">Ver solicitudes</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mascota 6: Mia (Gato) -->
+        <article class="pet-card">
+          <img src="IMG/mia.png" alt="Mia" class="pet-card-img" />
+          <div class="pet-card-content">
+            <div>
+              <div class="pet-card-header">
+                <h3 class="pet-name">Mia</h3>
+                <span class="pet-badge cat">Gato</span>
+              </div>
+              <div class="pet-info-row">
+                <div class="pet-info-item">
+                  <img src="IMG/calendario.png" alt="edad" /> 4 años
+                </div>
+                <div class="pet-info-item">
+                  <img src="IMG/ubicacion.png" alt="ubicacion" /> Lince
+                </div>
+              </div>
+              <p class="pet-desc">Tierna y curiosa, está aprendiendo a conocer el mundo.</p>
+            </div>
+            <div class="pet-card-actions">
+              <button class="btn-sm-outline">Editar</button>
+              <button class="btn-sm-filled">Ver solicitudes</button>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- PAGINACIÓN -->
+      <div class="pagination">
+        <a href="#" class="page-item active">1</a>
+        <a href="#" class="page-item">2</a>
+        <a href="#" class="page-item">3</a>
+        <span class="page-dots">...</span>
+        <a href="#" class="page-item">4</a>
+        <a href="#" class="page-item">›</a>
+      </div>
+
+    </main>
+
+    <!-- FOOTER SEMÁNTICO -->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+  <img src="Imagenes/Logo2.png" alt="Logo Huellas de Auxilio" />
+  <p>© 2026 Huellas de Auxilio.<br />Todos los derechos reservados.</p>
+
+  <div class="footer-social">
+    <a href="#"><img src="Iconos/facebook.png" alt="Facebook" /></a>
+    <a href="#"><img src="Iconos/twiter.png" alt="X" /></a>
+    <a href="#"><img src="Iconos/instagram.png" alt="Instagram" /></a>
+  </div>
+</div>
+
+<div class="footer-links">
+  <h4>Legal</h4>
+  <a href="documentos/politica-privacidad.pdf">Política de privacidad</a>
+  <a href="documentos/terminos-condiciones.pdf">Términos y condiciones</a>
+  <a href="documentos/libro-reclamaciones.pdf">Libro de Reclamaciones</a>
+</div>
+
+<div class="footer-contacto">
+  <h4>Contáctanos</h4>
+
+  <div class="contacto-item">
+    <img src="Iconos/email.png" alt="Correo" />
+    <span>hola@huellasdeauxilio.pe</span>
+  </div>
+
+  <div class="contacto-item">
+    <img src="Iconos/llamar.png" alt="Teléfono" />
+    <span>+51 987 654 321 Lima, Perú</span>
+  </div>
+
+  <div class="contacto-item">
+    <img src="Iconos/map.png" alt="Ubicación" />
+    <span>Lima, Perú</span>
+  </div>
+</div>
+      </div>
+    </footer>
+  </body>
+</html>

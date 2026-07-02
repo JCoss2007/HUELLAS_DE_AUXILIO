@@ -1,0 +1,193 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background:#eef8f6;
+  color:#000;
+}
+
+/* HEADER */
+
+.navbar {
+  height: 74px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0 58px;
+  display: grid;
+  grid-template-columns: 180px 1fr 230px;
+  align-items: center;
+}
+
+.logo {
+  width: 118px;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 58px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.navbar nav a:hover {
+  color: #007c83;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 26px;
+}
+
+.bell {
+  width: 22px;
+}
+
+.btn-account {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 15px;
+  border: 2px solid #007c83;
+  border-radius: 10px;
+  background: #dcefeb;
+  color: #007c83;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.btn-account img {
+  width: 25px;
+  height: 25px;
+}
+/* CONTENIDO */
+
+.delete-page{
+  display:grid;
+  grid-template-columns:315px 1fr;
+  gap:20px;
+  padding:80px 30px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  background:#fff;
+  border:1px solid #cfcfcf;
+  border-radius:5px;
+  padding:58px 28px;
+  min-height:560px;
+}
+
+.sidebar p{
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:28px;
+}
+
+.sidebar span{
+  color:#008891;
+}
+
+.sidebar hr{
+  border:none;
+  border-top:1px solid #333;
+  margin:24px 0;
+}
+
+.menu-item{
+  height:54px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding:0 16px;
+  margin-bottom:20px;
+  border:1px solid #d2d2d2;
+  border-radius:7px;
+  text-decoration:none;
+  color:#000;
+  font-weight:700;
+  font-size:15px;
+  background:#fff;
+}
+
+.menu-icon{
+  width:24px;
+  height:24px;
+  object-fit:contain;
+}
+
+.menu-item:hover{
+  background:#eef8f6;
+}
+
+.menu-item.delete{
+  color:red;
+}
+
+.active-delete{
+  background:#fdeaea;
+  color:red;
+}
+
+/* TARJETA ELIMINAR CUENTA */
+
+.delete-card{
+  background:#fff;
+  border:1px solid #cfcfcf;
+  border-radius:5px;
+  min-height:560px;
+  padding:40px 28px;
+}
+
+.delete-card h1{
+  color:#007f7f;
+  font-size:30px;
+  margin-bottom:34px;
+}
+
+.delete-card h2{
+  text-align:center;
+  font-size:20px;
+  font-weight:700;
+  margin-top:50px;
+  margin-bottom:40px;
+}
+
+.delete-buttons{
+  display:flex;
+  justify-content:center;
+  gap:45px;
+}
+
+.cancel-btn,
+.delete-btn{
+  width:145px;
+  height:26px;
+  border:2px solid #008891;
+  border-radius:7px;
+  background:#fff;
+  color:#008891;
+  font-size:11px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.cancel-btn:hover,
+.delete-btn:hover{
+  background:#008891;
+  color:#fff;
+}
