@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #eef8f6;
+  color: #1f302e;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 74px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0 58px;
+  display: grid;
+  grid-template-columns: 180px 1fr 230px;
+  align-items: center;
+}
+
+.logo {
+  width: 118px;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 58px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.navbar nav a:hover {
+  color: #007c83;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 26px;
+}
+
+.bell {
+  width: 22px;
+}
+
+.btn-account {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 15px;
+  border: 2px solid #007c83;
+  border-radius: 10px;
+  background: #dcefeb;
+  color: #007c83;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.btn-account img {
+  width: 25px;
+  height: 25px;
+}
+
+/* CONTENIDO */
+
+.report-page {
+  display: grid;
+  grid-template-columns: 315px 1fr;
+  gap: 20px;
+  padding: 80px 32px;
+  align-items: start;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  background: #fff;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  padding: 56px 28px;
+  min-height: 520px;
+}
+
+.sidebar p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.sidebar p span {
+  color: #008b8f;
+}
+
+.sidebar hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 24px 0;
+}
+
+.menu-item {
+  height: 54px;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 16px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #111;
+  font-size: 15px;
+  font-weight: 700;
+  background: #fff;
+}
+
+.menu-item .icon {
+  font-size: 28px;
+  width: 25px;
+  text-align: center;
+}
+
+.menu-item.active {
+  background: #dcefeb;
+  color: #007c83;
+  border-color: transparent;
+}
+
+.menu-item.delete {
+  color: #ff1f1f;
+}
+
+/* CARD REPORTAR */
+
+.report-card {
+  background: #fff;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  padding: 38px;
+  min-height: 520px;
+}
+
+.report-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+.back-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #d0d0d0;
+  background: #fff;
+  color: #007c83;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.report-header h1 {
+  color: #178783;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.report-header p {
+  font-size: 11px;
+  font-weight: 700;
+  color: #000;
+}
+
+.report-box {
+  background: #e6f1f0;
+  border-radius: 6px;
+  padding: 28px 36px 36px;
+}
+
+.report-box label {
+  display: block;
+  color: #007c83;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.report-box textarea {
+  width: 100%;
+  height: 145px;
+  border: 2px solid #007c83;
+  border-radius: 6px;
+  resize: none;
+  outline: none;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.report-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+  margin-top: 25px;
+}
+
+.cancel-btn {
+  border: none;
+  background: transparent;
+  color: #007c83;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.send-btn {
+  background: #007c83;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 34px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}

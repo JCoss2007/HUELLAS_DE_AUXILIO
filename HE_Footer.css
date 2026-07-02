@@ -1,0 +1,77 @@
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #1D5053;
+  color: #fff;
+  padding: 24px 50px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.2fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.footer-brand img {
+  width: 150px;
+  margin-bottom: 14px;
+}
+
+.footer-brand p {
+  font-size: 13px;
+  line-height: 1.45;
+  color: #e9f3f1;
+  margin-bottom: 16px;
+}
+
+.footer h4 {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.footer a,
+.footer p {
+  display: block;
+  color: #e9f3f1;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 11px;
+}
+
+/* Redes sociales */
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Contacto con iconos */
+.contacto-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 13px;
+}
+
+.contacto-item img {
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+}
+
+.contacto-item span {
+  font-size: 13px;
+  color: #e9f3f1;
+}
