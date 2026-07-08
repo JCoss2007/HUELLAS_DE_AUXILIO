@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Mis solicitudes</title>
+
+    <link rel="stylesheet" href="HE_Header_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Menu_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Mis_Solicitudes.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-ciudadano">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Ciudadano.html" class="logo">
+          <img src="img/logo.png" alt="Huellas de Auxilio" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Ciudadano.html" class="nav-link">Inicio</a></li>
+          <li><a href="Mis_Reportes.html" class="nav-link">Mis reportes</a></li>
+          <li><a href="Directorio.html" class="nav-link">Directorio</a></li>
+          <li><a href="Adopciones.html" class="nav-link activo">Adopciones</a></li>
+          <li><a href="Ayuda.html" class="nav-link">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Reportar.html" class="btn-reportar">Reportar</a>
+
+          <a href="Notificaciones.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Ciudadano.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+
+        <a href="Reportar.html" class="btn-reporte-mobile">Reporte</a>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>HuellaAmiga247</h3>
+              <a href="Mi_Cuenta_Ciudadano.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Ciudadano.html">Inicio</a>
+          <a href="Mis_Reportes.html">Mis Reportes</a>
+          <a href="Directorio.html">Directorio</a>
+          <a href="Adopciones.html" class="activo">Adopciones</a>
+          <a href="Ayuda.html">Ayuda</a>
+          <a href="Notificaciones.html">Notificaciones</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="mis-solicitudes-page">
+      <section class="hero-solicitudes">
+        <div class="hero-img">
+          <img src="img/banner-ciudadano.png" alt="Mascotas" />
+        </div>
+
+        <div class="hero-text">
+          <h1>Mis solicitudes</h1>
+          <p>Conoce el estado de tus postulaciones de adopción</p>
+        </div>
+      </section>
+
+      <section class="tabs-solicitudes">
+        <a href="Adopciones.html" class="tab">
+          <img src="icons/huella-verde.png" alt="Mascotas" />
+          Mascotas disponibles
+        </a>
+
+        <a href="Mis_Solicitudes.html" class="tab activo">
+          <img src="icons/documento-verde.png" alt="Solicitudes" />
+          Mis solicitudes
+        </a>
+      </section>
+
+      <section class="filtros-solicitudes">
+        <div class="buscar-box">
+          <img src="icons/buscar.png" alt="Buscar" />
+          <input type="text" placeholder="Buscar mascota" />
+        </div>
+
+        <select>
+          <option value="">Estado</option>
+          <option value="revision">En revisión</option>
+          <option value="rechazado">Rechazado</option>
+          <option value="aprobado">Aprobado</option>
+        </select>
+      </section>
+
+      <section class="tabla-solicitudes">
+        <div class="tabla-header">
+          <p>Mascota</p>
+          <p>Código</p>
+          <p>Entidad</p>
+          <p>Fecha</p>
+          <p>Estado</p>
+          <p>Acción</p>
+        </div>
+
+        <div class="tabla-fila">
+          <div class="mascota-col">
+            <img src="img/luna-gato.png" alt="Luna" />
+            <span>LUNA</span>
+          </div>
+
+          <p>SOL-2026-0234</p>
+          <p>Refugio Patitas</p>
+          <p>26 may 2026</p>
+
+          <div>
+            <span class="estado estado-revision">En revisión</span>
+          </div>
+
+          <a href="Detalle_Solicitud.html" class="btn-detalle">
+            Ver detalle
+            <img src="icons/flecha-verde.png" alt="Ver detalle" />
+          </a>
+        </div>
+
+        <div class="tabla-fila">
+          <div class="mascota-col">
+            <img src="img/toby-perro.png" alt="Toby" />
+            <span>Toby</span>
+          </div>
+
+          <p>SOL-2026-0134</p>
+          <p>Huella de Auxilio</p>
+          <p>12 may 2026</p>
+
+          <div>
+            <span class="estado estado-rechazado">Rechazado</span>
+          </div>
+
+          <a href="Detalle_Solicitud.html" class="btn-detalle">
+            Ver detalle
+            <img src="icons/flecha-verde.png" alt="Ver detalle" />
+          </a>
+        </div>
+
+        <div class="tabla-fila">
+          <div class="mascota-col">
+            <img src="img/rocky-perro.png" alt="Rocky" />
+            <span>Rocky</span>
+          </div>
+
+          <p>SOL-2026-0534</p>
+          <p>Hogar seguro</p>
+          <p>8 may 2026</p>
+
+          <div>
+            <span class="estado estado-aprobado">Aprobado</span>
+          </div>
+
+          <a href="Detalle_Solicitud.html" class="btn-detalle">
+            Ver detalle
+            <img src="icons/flecha-verde.png" alt="Ver detalle" />
+          </a>
+        </div>
+      </section>
+
+      <section class="aviso-solicitudes">
+        <div class="aviso-icono">!</div>
+        <p>Desde esta sección puedes revisar el avance de tu solicitud de adopción.</p>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="icons/x.png" alt="X" /></a>
+          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-ciudadano.js"></script>
+  </body>
+</html>

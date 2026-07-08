@@ -1,181 +1,304 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Huellas de Auxilio · Detalle de entidad aliada</title>
-<link rel="stylesheet" href="detalle.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Huellas de Auxilio - Landing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Encabezado -->
-<header class="topbar">
-  <div class="topbar__inner">
-    <a class="brand" href="#">
-      <img src="Img/Logo_Huellas.png" alt="Huellas de Auxilio" class="brand__logo">
-    </a>
+    <!-- CSS -->
+    <link rel="stylesheet" href="HE_Landing_general.css" />
+  </head>
 
-    <nav class="mainnav">
-      <a href="#">Inicio</a>
-      <a href="#">Reportes</a>
-      <a href="#">Adopciones</a>
-      <a href="#" class="mainnav__active">Red de apoyo</a>
-      <a href="#">Ayuda</a>
-    </nav>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo Huellas de Auxilio" />
+        </div>
 
-    <div class="topbar__actions">
-      <button class="icon-btn" aria-label="Notificaciones">
-        <img src="Img/icons/bell-muted.svg" alt="" class="icon icon-18">
-      </button>
-      <button class="account-btn">
-        <img src="Img/icons/user-circle-dark.svg" alt="" class="icon icon-20">
-        <span>Mi cuenta</span>
-      </button>
-    </div>
-  </div>
-</header>
+        <a href="login.html" class="btn-login">
+          <img src="icons/iniciar sesion.png" alt="Icono iniciar sesión" />
+          Iniciar sesión
+        </a>
+      </nav>
+    </header>
 
-<main class="page">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-texto">
+        <h1>Juntos podemos detener el maltrato animal.</h1>
 
-  <!-- Título de la página -->
-  <div class="page-title">
-    <button class="back-btn" aria-label="Volver">
-      <img src="Img/icons/arrow-left-teal.svg" alt="" class="icon icon-19">
-    </button>
-    <div>
-      <h1>Detalle de entidad aliada</h1>
-      <p>Información detallada de la entidad para una derivación informada y segura</p>
-    </div>
-  </div>
+        <p>
+          Huellas de Auxilio conecta a ciudadanos y entidades de apoyo para
+          reportar, dar seguimiento y actuar rápido en casos de maltrato o
+          abandono animal.
+        </p>
 
-  <!-- Contenido principal -->
-  <section class="content">
+        <div class="hero-beneficios">
+          <div class="beneficio">
+            <img src="icons/escudo-check.png" alt="Icono reporte anónimo" />
+            <h3>Reporte anónimo</h3>
+          </div>
 
-    <div class="main-col">
+          <div class="beneficio">
+            <img src="icons/mapa-ubi.png" alt="Icono evidencia y ubicación" />
+            <h3>Evidencia y ubicación</h3>
+          </div>
 
-      <article class="entity-card">
-        <div class="entity-card__top">
-          <div class="entity-card__avatar"></div>
-
-          <div class="entity-card__info">
-            <h2>Refugio Esperanza Animal</h2>
-            <span class="badge badge--refugio">Refugio</span>
-
-            <div class="info-grid">
-              <p class="info-row">
-                <img src="Img/icons/map-pin-muted.svg" alt="" class="icon icon-16">
-                San Miguel
-              </p>
-              <p class="info-row">
-                <img src="Img/icons/phone-muted.svg" alt="" class="icon icon-16">
-                987 657 321
-              </p>
-              <p class="info-row">
-                <img src="Img/icons/envelope-simple-muted.svg" alt="" class="icon icon-16">
-                contacto@refugioesperanza.pe
-              </p>
-              <p class="info-row">
-                <img src="Img/icons/buildings-muted.svg" alt="" class="icon icon-16">
-                Av. La Paz 1234, San Miguel, Lima
-              </p>
-              <p class="info-row">
-                <img src="Img/icons/clock-muted.svg" alt="" class="icon icon-16">
-                Lunes a Sábado: 9:00 a.m - 6:00 p.m<br>
-                Domingo: 10:00 a.m - 2:00 p.m
-              </p>
-            </div>
+          <div class="beneficio">
+            <img
+              src="icons/campana-seguimiento.png"
+              alt="Icono seguimiento"
+            />
+            <h3>Seguimiento del caso</h3>
           </div>
         </div>
 
-        <p class="entity-card__desc">
-          Refugio dedicado al rescate, recuperación y adopción responsable de perros y gatos en situación de abandono.
-          Promovemos el bienestar animal y la tendencia responsable a través de campañas de esterilización, educación y adopción
-        </p>
+        <a href="login.html" class="btn-primary">Ir a la plataforma</a>
+      </div>
 
-        <div class="features">
-          <div class="feature">
-            <span class="feature__icon">
-              <img src="Img/icons/heart-teal.svg" alt="" class="icon icon-18">
-            </span>
-            <p class="feature__title">Servicios disponibles</p>
-            <p class="feature__desc">Rescate y acogida, veterinaria básica.</p>
+      <div class="hero-imagen">
+        <img src="img/perro-hero.png" alt="Perrito rescatado" />
+      </div>
+    </section>
+
+    <!-- ¿CÓMO FUNCIONA? -->
+    <section class="funciona-section">
+      <h2>¿Cómo funciona?</h2>
+
+      <div class="funciona-grid">
+        <div class="funciona-card">
+          <div class="icono-funciona">
+            <img src="icons/formulario.png" alt="Icono formulario" />
           </div>
 
-          <div class="feature">
-            <span class="feature__icon">
-              <img src="Img/icons/person-simple-teal.svg" alt="" class="icon icon-18">
-            </span>
-            <p class="feature__title">Cobertura</p>
-            <p class="feature__desc">San Miguel, Pueblo Libre, Magdalena.</p>
-          </div>
-
-          <div class="feature">
-            <span class="feature__icon">
-              <img src="Img/icons/users-teal.svg" alt="" class="icon icon-18">
-            </span>
-            <p class="feature__title">Capacidad de apoyo</p>
-            <p class="feature__desc">10 animales.</p>
-          </div>
-
-          <div class="feature">
-            <span class="feature__icon">
-              <img src="Img/icons/clipboard-text-teal.svg" alt="" class="icon icon-18">
-            </span>
-            <p class="feature__title">Requisitos de derivación</p>
-            <p class="feature__desc">Formulario de evaluación previa.</p>
-          </div>
+          <h3>1. Reporta</h3>
+          <p>Completa la información del caso en pocos pasos.</p>
         </div>
-      </article>
 
-      <div class="actions">
-        <button class="btn btn--filled">Derivar caso</button>
-        <button class="btn btn--outline">
-          <img src="Img/icons/arrow-left-teal.svg" alt="" class="icon icon-16">
-          Volver al directorio
-        </button>
+        <div class="funciona-card">
+          <div class="icono-funciona">
+            <img src="icons/team.png" alt="Icono conexión" />
+          </div>
+
+          <h3>2. Conecta</h3>
+          <p>La plataforma vincula tu reporte con entidades de apoyo.</p>
+        </div>
+
+        <div class="funciona-card">
+          <div class="icono-funciona">
+            <img src="icons/seguimiento.png" alt="Icono seguimiento" />
+          </div>
+
+          <h3>3. Da seguimiento</h3>
+          <p>Consulta el estado del caso y sus avances.</p>
+        </div>
       </div>
+    </section>
 
-    </div>
+    <!-- SEGMENTOS -->
+    <section class="segmentos-section">
+      <div class="segmentos-card">
+        <div class="segmento">
+          <h2>Ciudadano denunciante</h2>
 
-    <aside class="sidebar">
+          <div class="icono-segmento">
+            <img src="icons/user.png" alt="Icono ciudadano" />
+          </div>
 
-      <div class="side-card">
-        <h3 class="side-card__title">Ubicación</h3>
-        <img src="Img/image_60.png" alt="Mapa de ubicación de la entidad" class="side-card__map">
-        <p class="side-card__address">
-          <img src="Img/icons/map-pin-muted.svg" alt="" class="icon icon-16">
-          Av. La Paz 1234, San Miguel, Lima
-        </p>
-        <button class="btn btn--maps">Ver en Google Maps</button>
+          <ul>
+            <li>Reporta de forma rápida y segura.</li>
+            <li>Adjunta evidencia y ubicación.</li>
+            <li>Revisa el estado de tus reportes.</li>
+          </ul>
+        </div>
+
+        <div class="separador"></div>
+
+        <div class="segmento">
+          <h2>Entidad de apoyo animal</h2>
+
+          <div class="icono-segmento">
+            <img src="icons/casita.png" alt="Icono entidad" />
+          </div>
+
+          <ul>
+            <li>Recibe reportes organizados.</li>
+            <li>Gestiona casos según prioridad.</li>
+            <li>Actualiza el estado del caso.</li>
+          </ul>
+        </div>
       </div>
+    </section>
 
-      <div class="side-card">
-        <h3 class="side-card__title">Estado de disponibilidad</h3>
-        <div class="status">
-          <span class="status__icon">
-            <img src="Img/icons/check-circle-green.svg" alt="" class="icon icon-21">
-          </span>
+    <!-- HISTORIAS -->
+    <section class="historias-section">
+      <h2>Historias que inspiran</h2>
+
+      <div class="historias-grid">
+        <div class="historia-card">
+          <img src="img/luna.png" alt="Historia de Luna" />
+
           <div>
-            <p class="status__title">Disponibilidad para derivación</p>
-            <p class="status__desc">Esta entidad puede recibir casos en estos momento.</p>
+            <h3>Luna encontró un hogar</h3>
+            <p>
+              Fue rescatada después de un reporte ciudadano y ahora vive con una
+              familia responsable.
+            </p>
+          </div>
+        </div>
+
+        <div class="historia-card">
+          <img src="img/simba.png" alt="Historia de Simba" />
+
+          <div>
+            <h3>Simba recibió atención</h3>
+            <p>
+              Una entidad aliada revisó el caso y coordinó su recuperación.
+            </p>
+          </div>
+        </div>
+
+        <div class="historia-card">
+          <img src="img/max.png" alt="Historia de Max" />
+
+          <div>
+            <h3>Max fue reportado a tiempo</h3>
+            <p>
+              Gracias a la evidencia enviada, el caso pudo ser atendido
+              rápidamente.
+            </p>
           </div>
         </div>
       </div>
+    </section>
 
-    </aside>
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="faq-section">
+      <h2>Preguntas frecuentes</h2>
 
-  </section>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>¿Qué es Huellas de Auxilio?</summary>
+          <p>
+            Es una plataforma digital que facilita el reporte y seguimiento de
+            casos de maltrato o abandono animal.
+          </p>
+        </details>
 
-</main>
+        <details class="faq-item">
+          <summary>¿Puedo hacer un reporte de forma anónima?</summary>
+          <p>
+            Sí. La plataforma permite proteger la identidad del ciudadano
+            denunciante mediante el uso de un alias.
+          </p>
+        </details>
 
-<footer class="site-footer">
-  <p>© 2026 Huellas de Auxilio. Todos los derechos reservados.</p>
-  <p class="site-footer__links">
-    <a href="#">Política de privacidad</a>
-    <span>|</span>
-    <a href="#">Términos y condiciones</a>
-  </p>
-</footer>
+        <details class="faq-item">
+          <summary>¿Qué necesito para hacer un reporte?</summary>
+          <p>
+            Debes registrar una descripción del caso, ubicación y, si es
+            posible, adjuntar evidencia como fotografías.
+          </p>
+        </details>
 
-</body>
+        <details class="faq-item">
+          <summary>¿Qué pasa después de hacer un reporte?</summary>
+          <p>
+            El reporte será revisado por una entidad de apoyo animal y podrás
+            consultar su estado desde la plataforma.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-section">
+      <div class="cta-card">
+        <img src="img/corazon-mascotas.png" alt="Mascotas" />
+
+        <div>
+          <h2>Tu acción puede marcar la diferencia.</h2>
+          <p>
+            Ayuda a reportar y dar seguimiento a casos que necesitan atención.
+          </p>
+        </div>
+
+        <a href="login.html" class="btn-primary">Ir a la plataforma</a>
+      </div>
+    </section>
+
+    <!-- FOOTER LANDING -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- LOGO Y DERECHOS -->
+        <div class="footer-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio.<br />
+            Todos los derechos reservados.
+          </p>
+
+          <div class="footer-social">
+            <a href="#">
+              <img src="icons/facebook.png" alt="Facebook" />
+            </a>
+
+            <a href="#">
+              <img src="icons/x.png" alt="X" />
+            </a>
+
+            <a href="#">
+              <img src="icons/instagram.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+
+        <!-- LEGAL -->
+        <div class="footer-links">
+          <h4>Legal</h4>
+
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de privacidad
+          </a>
+
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <!-- CONTACTO -->
+        <div class="footer-contacto">
+          <h4>Contáctanos</h4>
+
+          <div class="contacto-item">
+            <img src="icons/email.png" alt="Correo" />
+            <span>hola@huellasdeauxilio.pe</span>
+          </div>
+
+          <div class="contacto-item">
+            <img src="icons/llamar.png" alt="Teléfono" />
+            <span>+51 987 654 321</span>
+          </div>
+
+          <div class="contacto-item">
+            <img src="icons/map.png" alt="Ubicación" />
+            <span>Lima, Perú</span>
+          </div>
+        </div>
+
+        <!-- LIBRO DE RECLAMACIONES -->
+        <div class="footer-libro">
+          <a href="documentos/libro-reclamaciones.pdf" target="_blank">
+            <img
+              src="img/libro-reclamaciones.png"
+              alt="Libro de Reclamaciones"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
