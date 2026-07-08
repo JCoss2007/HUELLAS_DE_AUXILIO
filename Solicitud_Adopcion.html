@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Solicitud de adopción</title>
+
+    <link rel="stylesheet" href="HE_Header_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Menu_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Solicitud_Adopcion.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-ciudadano">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Ciudadano.html" class="logo">
+          <img src="img/logo.png" alt="Huellas de Auxilio" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Ciudadano.html" class="nav-link">Inicio</a></li>
+          <li><a href="Mis_Reportes.html" class="nav-link">Mis reportes</a></li>
+          <li><a href="Directorio.html" class="nav-link">Directorio</a></li>
+          <li><a href="Adopciones.html" class="nav-link activo">Adopciones</a></li>
+          <li><a href="Ayuda.html" class="nav-link">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Reportar.html" class="btn-reportar">Reportar</a>
+
+          <a href="Notificaciones.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Ciudadano.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+
+        <a href="Reportar.html" class="btn-reporte-mobile">Reporte</a>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>HuellaAmiga247</h3>
+              <a href="Mi_Cuenta_Ciudadano.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Ciudadano.html">Inicio</a>
+          <a href="Mis_Reportes.html">Mis Reportes</a>
+          <a href="Directorio.html">Directorio</a>
+          <a href="Adopciones.html" class="activo">Adopciones</a>
+          <a href="Ayuda.html">Ayuda</a>
+          <a href="Notificaciones.html">Notificaciones</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="solicitud-page">
+      <section class="titulo-solicitud">
+        <a href="Detalle_Mascota.html" class="btn-volver">
+          <img src="icons/flecha-volver.png" alt="Volver" />
+        </a>
+
+        <div>
+          <h1>Solicitud de adopción</h1>
+          <p>Completa tus datos para postular a la adopción</p>
+        </div>
+      </section>
+
+      <section class="solicitud-contenido">
+        <form class="formulario-solicitud" action="Confirmacion_Solicitud.html">
+          <h2>Tus datos</h2>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo</label>
+              <input type="text" id="nombre" placeholder="Ingresa tu nombre completo" />
+            </div>
+
+            <div class="form-group">
+              <label for="dni">Dni</label>
+              <input type="text" id="dni" placeholder="Ingresa tu DNI" />
+            </div>
+
+            <div class="form-group">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" placeholder="ejemplo@correo.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="text" id="telefono" placeholder="Ingresa tu número de teléfono" />
+            </div>
+
+            <div class="form-group">
+              <label for="distrito">Distrito</label>
+              <select id="distrito">
+                <option value="">Selecciona tu distrito</option>
+                <option value="san-miguel">San Miguel</option>
+                <option value="miraflores">Miraflores</option>
+                <option value="surco">Surco</option>
+                <option value="lince">Lince</option>
+                <option value="jesus-maria">Jesús María</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="vivienda">Tipo de vivienda</label>
+              <select id="vivienda">
+                <option value="">Selecciona el tipo de vivienda</option>
+                <option value="casa">Casa</option>
+                <option value="departamento">Departamento</option>
+                <option value="habitacion">Habitación</option>
+              </select>
+            </div>
+
+            <div class="form-group experiencia">
+              <label>¿Tienes experiencia con mascotas?</label>
+
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="experiencia" value="si" />
+                  Sí
+                </label>
+
+                <label>
+                  <input type="radio" name="experiencia" value="no" />
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="motivo">Motivo de adopción</label>
+              <textarea id="motivo" placeholder="Cuéntanos por qué deseas adoptar"></textarea>
+            </div>
+          </div>
+
+          <div class="terminos">
+            <input type="checkbox" id="terminos" />
+
+            <label for="terminos">
+              Acepto los
+              <a href="#">términos de adopción responsable</a>
+              y me comprometo a brindar cuidado, respeto y bienestar al animal.
+            </label>
+          </div>
+
+          <div class="linea-form"></div>
+
+          <div class="acciones-form">
+            <button type="submit" class="btn-enviar">Enviar solicitud</button>
+
+            <a href="Detalle_Adopcion.html" class="btn-cancelar">Cancelar</a>
+          </div>
+        </form>
+
+        <aside class="mascota-seleccionada">
+          <h2>Mascota seleccionada</h2>
+
+          <div class="mascota-resumen">
+            <img src="img/luna-gato.png" alt="Luna" />
+
+            <div class="mascota-info">
+              <h3>Luna</h3>
+              <span>Gato</span>
+
+              <div class="mascota-datos">
+                <p><strong>Edad:</strong> 2 años</p>
+                <p><strong>Sexo:</strong> Hembra</p>
+                <p><strong>Distrito:</strong> San Miguel</p>
+                <p><strong>Entidad:</strong> Refugio Patitas</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="icons/x.png" alt="X" /></a>
+          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-ciudadano.js"></script>
+  </body>
+</html>

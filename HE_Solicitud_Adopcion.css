@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaf3f2;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #082f3d;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.solicitud-page {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 28px 50px 12px;
+}
+
+.titulo-solicitud {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 38px;
+}
+
+.btn-volver {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #d9dddd;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-volver img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.btn-volver:hover {
+  background-color: #f7fbfa;
+}
+
+.titulo-solicitud h1 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1b746f;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.titulo-solicitud p {
+  font-size: 16px;
+  color: #676d68;
+}
+
+.solicitud-contenido {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 34px;
+  align-items: flex-start;
+}
+
+.formulario-solicitud,
+.mascota-seleccionada {
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 14px;
+}
+
+.formulario-solicitud {
+  padding: 22px 34px 24px;
+}
+
+.formulario-solicitud h2,
+.mascota-seleccionada h2 {
+  color: #1b746f;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 24px 54px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #676d68;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  border: 1.8px solid #d9dddd;
+  border-radius: 9px;
+  outline: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #263b3b;
+  background-color: #ffffff;
+}
+
+.form-group input,
+.form-group select {
+  height: 44px;
+  padding: 0 18px;
+}
+
+.form-group textarea {
+  height: 76px;
+  padding: 14px 18px;
+  resize: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #777777;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007476;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  height: 44px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.radio-group input {
+  width: 13px;
+  height: 13px;
+}
+
+.terminos {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 24px;
+  max-width: 670px;
+}
+
+.terminos input {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.terminos label {
+  font-size: 13px;
+  color: #676d68;
+  line-height: 1.4;
+}
+
+.terminos a {
+  color: #007476;
+  font-weight: 600;
+}
+
+.linea-form {
+  height: 1px;
+  background-color: #d9dddd;
+  margin: 24px 0 14px;
+}
+
+.acciones-form {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.btn-enviar,
+.btn-cancelar {
+  width: 158px;
+  height: 46px;
+  border-radius: 6px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-enviar {
+  background-color: #007476;
+  color: #ffffff;
+  border: 2px solid #007476;
+  cursor: pointer;
+}
+
+.btn-enviar:hover {
+  background-color: #005d60;
+}
+
+.btn-cancelar {
+  background-color: #ffffff;
+  color: #1b746f;
+  border: 2px solid #007476;
+}
+
+.btn-cancelar:hover {
+  background-color: #eaf3f2;
+}
+
+.mascota-seleccionada {
+  padding: 20px 24px 30px;
+}
+
+.mascota-resumen {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.mascota-resumen > img {
+  width: 165px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.mascota-info h3 {
+  font-size: 22px;
+  color: #1b746f;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.mascota-info > span {
+  width: 70px;
+  height: 24px;
+  background-color: #e5f4df;
+  color: #1b746f;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.mascota-datos p {
+  font-size: 14px;
+  color: #676d68;
+  margin-bottom: 7px;
+}
+
+.mascota-datos strong {
+  min-width: 78px;
+  display: inline-block;
+  color: #676d68;
+}
+
+@media (max-width: 1180px) {
+  .solicitud-page {
+    padding: 28px 32px 22px;
+  }
+
+  .solicitud-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .mascota-seleccionada {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 960px) {
+  .solicitud-page {
+    padding: 24px 24px 24px;
+  }
+
+  .titulo-solicitud h1 {
+    font-size: 34px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+}
+
+@media (max-width: 700px) {
+  .solicitud-page {
+    padding: 22px 18px;
+  }
+
+  .titulo-solicitud {
+    margin-bottom: 24px;
+  }
+
+  .titulo-solicitud h1 {
+    font-size: 29px;
+  }
+
+  .titulo-solicitud p {
+    font-size: 14px;
+  }
+
+  .formulario-solicitud {
+    padding: 22px 22px 24px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .radio-group {
+    height: auto;
+  }
+
+  .acciones-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-enviar,
+  .btn-cancelar {
+    width: 100%;
+  }
+
+  .mascota-resumen {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mascota-resumen > img {
+    width: 100%;
+    height: 230px;
+  }
+}
+
+@media (max-width: 430px) {
+  .btn-volver {
+    width: 42px;
+    height: 42px;
+  }
+
+  .btn-volver img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .titulo-solicitud h1 {
+    font-size: 25px;
+  }
+
+  .formulario-solicitud h2,
+  .mascota-seleccionada h2 {
+    font-size: 19px;
+  }
+
+  .terminos label {
+    font-size: 12px;
+  }
+}

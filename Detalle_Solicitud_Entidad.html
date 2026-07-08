@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Detalle de solicitud</title>
+
+    <link rel="stylesheet" href="HE_Header_Entidad.css" />
+    <link rel="stylesheet" href="HE_Menu_Entidad.css" />
+    <link rel="stylesheet" href="HE_Detalle_Solicitud_Entidad.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-entidad">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Entidad.html" class="logo">
+          <img src="img/logo.png" alt="Huellas de Auxilio" />
+        </a>
+
+        <a href="Notificaciones_Entidad.html" class="btn-campana-mobile">
+          <img src="icons/campana.png" alt="Notificaciones" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Entidad.html" class="nav-link">Inicio</a></li>
+          <li><a href="Reportes_Entidad.html" class="nav-link">Reportes</a></li>
+          <li><a href="Adopciones_Entidad.html" class="nav-link activo">Adopciones</a></li>
+          <li><a href="Red_Apoyo.html" class="nav-link">Red de apoyo</a></li>
+          <li><a href="Ayuda_Entidad.html" class="nav-link">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Notificaciones_Entidad.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>Refugio Patitas</h3>
+              <a href="Mi_Cuenta_Entidad.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Entidad.html">Inicio</a>
+          <a href="Reportes_Entidad.html">Reportes</a>
+          <a href="Adopciones_Entidad.html" class="activo">Adopciones</a>
+          <a href="Red_Apoyo.html">Red de apoyo</a>
+          <a href="Ayuda_Entidad.html">Ayuda</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="detalle-solicitud-entidad-page">
+      <section class="titulo-detalle">
+        <a href="Solicitudes_Adopcion_Entidad.html" class="btn-volver">
+          <img src="icons/flecha-volver.png" alt="Volver" />
+        </a>
+
+        <h1>Detalle de solicitud</h1>
+      </section>
+
+      <section class="resumen-superior">
+        <div class="resumen-dato">
+          <div class="resumen-icono">
+            <img src="icons/documento-verde.png" alt="Código" />
+          </div>
+
+          <div>
+            <h3>Código de solicitud</h3>
+            <p>SOL-2026-0233</p>
+          </div>
+        </div>
+
+        <div class="resumen-dato">
+          <div class="resumen-icono">
+            <img src="icons/calendario.png" alt="Fecha" />
+          </div>
+
+          <div>
+            <h3>Fecha de solicitud</h3>
+            <p>26 may 2026</p>
+          </div>
+        </div>
+
+        <div class="resumen-dato">
+          <div class="resumen-icono">
+            <img src="icons/huella-verde.png" alt="Mascota" />
+          </div>
+
+          <div>
+            <h3>Mascota</h3>
+            <p>Max</p>
+          </div>
+        </div>
+
+        <div class="resumen-dato">
+          <div class="resumen-icono">
+            <img src="icons/reloj-azul.png" alt="Estado" />
+          </div>
+
+          <div>
+            <h3>Estado actual</h3>
+            <span class="estado estado-revision">En revision</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="detalle-layout">
+        <article class="datos-solicitante-card">
+          <div class="card-titulo">
+            <img src="icons/user-circle.png" alt="Solicitante" />
+            <h2>Datos del solicitante</h2>
+          </div>
+
+          <div class="dato-linea">
+            <strong>Nombre Completo</strong>
+            <span>Camila Torres</span>
+          </div>
+
+          <div class="dato-linea">
+            <strong>DNI</strong>
+            <span>74852136</span>
+          </div>
+
+          <div class="dato-linea">
+            <strong>Correo electrónico</strong>
+            <span>camila.torres@email.com</span>
+          </div>
+
+          <div class="dato-linea">
+            <strong>Telefono</strong>
+            <span>987 654 321</span>
+          </div>
+
+          <div class="dato-linea">
+            <strong>Distrito</strong>
+            <span>Miraflores</span>
+          </div>
+
+          <div class="dato-linea">
+            <strong>Tipo de vivienda</strong>
+            <span>Departamento</span>
+          </div>
+
+          <div class="dato-linea">
+            <strong>Experiencia con mascotas</strong>
+            <span>Si</span>
+          </div>
+
+          <div class="dato-linea dato-motivo">
+            <strong>Motivo de adopción</strong>
+            <span>
+              Quiero brindarle un hogar lleno de amor y cuidados a una mascota
+              que lo necesite. Tengo tiempo, paciencia y muchas ganas de
+              acompañarlo en cada etapa de su vida.
+            </span>
+          </div>
+        </article>
+
+        <section class="columna-derecha">
+          <article class="mascota-solicitada-card">
+            <div class="card-titulo pequeño">
+              <img src="icons/huella-verde.png" alt="Mascota" />
+              <h2>Mascota solicitada</h2>
+            </div>
+
+            <div class="mascota-mini">
+              <img src="img/max-perro-1.png" alt="Max" class="mascota-mini-img" />
+
+              <div class="mascota-mini-info">
+                <div class="mascota-mini-header">
+                  <h3>Max</h3>
+                  <span>Perro</span>
+                </div>
+
+                <div class="mascota-mini-datos">
+                  <p>
+                    <img src="icons/calendario.png" alt="Edad" />
+                    2 años
+                  </p>
+
+                  <p>
+                    <img src="icons/map.png" alt="Distrito" />
+                    Miraflores
+                  </p>
+                </div>
+
+                <p>
+                  Cariñoso y juguetón, le encanta correr y recibir caricias.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="gestion-card">
+            <div class="card-titulo pequeño">
+              <img src="icons/documento-verde.png" alt="Gestión" />
+              <h2>Gestión de la solicitud</h2>
+            </div>
+
+            <label for="observacion">Observación interna (opcional)</label>
+
+            <textarea
+              id="observacion"
+              placeholder="Escribe una observación interna.."
+            ></textarea>
+
+            <div class="acciones-gestion">
+              <a href="Confirmacion_Rechazar_Solicitud.html" class="btn-rechazar">
+                Rechazar solicitud
+              </a>
+
+              <a href="Confirmacion_Aprobar_Solicitud.html" class="btn-aprobar">
+                Aprobar solicitud
+              </a>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="icons/x.png" alt="X" /></a>
+          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-entidad.js"></script>
+  </body>
+</html>

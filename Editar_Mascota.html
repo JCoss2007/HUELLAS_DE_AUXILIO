@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Editar mascota</title>
+
+    <link rel="stylesheet" href="HE_Header_Entidad.css" />
+    <link rel="stylesheet" href="HE_Menu_Entidad.css" />
+    <link rel="stylesheet" href="HE_Form_Mascota.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-entidad">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Entidad.html" class="logo">
+          <img src="img/logo.png" alt="Huellas de Auxilio" />
+        </a>
+
+        <a href="Notificaciones_Entidad.html" class="btn-campana-mobile">
+          <img src="icons/campana.png" alt="Notificaciones" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Entidad.html" class="nav-link">Inicio</a></li>
+          <li><a href="Reportes_Entidad.html" class="nav-link">Reportes</a></li>
+          <li><a href="Adopciones_Entidad.html" class="nav-link activo">Adopciones</a></li>
+          <li><a href="Red_Apoyo.html" class="nav-link">Red de apoyo</a></li>
+          <li><a href="Ayuda_Entidad.html" class="nav-link">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Notificaciones_Entidad.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>Refugio Patitas</h3>
+              <a href="Mi_Cuenta_Entidad.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Entidad.html">Inicio</a>
+          <a href="Reportes_Entidad.html">Reportes</a>
+          <a href="Adopciones_Entidad.html" class="activo">Adopciones</a>
+          <a href="Red_Apoyo.html">Red de apoyo</a>
+          <a href="Ayuda_Entidad.html">Ayuda</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="form-mascota-page">
+      <section class="titulo-form">
+        <div class="titulo-linea">
+          <a href="Adopciones_Entidad.html" class="btn-volver">
+            <img src="icons/flecha-volver.png" alt="Volver" />
+          </a>
+
+          <h1>Editar mascota</h1>
+        </div>
+
+        <p>Actualiza la información de la mascota publicada.</p>
+      </section>
+
+      <form class="form-card" action="Confirmacion_Editar_Mascota.html">
+        <div class="form-contenido">
+          <div class="campo">
+            <label for="nombre">Nombre de la mascota</label>
+            <input type="text" id="nombre" required />
+          </div>
+
+          <div class="campo">
+            <label for="especie">Especie</label>
+            <select id="especie" required>
+              <option value="">Seleccione la especie</option>
+              <option value="perro">Perro</option>
+              <option value="gato">Gato</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="edad">Edad</label>
+            <input type="text" id="edad" required />
+          </div>
+
+          <div class="campo">
+            <label for="sexo">Sexo</label>
+            <select id="sexo" required>
+              <option value="">Seleccione el sexo</option>
+              <option value="macho">Macho</option>
+              <option value="hembra">Hembra</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="distrito">Distrito</label>
+            <select id="distrito" required>
+              <option value="">Selecciona el distrito</option>
+              <option value="miraflores">Miraflores</option>
+              <option value="san-borja">San Borja</option>
+              <option value="surco">Surco</option>
+              <option value="jesus-maria">Jesús María</option>
+              <option value="pueblo-libre">Pueblo Libre</option>
+              <option value="lince">Lince</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="tamano">Tamaño</label>
+            <select id="tamano" required>
+              <option value="">Seleccione el tamaño</option>
+              <option value="pequeno">Pequeño</option>
+              <option value="mediano">Mediano</option>
+              <option value="grande">Grande</option>
+            </select>
+          </div>
+
+          <div class="campo campo-completo">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" required></textarea>
+          </div>
+
+          <div class="campo campo-completo">
+            <label>Fotos</label>
+
+            <div class="zona-fotos" id="zonaFotos">
+              <button type="button" class="btn-agregar-foto" id="btnAgregarFoto">
+                <span>+</span>
+                <strong>Agregar foto</strong>
+                <small>Elige una imagen del proyecto</small>
+              </button>
+
+              <div class="preview-fotos" id="previewFotos"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acciones-form">
+          <a href="Adopciones_Entidad.html" class="btn-cancelar">Cancelar</a>
+          <button type="submit" class="btn-guardar">Guardar cambios</button>
+        </div>
+      </form>
+
+      <section class="modal-fotos" id="modalFotos">
+        <div class="modal-contenido">
+          <div class="modal-header">
+            <h2>Seleccionar foto</h2>
+            <button type="button" id="btnCerrarModal">×</button>
+          </div>
+
+          <div class="galeria-fotos">
+            <button type="button" class="opcion-foto" data-img="img/max-perro-1.png">
+              <img src="img/max-perro-1.png" alt="Max" />
+            </button>
+
+            <button type="button" class="opcion-foto" data-img="img/max-perro-2.png">
+              <img src="img/max-perro-2.png" alt="Max" />
+            </button>
+
+            <button type="button" class="opcion-foto" data-img="img/fifi-gato.png">
+              <img src="img/fifi-gato.png" alt="Fifí" />
+            </button>
+
+            <button type="button" class="opcion-foto" data-img="img/luna-gato.png">
+              <img src="img/luna-gato.png" alt="Luna" />
+            </button>
+
+            <button type="button" class="opcion-foto" data-img="img/simba-perro.png">
+              <img src="img/simba-perro.png" alt="Simba" />
+            </button>
+
+            <button type="button" class="opcion-foto" data-img="img/toby-perro.png">
+              <img src="img/toby-perro.png" alt="Toby" />
+            </button>
+
+            <button type="button" class="opcion-foto" data-img="img/mia-gato.png">
+              <img src="img/mia-gato.png" alt="Mia" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="icons/x.png" alt="X" /></a>
+          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-entidad.js"></script>
+    <script src="form-mascota.js"></script>
+  </body>
+</html>

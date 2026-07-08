@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Inicio Ciudadano</title>
+
+    <link rel="stylesheet" href="HE_Home_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Menu_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Header_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-ciudadano">
+      <nav class="navbar">
+  <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <a href="Home_Ciudadano.html" class="logo">
+    <img src="img/logo.png" alt="Huellas de Auxilio" />
+  </a>
+
+  <ul class="nav-links">
+    <li>
+      <a href="Home_Ciudadano.html" class="nav-link activo">Inicio</a>
+    </li>
+
+    <li>
+      <a href="Mis_Reportes.html" class="nav-link">Mis reportes</a>
+    </li>
+
+    <li>
+      <a href="Directorio.html" class="nav-link">Directorio</a>
+    </li>
+
+    <li>
+      <a href="Adopciones.html" class="nav-link">Adopciones</a>
+    </li>
+
+    <li>
+      <a href="Ayuda.html" class="nav-link">Ayuda</a>
+    </li>
+  </ul>
+
+  <div class="header-actions">
+    <a href="Reportar.html" class="btn-reportar">
+      Reportar
+    </a>
+
+    <a href="Notificaciones.html" class="btn-campana">
+      <img src="icons/campana.png" alt="Notificaciones" />
+    </a>
+
+    <a href="Mi_Cuenta_Ciudadano.html" class="btn-cuenta">
+      <img src="icons/user-circle.png" alt="Mi cuenta" />
+      <span>Mi cuenta</span>
+    </a>
+  </div>
+
+  <a href="Reportar.html" class="btn-reporte-mobile">
+    Reporte
+  </a>
+</nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>HuellaAmiga247</h3>
+              <a href="Mi_Cuenta_Ciudadano.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Ciudadano.html" class="activo">Inicio</a>
+          <a href="Mis_Reportes.html">Mis Reportes</a>
+          <a href="Directorio.html">Directorio</a>
+          <a href="Adopciones.html">Adopciones</a>
+          <a href="Ayuda.html">Ayuda</a>
+          <a href="Notificaciones.html">Notificaciones</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="home-ciudadano">
+      <section class="hero-ciudadano">
+        <div class="hero-img">
+          <img src="img/banner-ciudadano.png" alt="Animales protegidos" />
+        </div>
+
+        <div class="hero-text">
+          <h1>Hola, <span>HuellaAmiga247</span></h1>
+
+          <p>
+            Gracias por ayudar a proteger los animales.<br />
+            Desde aquí pueden reportar, revisar estado de tus casos y encontrar
+            apoyo.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="Reportar.html" class="btn-primary">
+              <img src="icons/mas-blanco.png" alt="Reportar" />
+              Reportar
+            </a>
+
+            <a href="Mis_Reportes.html" class="btn-outline">
+              <img src="icons/documento-verde.png" alt="Ver mis reportes" />
+              Ver mis reportes
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <article class="stat-card">
+          <div class="stat-content">
+            <div class="stat-icon fondo-verde">
+              <img src="icons/documento-verde.png" alt="Reportes enviados" />
+            </div>
+
+            <div>
+              <h3>Reportes enviados</h3>
+              <p class="numero verde">4</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-content">
+            <div class="stat-icon fondo-naranja">
+              <img src="icons/reloj-naranja.png" alt="En revisión" />
+            </div>
+
+            <div>
+              <h3>En revisión</h3>
+              <p class="numero naranja">2</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-content">
+            <div class="stat-icon fondo-check">
+              <img src="icons/check-verde.png" alt="Casos atendidos" />
+            </div>
+
+            <div>
+              <h3>Casos atendidos</h3>
+              <p class="numero atendido">1</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="seguimiento">
+        <h2>Seguimiento reciente</h2>
+
+        <article class="caso-card">
+          <img
+            src="img/perrito-reporte.png"
+            alt="Cachorro reportado"
+            class="caso-img"
+          />
+
+          <div class="caso-info">
+            <div class="caso-header">
+              <h3>HA-0251</h3>
+              <span>En revisión</span>
+            </div>
+
+            <div class="caso-meta">
+              <p>
+                <img src="icons/map2.png" alt="Ubicación" />
+                San Miguel, Lima
+              </p>
+
+              <p>
+                <img src="icons/calendario.png" alt="Fecha" />
+                12 may, 2025
+              </p>
+
+              <p>
+                <img src="icons/edificio.png" alt="Entidad" />
+                Municipalidad de San Miguel
+              </p>
+            </div>
+
+            <p class="caso-desc">
+              Reporte por posible abandono de cachorros en parque.
+            </p>
+          </div>
+
+          <a href="Detalle_Reporte.html" class="btn-detalle">
+            Ver detalle
+          </a>
+        </article>
+      </section>
+
+      <section class="accesos">
+        <h2>Accesos rápidos</h2>
+
+        <div class="accesos-grid">
+          <a href="Directorio.html" class="acceso-card">
+            <div class="acceso-icon">
+              <img src="icons/casita.png" alt="Directorio de apoyo" />
+            </div>
+
+            <div class="acceso-text">
+              <h3>Directorio de apoyo</h3>
+              <p>Encuentre entidades y contactos de ayuda.</p>
+            </div>
+
+            <img src="icons/flecha-derecha.png" alt="Ver" class="flecha" />
+          </a>
+
+          <a href="Adopciones.html" class="acceso-card">
+            <div class="acceso-icon">
+              <img src="icons/huella-corazon.png" alt="Adopciones" />
+            </div>
+
+            <div class="acceso-text">
+              <h3>Adopciones</h3>
+              <p>Conoce animales que buscan un lugar.</p>
+            </div>
+
+            <img src="icons/flecha-derecha.png" alt="Ver" class="flecha" />
+          </a>
+
+          <a href="Guia_Reportar.html" class="acceso-card">
+            <div class="acceso-icon">
+              <img src="icons/libro-verde.png" alt="Guía para reportar" />
+            </div>
+
+            <div class="acceso-text">
+              <h3>Guía para reportar</h3>
+              <p>Consejos y pasos para hacer un buen reporte.</p>
+            </div>
+
+            <img src="icons/flecha-derecha.png" alt="Ver" class="flecha" />
+          </a>
+        </div>
+      </section>
+
+      <section class="ayuda-banner">
+        <div class="ayuda-info">
+          <div class="ayuda-icon">
+            <img src="icons/ayuda-verde.png" alt="Ayuda" />
+          </div>
+
+          <div>
+            <h3>¿Necesitas orientación?</h3>
+            <p>Consulta recurso útiles o contáctanos.</p>
+          </div>
+        </div>
+
+        <a href="Ayuda.html" class="btn-ayuda">
+          <img src="icons/interrogracion blanca.png" alt="Ayuda" />
+          <span>Ir a ayuda</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="#">
+            <img src="icons/x.png" alt="X" />
+          </a>
+
+          <a href="#">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-ciudadano.js"></script>
+  </body>
+</html>
