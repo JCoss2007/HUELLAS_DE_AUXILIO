@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Mascota publicada</title>
+
+    <link rel="stylesheet" href="HE_Header_Entidad.css" />
+    <link rel="stylesheet" href="HE_Menu_Entidad.css" />
+    <link rel="stylesheet" href="HE_Confirmacion_Mascota.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-entidad">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Entidad.html" class="logo">
+          <img src="img/logo.png" alt="Huellas de Auxilio" />
+        </a>
+
+        <a href="Notificaciones_Entidad.html" class="btn-campana-mobile">
+          <img src="icons/campana.png" alt="Notificaciones" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Entidad.html" class="nav-link">Inicio</a></li>
+          <li><a href="Reportes_Entidad.html" class="nav-link">Reportes</a></li>
+          <li><a href="Adopciones_Entidad.html" class="nav-link activo">Adopciones</a></li>
+          <li><a href="Red_Apoyo.html" class="nav-link">Red de apoyo</a></li>
+          <li><a href="Ayuda_Entidad.html" class="nav-link">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Notificaciones_Entidad.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>Refugio Patitas</h3>
+              <a href="Mi_Cuenta_Entidad.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Entidad.html">Inicio</a>
+          <a href="Reportes_Entidad.html">Reportes</a>
+          <a href="Adopciones_Entidad.html" class="activo">Adopciones</a>
+          <a href="Red_Apoyo.html">Red de apoyo</a>
+          <a href="Ayuda_Entidad.html">Ayuda</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="confirmacion-mascota-page">
+      <section class="confirmacion-card">
+        <div class="check-principal">
+          <span></span>
+        </div>
+
+        <h1>¡Mascota publicada!</h1>
+
+        <p class="mensaje-confirmacion">
+          La mascota fue publicada correctamente en la sección de adopciones.
+        </p>
+
+        <div class="resumen-confirmacion">
+          <div class="resumen-item">
+            <div class="resumen-icono">
+              <img src="icons/huella-verde.png" alt="Mascota" />
+            </div>
+
+            <p>Publicación</p>
+            <h3>Nueva mascota</h3>
+          </div>
+
+          <div class="resumen-item">
+            <div class="resumen-icono">
+              <img src="icons/casita.png" alt="Entidad" />
+            </div>
+
+            <p>Entidad</p>
+            <h3>Refugio Patitas</h3>
+          </div>
+
+          <div class="resumen-item">
+            <div class="resumen-icono">
+              <img src="icons/calendario.png" alt="Fecha" />
+            </div>
+
+            <p>Fecha</p>
+            <h3>26 may 2026</h3>
+          </div>
+
+          <div class="resumen-item">
+            <div class="resumen-icono">
+              <img src="icons/check-verde.png" alt="Estado" />
+            </div>
+
+            <p>Estado</p>
+            <h3>Activa</h3>
+          </div>
+        </div>
+
+        <p class="texto-extra">
+          Ahora los ciudadanos podrán ver esta mascota y enviar solicitudes de adopción.
+        </p>
+
+        <div class="acciones-confirmacion">
+          <a href="Adopciones_Entidad.html" class="btn-principal">
+            Volver a adopciones
+          </a>
+
+          <a href="Publicar_Mascota.html" class="btn-secundario">
+            Publicar otra mascota
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="icons/x.png" alt="X" /></a>
+          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-entidad.js"></script>
+  </body>
+</html>

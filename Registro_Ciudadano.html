@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de ciudadano</title>
+
+    <link rel="stylesheet" href="HE_Registro_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <main class="registro-page">
+      <a href="Crear_Cuenta.html" class="back-btn" aria-label="Volver">
+        <img src="icons/flecha-volver.png" alt="Volver" />
+      </a>
+
+      <section class="registro-container">
+        <h1>Registro de ciudadano</h1>
+
+        <div class="steps">
+          <div class="step completed">
+            <span>1</span>
+            <p>Tipo de usuario</p>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="step active">
+            <span>2</span>
+            <p>Datos principales</p>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="step">
+            <span>3</span>
+            <p>Confirmación</p>
+          </div>
+        </div>
+
+        <section class="form-card">
+          <h2>Datos principales</h2>
+
+          <form class="registro-form" action="Confirmacion_Ciudadano.html">
+            <div class="form-group">
+              <label for="dni">DNI</label>
+
+              <div class="input-box">
+                <img src="icons/dni.png" alt="DNI" class="input-icon" />
+                <input
+                  type="text"
+                  id="dni"
+                  placeholder="Ingresa tu número de DNI"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="correo">Correo electrónico</label>
+
+              <div class="input-box">
+                <img src="icons/email2.png" alt="Correo" class="input-icon" />
+                <input
+                  type="email"
+                  id="correo"
+                  placeholder="ejemplo@correo.com"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="distrito">Distrito</label>
+
+              <div class="input-box">
+                <img src="icons/map2.png" alt="Distrito" class="input-icon" />
+                <input
+                  type="text"
+                  id="distrito"
+                  placeholder="Ej: Lima metropolitana, Cuzco..."
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">
+                Teléfono <span>(opcional)</span>
+              </label>
+
+              <div class="input-box">
+                <img src="icons/llamar2.png" alt="Teléfono" class="input-icon" />
+                <input
+                  type="tel"
+                  id="telefono"
+                  placeholder="Ingresa tu número de teléfono"
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="btn-continuar">
+              Continuar
+              <img src="icons/huella.png" alt="Continuar" />
+            </button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+<footer class="footer-compacto">
+  <div class="footer-compacto-container">
+    <div class="footer-compacto-brand">
+      <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+      <p>
+        © 2026 Huellas de Auxilio. Todos<br />
+        los derechos reservados.
+      </p>
+    </div>
+
+    <div class="footer-compacto-links">
+      <a href="#">Soporte</a>
+      <a href="documentos/politica-privacidad.pdf" target="_blank">
+        Política de Privacidad
+      </a>
+      <a href="documentos/terminos-condiciones.pdf" target="_blank">
+        Términos y condiciones
+      </a>
+    </div>
+
+    <div class="footer-social">
+      <a href="#">
+        <img src="icons/facebook.png" alt="Facebook" />
+      </a>
+
+      <a href="#">
+        <img src="icons/x.png" alt="X" />
+      </a>
+
+      <a href="#">
+        <img src="icons/instagram.png" alt="Instagram" />
+      </a>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
