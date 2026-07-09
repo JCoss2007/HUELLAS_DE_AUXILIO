@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reportes Asignados - Huellas de Auxilio</title>
+
+    <link rel="stylesheet" href="HE_Header_Entidad.css" />
+    <link rel="stylesheet" href="HE_Menu_Entidad.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+    <link rel="stylesheet" href="HE_Reportes.css" />
+  </head>
+
+  <body>
+    <header class="header-entidad">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+
+        <a href="Home_Entidad.html" class="logo">
+          <img src="img/logo.png" alt="Logo Huellas de Auxilio" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Entidad.html" class="nav-link">Inicio</a></li>
+          <li><a href="Reportes_Entidad.html" class="nav-link activo">Reportes</a></li>
+          <li><a href="Adopciones_Entidad.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Red_Apoyo_Entidad.html" class="nav-link">Red de apoyo</a></li>
+          <li><a href="Ayuda_Entidad.html" class="nav-link">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Notificaciones_Entidad.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-width-container reportes-page">
+      
+      <div class="page-header">
+        <a href="Home_Entidad.html" class="btn-back" aria-label="Volver">
+          <img src="icons/flecha-volver.png" alt="Volver" />
+        </a>
+        <div class="header-text">
+          <h1>Reportes asignados</h1>
+          <p>Revisa, filtra y gestiona los casos recibidos por tu entidad</p>
+        </div>
+      </div>
+
+      <section class="stats-grid">
+        <article class="stat-card">
+          <div class="stat-icon bg-green-light">
+            <img src="icons/documento-verde.png" alt="Reportes" />
+          </div>
+          <div class="stat-info">
+            <h3>Reportes recibidos</h3>
+            <p class="stat-number c-teal">12</p>
+          </div>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon bg-blue-light">
+            <img src="icons/reloj-azul.png" alt="En revisión" />
+          </div>
+          <div class="stat-info">
+            <h3>En revisión</h3>
+            <p class="stat-number c-blue">5</p>
+          </div>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon bg-green-light">
+            <img src="icons/check-verde.png" alt="Atendidos" />
+          </div>
+          <div class="stat-info">
+            <h3>Atendidos</h3>
+            <p class="stat-number c-green">4</p>
+          </div>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon bg-teal-light">
+            </div>
+          <div class="stat-info">
+            <h3>Total</h3>
+            <p class="stat-number c-teal">21</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="filters-bar">
+        <div class="search-box">
+          <img src="icons/buscar.png" alt="Buscar" />
+          <input type="text" placeholder="Buscar por código" />
+        </div>
+
+        <div class="filters-group">
+          <div class="select-wrapper">
+            <label>Estado</label>
+            <select>
+              <option value="todos">Todos</option>
+              <option value="recibido">Recibido</option>
+              <option value="revision">En revisión</option>
+              <option value="atendido">Atendido</option>
+            </select>
+          </div>
+
+          <div class="select-wrapper">
+            <label>Urgencia</label>
+            <select>
+              <option value="todas">Todas</option>
+              <option value="alta">Alta</option>
+              <option value="media">Media</option>
+              <option value="baja">Baja</option>
+            </select>
+          </div>
+
+          <div class="select-wrapper">
+            <label>Distrito</label>
+            <select>
+              <option value="todos">Todos</option>
+              <option value="san-miguel">San Miguel</option>
+              <option value="surco">Surco</option>
+            </select>
+          </div>
+
+          <div class="select-wrapper">
+            <label>Ordenar por</label>
+            <select>
+              <option value="recientes">Más recientes</option>
+              <option value="antiguos">Más antiguos</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="table-section">
+        <div class="table-responsive">
+          <div class="custom-table">
+            
+            <div class="table-header">
+              <div>Código</div>
+              <div>Distrito</div>
+              <div class="text-center">Urgencia</div>
+              <div class="text-center">Estado</div>
+              <div>Fecha</div>
+              <div class="text-right">Acción</div>
+            </div>
+
+            <div class="table-row">
+              <div class="font-medium">HA-0241</div>
+              <div>San Miguel</div>
+              <div class="text-center"><span class="badge tag-alta">Alta</span></div>
+              <div class="text-center"><span class="badge tag-recibido">Recibido</span></div>
+              <div>20 may 2026 - 10:30</div>
+              <div class="text-right">
+                <a href="Detalle_Reporte_Entidad.html" class="btn-outline-small">Ver detalle ›</a>
+              </div>
+            </div>
+
+            <div class="table-row">
+              <div class="font-medium">HA-0238</div>
+              <div>Surco</div>
+              <div class="text-center"><span class="badge tag-media">Media</span></div>
+              <div class="text-center"><span class="badge tag-revision">En revisión</span></div>
+              <div>20 may 2026 - 08:15</div>
+              <div class="text-right">
+                <a href="Detalle_Reporte_Entidad.html" class="btn-outline-small">Ver detalle ›</a>
+              </div>
+            </div>
+
+            <div class="table-row">
+              <div class="font-medium">HA-0234</div>
+              <div>Chorrillos</div>
+              <div class="text-center"><span class="badge tag-baja">Baja</span></div>
+              <div class="text-center"><span class="badge tag-atendido">Atendido</span></div>
+              <div>19 may 2026 - 17:45</div>
+              <div class="text-right">
+                <a href="Detalle_Reporte_Entidad.html" class="btn-outline-small">Ver detalle ›</a>
+              </div>
+            </div>
+
+            <div class="table-row">
+              <div class="font-medium">HA-0231</div>
+              <div>Miraflores</div>
+              <div class="text-center"><span class="badge tag-media">Media</span></div>
+              <div class="text-center"><span class="badge tag-revision">En revisión</span></div>
+              <div>19 may 2026 - 14:22</div>
+              <div class="text-right">
+                <a href="Detalle_Reporte_Entidad.html" class="btn-outline-small">Ver detalle ›</a>
+              </div>
+            </div>
+
+            <div class="table-row">
+              <div class="font-medium">HA-0229</div>
+              <div>San Borja</div>
+              <div class="text-center"><span class="badge tag-alta">Alta</span></div>
+              <div class="text-center"><span class="badge tag-recibido">Recibido</span></div>
+              <div>19 may 2026 - 09:10</div>
+              <div class="text-right">
+                <a href="Detalle_Reporte_Entidad.html" class="btn-outline-small">Ver detalle ›</a>
+              </div>
+            </div>
+
+            <div class="table-row">
+              <div class="font-medium">HA-0226</div>
+              <div>Villa El Salvador</div>
+              <div class="text-center"><span class="badge tag-baja">Baja</span></div>
+              <div class="text-center"><span class="badge tag-atendido">Atendido</span></div>
+              <div>18 may 2026 - 16:05</div>
+              <div class="text-right">
+                <a href="Detalle_Reporte_Entidad.html" class="btn-outline-small">Ver detalle ›</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="pagination-bar">
+          <p class="pagination-info">Mostrando de 1 a 6 de 21 reportes</p>
+          
+          <div class="pagination-controls">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <span class="page-dots">...</span>
+            <button class="page-btn">4</button>
+            <button class="page-btn">›</button>
+          </div>
+
+          <div class="pagination-select">
+            <select>
+              <option>6</option>
+              <option>12</option>
+              <option>24</option>
+            </select>
+            <span>por página</span>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo" />
+          <p>© 2026 Huellas de Auxilio. Todos<br />los derechos reservados.</p>
+        </div>
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">Política de Privacidad</a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">Términos y condiciones</a>
+        </div>
+        <div class="footer-social">
+          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="icons/x.png" alt="X" /></a>
+          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-entidad.js"></script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red de apoyo - Huellas de Auxilio</title>
+    
+    <link rel="stylesheet" href="HE_Header_Entidad.css" />
+    <link rel="stylesheet" href="HE_Menu_Entidad.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+    <link rel="stylesheet" href="HE_Red_Apoyo.css" />
+  </head>
+
+  <body>
+    <header class="header-entidad">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="Home_Entidad.html" class="logo">
+          <img src="img/logo.png" alt="Logo Huellas de Auxilio" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="Home_Entidad.html" class="nav-link">Inicio</a></li>
+          <li><a href="Reportes_Entidad.html" class="nav-link">Reportes</a></li>
+          <li><a href="Adopciones_Entidad.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Red_Apoyo_Entidad.html" class="nav-link activo">Red de apoyo</a></li>
+          <li><a href="Ayuda_Entidad.html" class="nav-link">Ayuda</a></li>
+        </ul>
+        <div class="header-actions">
+          <a href="Notificaciones_Entidad.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+          <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-width-container">
+      
+      <section class="hero-banner">
+        <img src="img/banner-entidad.png" alt="Ilustración Red Apoyo" class="hero-img-left" style="width: 180px;" />
+        <div class="hero-text">
+          <h1>Red de apoyo</h1>
+          <p>Encuentra entidades aliadas para coordinar apoyo, derivar casos y fortalecer la atención</p>
+        </div>
+      </section>
+
+      <section class="filters-bar">
+        <div class="search-box">
+          <img src="icons/buscar.png" alt="Buscar" />
+          <input type="text" placeholder="Buscar entidades aliadas" />
+        </div>
+
+        <div class="pills-container">
+          <button class="pill active">Todos</button>
+          <button class="pill">Refugios</button>
+          <button class="pill">Veterinarias</button>
+          <button class="pill">Municipalidades</button>
+          <button class="pill">Asociaciones</button>
+        </div>
+
+        <div class="select-box">
+          <select>
+            <option value="" disabled selected hidden>Distrito</option>
+            <option value="san-miguel">San Miguel</option>
+            <option value="surco">Surco</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        
+        <div class="cards-grid">
+          
+          <article class="entity-card">
+            <div class="entity-header">
+              <div class="entity-avatar">
+                <img src="img/banner-ciudadano.png" alt="Refugio" />
+              </div>
+              <div class="entity-title">
+                <h3>Refugio Esperanza Animal</h3>
+                <span class="badge badge-refugio">Refugio</span>
+              </div>
+            </div>
+            
+            <div class="entity-info-row">
+              <span><img src="icons/mapa-ubi.png" alt="Ubicación" /> San Miguel</span>
+              <span><img src="icons/llamar.png" alt="Teléfono" /> 987 654 321</span>
+            </div>
+            
+            <p class="entity-desc">
+              Refugio dedicado al rescate, recuperación y adopción responsable de perros y gatos en situación de abandono
+            </p>
+            
+            <div class="entity-actions">
+              <button class="btn-outline">Ver detalle ›</button>
+              <button class="btn-solid">Derivar caso</button>
+            </div>
+          </article>
+
+          <article class="entity-card">
+            <div class="entity-header">
+              <div class="entity-avatar bg-gray"></div>
+              <div class="entity-title">
+                <h3>Veterinaria San Marcos</h3>
+                <span class="badge badge-vet">Veterinaria</span>
+              </div>
+            </div>
+            <div class="entity-info-row">
+              <span><img src="icons/mapa-ubi.png" alt="Ubicación" /> San Miguel</span>
+              <span><img src="icons/llamar2.png" alt="Teléfono" /> 987 654 321</span>
+            </div>
+            <p class="entity-desc">
+              Atención veterinaria general, urgencias, vacunas y esterilización a precios solidarios
+            </p>
+            <div class="entity-actions">
+              <button class="btn-outline">Ver detalle ›</button>
+              <button class="btn-solid">Derivar caso</button>
+            </div>
+          </article>
+
+          <article class="entity-card">
+            <div class="entity-header">
+              <div class="entity-avatar bg-gray"></div>
+              <div class="entity-title">
+                <h3>Municipalidad de San Miguel</h3>
+                <span class="badge badge-muni">Municipalidad</span>
+              </div>
+            </div>
+            <div class="entity-info-row">
+              <span><img src="icons/mapa-ubi.png" alt="Ubicación" /> San Miguel</span>
+              <span><img src="icons/llamar2.png" alt="Teléfono" /> 987 654 321</span>
+            </div>
+            <p class="entity-desc">
+              Entidad pública que promueve el bienestar animal y coordinar campañas de esterilización y rescate
+            </p>
+            <div class="entity-actions">
+              <button class="btn-outline">Ver detalle ›</button>
+              <button class="btn-solid">Derivar caso</button>
+            </div>
+          </article>
+
+          <article class="entity-card">
+            <div class="entity-header">
+              <div class="entity-avatar bg-gray"></div>
+              <div class="entity-title">
+                <h3>Asociación Patitas Unidas</h3>
+                <span class="badge badge-asoc">Asociación</span>
+              </div>
+            </div>
+            <div class="entity-info-row">
+              <span><img src="icons/mapa-ubi.png" alt="Ubicación" /> San Miguel</span>
+              <span><img src="icons/llamar2.png" alt="Teléfono" /> 987 654 321</span>
+            </div>
+            <p class="entity-desc">
+              Organización sin fines de lucro que rescata, rehabilita y busca hogares responsables para animales
+            </p>
+            <div class="entity-actions">
+              <button class="btn-outline">Ver detalle ›</button>
+              <button class="btn-solid">Derivar caso</button>
+            </div>
+          </article>
+
+        </div>
+
+        <aside class="sidebar-card">
+          <h3>Coordinación rápida</h3>
+          
+          <div class="sidebar-item">
+            <div class="sidebar-icon">
+              <img src="icons/reenviar.png" alt="Deriva" />
+            </div>
+            <div class="sidebar-text">
+              <h4>Deriva con confianza</h4>
+              <p>Envía casos a entidades verificadas</p>
+            </div>
+          </div>
+
+          <div class="sidebar-item">
+            <div class="sidebar-icon">
+              <img src="icons/mapa-ubi.png" alt="Filtra" />
+            </div>
+            <div class="sidebar-text">
+              <h4>Filtra por distrito</h4>
+              <p>Encuentra aliados cercanos a tu zona</p>
+            </div>
+          </div>
+
+          <div class="sidebar-item">
+            <div class="sidebar-icon">
+              <img src="icons/mundo.png" alt="Red" />
+            </div>
+            <div class="sidebar-text">
+              <h4>Trabajo en red</h4>
+              <p>Juntos logramos más por los animales</p>
+            </div>
+          </div>
+
+          <button class="btn-outline w-100">Ver guía de derivación</button>
+        </aside>
+
+      </section>
+    </main>
+
+    <!-- FOOTER MODULAR GENERAL -->
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">Política de Privacidad</a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">Términos y condiciones</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="icons/x.png" alt="X" /></a>
+          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT DEL MENU MODULAR -->
+    <script src="menu-entidad.js"></script>
+  </body>
+</html>

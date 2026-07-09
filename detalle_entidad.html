@@ -1,181 +1,272 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Huellas de Auxilio · Detalle de entidad aliada</title>
-<link rel="stylesheet" href="detalle.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle de Entidad - Huellas de Auxilio</title>
+    
+    <link rel="stylesheet" href="HE_Header_Entidad.css" />
+    <link rel="stylesheet" href="HE_Menu_Entidad.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+    <link rel="stylesheet" href="HE_Detalle_Entidad.css" />
+  </head>
 
-<!-- Encabezado -->
-<header class="topbar">
-  <div class="topbar__inner">
-    <a class="brand" href="#">
-      <img src="Img/Logo_Huellas.png" alt="Huellas de Auxilio" class="brand__logo">
-    </a>
+  <body>
+    <header class="header-entidad">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="Home_Entidad.html" class="logo">
+          <img src="img/logo.png" alt="Logo Huellas de Auxilio" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="Home_Entidad.html" class="nav-link">Inicio</a></li>
+          <li><a href="Reportes_Entidad.html" class="nav-link">Reportes</a></li>
+          <li><a href="Adopciones_Entidad.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Red_Apoyo_Entidad.html" class="nav-link activo">Red de apoyo</a></li>
+          <li><a href="Ayuda_Entidad.html" class="nav-link">Ayuda</a></li>
+        </ul>
+        <div class="header-actions">
+          <a href="Notificaciones_Entidad.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+          <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+    </header>
 
-    <nav class="mainnav">
-      <a href="#">Inicio</a>
-      <a href="#">Reportes</a>
-      <a href="#">Adopciones</a>
-      <a href="#" class="mainnav__active">Red de apoyo</a>
-      <a href="#">Ayuda</a>
-    </nav>
+    <main class="max-width-container">
+      
+      <div class="page-header">
+        <a href="Red_Apoyo_Entidad.html" class="btn-back">
+          <img src="icons/flecha-volver.png" alt="Volver" />
+        </a>
+        <div class="header-text">
+          <h1>Detalle de entidad aliada</h1>
+          <p>Información detallada de la entidad para una derivación informada y segura</p>
+        </div>
+      </div>
 
-    <div class="topbar__actions">
-      <button class="icon-btn" aria-label="Notificaciones">
-        <img src="Img/icons/bell-muted.svg" alt="" class="icon icon-18">
-      </button>
-      <button class="account-btn">
-        <img src="Img/icons/user-circle-dark.svg" alt="" class="icon icon-20">
-        <span>Mi cuenta</span>
-      </button>
-    </div>
-  </div>
-</header>
+      <section class="content-grid">
+        
+        <div class="main-col">
+          <article class="entity-detail-card">
+            
+            <div class="entity-top">
+              <div class="entity-avatar-large">
+                <img src="img/banner-ciudadano.png" alt="Refugio Esperanza Animal" />
+              </div>
 
-<main class="page">
+              <div class="entity-info">
+                <h2>Refugio Esperanza Animal</h2>
+                <span class="badge badge-refugio">Refugio</span>
 
-  <!-- Título de la página -->
-  <div class="page-title">
-    <button class="back-btn" aria-label="Volver">
-      <img src="Img/icons/arrow-left-teal.svg" alt="" class="icon icon-19">
-    </button>
-    <div>
-      <h1>Detalle de entidad aliada</h1>
-      <p>Información detallada de la entidad para una derivación informada y segura</p>
-    </div>
-  </div>
+                <div class="info-list">
+                  <div class="info-row">
+                    <img src="icons/mapa-ubi.png" alt="Ubicación" />
+                    <span>San Miguel</span>
+                  </div>
+                  <div class="info-row">
+                    <img src="icons/llamar2.png" alt="Teléfono" />
+                    <span>987 657 321</span>
+                  </div>
+                  <div class="info-row">
+                    <img src="icons/email2.png" alt="Correo" />
+                    <span>contacto@refugiosesperanza.pe</span>
+                  </div>
+                  <div class="info-row">
+                    <img src="icons/mapa-ubi.png" alt="Dirección" />
+                    <span>Av. La Paz 1234, San Miguel, Lima</span>
+                  </div>
+                  <div class="info-row">
+                    <img src="icons/reloj-azul.png" alt="Horario" />
+                    <span>Lunes a Sábado: 9:00 a.m - 6:00 p.m<br>Domingo: 10:00 a.m - 2:00 p.m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  <!-- Contenido principal -->
-  <section class="content">
+            <p class="entity-desc-large">
+              Refugio dedicado al rescate, recuperación y adopción responsable de perros y gatos en situación de abandono. Promovemos el bienestar animal y la tenencia responsable a través de campañas de esterilización, educación y adopción.
+            </p>
 
-    <div class="main-col">
+            <div class="features-grid">
+              
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <img src="icons/huella-corazon.png" alt="Servicios" />
+                </div>
+                <h4>Servicios disponibles</h4>
+                <p>Rescate y acogida, veterinaria básica.</p>
+              </div>
 
-      <article class="entity-card">
-        <div class="entity-card__top">
-          <div class="entity-card__avatar"></div>
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <img src="icons/mapa-ubi.png" alt="Cobertura" />
+                </div>
+                <h4>Cobertura</h4>
+                <p>San Miguel, Pueblo Libre, Magdalena.</p>
+              </div>
 
-          <div class="entity-card__info">
-            <h2>Refugio Esperanza Animal</h2>
-            <span class="badge badge--refugio">Refugio</span>
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <img src="icons/user-circle.png" alt="Capacidad" />
+                </div>
+                <h4>Capacidad de apoyo</h4>
+                <p>10 animales</p>
+              </div>
 
-            <div class="info-grid">
-              <p class="info-row">
-                <img src="Img/icons/map-pin-muted.svg" alt="" class="icon icon-16">
-                San Miguel
-              </p>
-              <p class="info-row">
-                <img src="Img/icons/phone-muted.svg" alt="" class="icon icon-16">
-                987 657 321
-              </p>
-              <p class="info-row">
-                <img src="Img/icons/envelope-simple-muted.svg" alt="" class="icon icon-16">
-                contacto@refugioesperanza.pe
-              </p>
-              <p class="info-row">
-                <img src="Img/icons/buildings-muted.svg" alt="" class="icon icon-16">
-                Av. La Paz 1234, San Miguel, Lima
-              </p>
-              <p class="info-row">
-                <img src="Img/icons/clock-muted.svg" alt="" class="icon icon-16">
-                Lunes a Sábado: 9:00 a.m - 6:00 p.m<br>
-                Domingo: 10:00 a.m - 2:00 p.m
-              </p>
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <img src="icons/documento-verde.png" alt="Requisitos" />
+                </div>
+                <h4>Requisitos de derivación</h4>
+                <p>Formulario de evaluación previa.</p>
+              </div>
+
+            </div>
+          </article>
+
+          <div class="bottom-actions">
+            <button class="btn-solid" id="btnAbrirDerivar">Derivar caso</button>
+            <a href="Red_Apoyo_Entidad.html" class="btn-outline">
+              <img src="icons/flecha-volver.png" alt="Volver" class="icon-small" />
+              Volver al directorio
+            </a>
+          </div>
+        </div>
+
+        <aside class="sidebar-col">
+          
+          <div class="side-card">
+            <h3>Ubicación</h3>
+            <div class="map-container">
+              <img src="img/mapa_ubicacion.png" alt="Mapa" class="map-img" />
+            </div>
+            <div class="address-row">
+              <img src="icons/mapa-ubi.png" alt="Ubicación" />
+              <span>Av. La Paz 1234, San Miguel, Lima</span>
+            </div>
+            <button class="btn-outline w-100">Ver en Google Maps</button>
+          </div>
+
+          <div class="side-card">
+            <h3>Estado de disponibilidad</h3>
+            <div class="status-container">
+              <div class="status-icon">
+                <img src="icons/check-verde.png" alt="Disponible" />
+              </div>
+              <div class="status-text">
+                <h4 class="text-success">Disponibilidad para derivación</h4>
+                <p>Esta entidad puede recibir casos en estos momento.</p>
+              </div>
             </div>
           </div>
+
+        </aside>
+
+      </section>
+    </main>
+<div class="modal-overlay" id="modalDerivar">
+      <div class="modal-content modal-derivar">
+        <div class="modal-header">
+          <h2 class="modal-title">Derivar caso a entidad aliada</h2>
+          <button class="btn-close-modal" id="btnCerrarDerivar">×</button>
         </div>
 
-        <p class="entity-card__desc">
-          Refugio dedicado al rescate, recuperación y adopción responsable de perros y gatos en situación de abandono.
-          Promovemos el bienestar animal y la tendencia responsable a través de campañas de esterilización, educación y adopción
-        </p>
-
-        <div class="features">
-          <div class="feature">
-            <span class="feature__icon">
-              <img src="Img/icons/heart-teal.svg" alt="" class="icon icon-18">
-            </span>
-            <p class="feature__title">Servicios disponibles</p>
-            <p class="feature__desc">Rescate y acogida, veterinaria básica.</p>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="field-label">Entidad aliada seleccionada</label>
+            <div class="custom-select-readonly">
+              <img src="icons/perrito-verde.png" alt="Refugio" class="icon-small" />
+              <span class="entity-name">Refugio Esperanza Animal</span>
+              <span class="badge badge-refugio">Refugio</span>
+            </div>
           </div>
 
-          <div class="feature">
-            <span class="feature__icon">
-              <img src="Img/icons/person-simple-teal.svg" alt="" class="icon icon-18">
-            </span>
-            <p class="feature__title">Cobertura</p>
-            <p class="feature__desc">San Miguel, Pueblo Libre, Magdalena.</p>
+          <div class="form-group">
+            <label class="field-label">Código de reporte</label>
+            <select class="standard-select">
+              <option>HA - 0243</option>
+              <option>HA - 0244</option>
+              <option>HA - 0245</option>
+            </select>
           </div>
 
-          <div class="feature">
-            <span class="feature__icon">
-              <img src="Img/icons/users-teal.svg" alt="" class="icon icon-18">
-            </span>
-            <p class="feature__title">Capacidad de apoyo</p>
-            <p class="feature__desc">10 animales.</p>
+          <div class="form-group">
+            <label class="field-label">Tipo de apoyo</label>
+            <div class="support-options">
+              
+              <label class="support-label">
+                <input type="radio" name="tipo_apoyo" value="refugio" checked>
+                <div class="support-box">
+                  <span class="radio-circle"></span>
+                  <span class="support-text">Refugio</span>
+                </div>
+              </label>
+
+              <label class="support-label">
+                <input type="radio" name="tipo_apoyo" value="veterinaria">
+                <div class="support-box">
+                  <span class="radio-circle"></span>
+                  <span class="support-text">Atención veterinaria</span>
+                </div>
+              </label>
+
+              <label class="support-label">
+                <input type="radio" name="tipo_apoyo" value="coordinacion">
+                <div class="support-box">
+                  <span class="radio-circle"></span>
+                  <span class="support-text">Coordinación</span>
+                </div>
+              </label>
+
+            </div>
           </div>
 
-          <div class="feature">
-            <span class="feature__icon">
-              <img src="Img/icons/clipboard-text-teal.svg" alt="" class="icon icon-18">
-            </span>
-            <p class="feature__title">Requisitos de derivación</p>
-            <p class="feature__desc">Formulario de evaluación previa.</p>
+          <div class="form-group">
+            <label class="field-label">Observación opcional</label>
+            <textarea class="standard-textarea" placeholder="Agregar información relevante para entidad..."></textarea>
           </div>
         </div>
-      </article>
 
-      <div class="actions">
-        <button class="btn btn--filled">Derivar caso</button>
-        <button class="btn btn--outline">
-          <img src="Img/icons/arrow-left-teal.svg" alt="" class="icon icon-16">
-          Volver al directorio
-        </button>
+        <div class="modal-footer">
+          <button class="btn-outline" id="btnCancelarDerivar">Cancelar</button>
+          <button class="btn-solid" id="btnConfirmarDerivar">Confirmar derivación</button>
+        </div>
       </div>
-
     </div>
 
-    <aside class="sidebar">
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
 
-      <div class="side-card">
-        <h3 class="side-card__title">Ubicación</h3>
-        <img src="Img/image_60.png" alt="Mapa de ubicación de la entidad" class="side-card__map">
-        <p class="side-card__address">
-          <img src="Img/icons/map-pin-muted.svg" alt="" class="icon icon-16">
-          Av. La Paz 1234, San Miguel, Lima
-        </p>
-        <button class="btn btn--maps">Ver en Google Maps</button>
-      </div>
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">Política de Privacidad</a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">Términos y condiciones</a>
+        </div>
 
-      <div class="side-card">
-        <h3 class="side-card__title">Estado de disponibilidad</h3>
-        <div class="status">
-          <span class="status__icon">
-            <img src="Img/icons/check-circle-green.svg" alt="" class="icon icon-21">
-          </span>
-          <div>
-            <p class="status__title">Disponibilidad para derivación</p>
-            <p class="status__desc">Esta entidad puede recibir casos en estos momento.</p>
-          </div>
+        <div class="footer-social">
+          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="icons/x.png" alt="X" /></a>
+          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
         </div>
       </div>
+    </footer>
 
-    </aside>
+    <script src="menu-entidad.js"></script>
 
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <p>© 2026 Huellas de Auxilio. Todos los derechos reservados.</p>
-  <p class="site-footer__links">
-    <a href="#">Política de privacidad</a>
-    <span>|</span>
-    <a href="#">Términos y condiciones</a>
-  </p>
-</footer>
-
-</body>
+    <script src="derivar.js"></script>
+  </body>
 </html>
