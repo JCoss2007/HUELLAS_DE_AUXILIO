@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Libro de Reclamaciones</title>
+
+    <link rel="stylesheet" href="HE_Landing_general.css" />
+    <link rel="stylesheet" href="HE_Libro_Reclamaciones.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo Huellas de Auxilio" />
+        </div>
+
+        <a href="Login.html" class="btn-login">
+          <img src="icons/iniciar sesion.png" alt="Icono iniciar sesión" />
+          Iniciar sesión
+        </a>
+      </nav>
+    </header>
+
+    <main class="libro-page">
+      <section class="titulo-libro">
+        <a href="index.html" class="btn-volver">
+          <img src="icons/flecha-volver.png" alt="Volver" />
+        </a>
+
+        <div>
+          <h1>Libro de Reclamaciones</h1>
+          <p>
+            Registra una queja o reclamo relacionado con el uso de la plataforma.
+          </p>
+        </div>
+      </section>
+
+      <section class="intro-libro">
+        <div class="intro-icono">
+          <img src="icons/documento-verde.png" alt="Libro de reclamaciones" />
+        </div>
+
+        <div>
+          <h2>Antes de enviar tu solicitud</h2>
+          <p>
+            Completa tus datos y describe el inconveniente ocurrido. Esta información
+            será revisada por el equipo de Huellas de Auxilio para brindarte una
+            respuesta oportuna.
+          </p>
+        </div>
+      </section>
+
+      <form class="form-libro" action="Confirmacion_Libro_Reclamaciones.html">
+        <section class="form-bloque">
+          <h2>Datos del usuario</h2>
+
+          <div class="form-grid">
+            <div class="campo">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" placeholder="Ej: Camila Torres" required />
+            </div>
+
+            <div class="campo">
+              <label for="dni">DNI</label>
+              <input type="text" id="dni" placeholder="Ej: 74852136" required />
+            </div>
+
+            <div class="campo">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" placeholder="Ej: usuario@email.com" required />
+            </div>
+
+            <div class="campo">
+              <label for="telefono">Teléfono</label>
+              <input type="text" id="telefono" placeholder="Ej: 987 654 321" required />
+            </div>
+          </div>
+        </section>
+
+        <section class="form-bloque">
+          <h2>Detalle del reclamo</h2>
+
+          <div class="form-grid">
+            <div class="campo">
+              <label for="tipo">Tipo de solicitud</label>
+              <select id="tipo" required>
+                <option value="">Seleccionar</option>
+                <option value="reclamo">Reclamo</option>
+                <option value="queja">Queja</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="servicio">Servicio relacionado</label>
+              <select id="servicio" required>
+                <option value="">Seleccionar</option>
+                <option value="reportes">Reportes</option>
+                <option value="adopciones">Adopciones</option>
+                <option value="cuenta">Cuenta de usuario</option>
+                <option value="soporte">Soporte</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="fecha">Fecha del inconveniente</label>
+              <input type="date" id="fecha" required />
+            </div>
+
+            <div class="campo">
+              <label for="pedido">Pedido del usuario</label>
+              <input type="text" id="pedido" placeholder="Ej: Solicito revisión del caso" required />
+            </div>
+          </div>
+
+          <div class="campo campo-completo">
+            <label for="descripcion">Descripción del reclamo o queja</label>
+            <textarea
+              id="descripcion"
+              placeholder="Describe lo ocurrido con el mayor detalle posible..."
+              required
+            ></textarea>
+          </div>
+        </section>
+
+        <section class="aviso-libro">
+          <div class="aviso-icono">!</div>
+
+          <p>
+            Al enviar este formulario, aceptas que Huellas de Auxilio revise la
+            información registrada para atender tu solicitud.
+          </p>
+        </section>
+
+        <div class="acciones-libro">
+          <a href="index.html" class="btn-cancelar">Cancelar</a>
+          <button type="submit" class="btn-enviar">Enviar reclamo</button>
+        </div>
+      </form>
+    </main>
+
+<footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.facebook.com/">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="https://x.com/">
+            <img src="icons/x.png" alt="X" />
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

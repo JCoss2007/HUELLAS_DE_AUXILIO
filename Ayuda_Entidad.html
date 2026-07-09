@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Centro de ayuda entidad</title>
+
+    <link rel="stylesheet" href="HE_Header_Entidad.css" />
+    <link rel="stylesheet" href="HE_Menu_Entidad.css" />
+    <link rel="stylesheet" href="HE_Ayuda_Entidad.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-entidad">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Entidad.html" class="logo">
+          <img src="img/logo.png" alt="Huellas de Auxilio" />
+        </a>
+
+        <a href="Notificaciones_Entidad.html" class="btn-campana-mobile">
+          <img src="icons/campana.png" alt="Notificaciones" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Entidad.html" class="nav-link">Inicio</a></li>
+          <li><a href="Reportes_Entidad.html" class="nav-link">Reportes</a></li>
+          <li><a href="Adopciones_Entidad.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Red_Apoyo.html" class="nav-link">Red de apoyo</a></li>
+          <li><a href="Ayuda_Entidad.html" class="nav-link activo">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Notificaciones_Entidad.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>Refugio Patitas</h3>
+              <a href="Mi_Cuenta_Entidad.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Entidad.html">Inicio</a>
+          <a href="Reportes_Entidad.html">Reportes</a>
+          <a href="Adopciones_Entidad.html">Adopciones</a>
+          <a href="Red_Apoyo.html">Red de apoyo</a>
+          <a href="Ayuda_Entidad.html">Ayuda</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="ayuda-entidad-page">
+      <section class="hero-ayuda-entidad">
+        <div class="hero-img">
+          <img src="img/banner-ayuda-entidad.png" alt="Centro de ayuda entidad" />
+        </div>
+
+        <div class="hero-text">
+          <h1>Centro de ayuda</h1>
+          <p>
+            Encuentra orientación para reportar, dar seguimiento y usar la plataforma.
+          </p>
+        </div>
+      </section>
+
+      <section class="bloque-ayuda">
+        <h2>Accesos rápidos</h2>
+
+        <div class="accesos-grid">
+          <a href="Chat_Ayuda_Entidad.html" class="acceso-card">
+            <div class="acceso-icono">
+              <img src="icons/chat-ayuda.png" alt="Chat de ayuda" />
+            </div>
+
+            <div class="acceso-info">
+              <h3>Chat de ayuda</h3>
+              <p>Recibe orientación rápido sobre el uso del panel</p>
+            </div>
+
+            <img src="icons/flecha-verde.png" alt="Ir" class="flecha-acceso" />
+          </a>
+
+          <a href="Guia_Ayuda_Entidad.html" class="acceso-card">
+            <div class="acceso-icono">
+              <img src="icons/guia.png" alt="Guía completa" />
+            </div>
+
+            <div class="acceso-info">
+              <h3>Guía completa</h3>
+              <p>Consulta los pasos para gestionar reportes y solicitudes</p>
+            </div>
+
+            <img src="icons/flecha-verde.png" alt="Ir" class="flecha-acceso" />
+          </a>
+        </div>
+      </section>
+
+      <section class="bloque-ayuda" id="tutorial">
+        <h2>Tutorial de uso</h2>
+
+        <article class="tutorial-card">
+          <div class="video-box">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              title="Tutorial panel entidad"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="tutorial-info">
+            <h3>Conoce cómo usar el panel de entidad</h3>
+            <p>
+              Aprende a revisar reportes, actualizar estados, derivar casos y gestionar
+              adopciones.
+            </p>
+
+            <div class="duracion">
+              <img src="icons/reloj-azul.png" alt="Duración" />
+              <span>4:20</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="bloque-ayuda">
+        <h2>Preguntas frecuentes</h2>
+
+        <div class="faq-lista">
+          <details class="faq-item" open>
+            <summary>
+              <span>¿Cómo reviso un reporte asignado?</span>
+              <img src="icons/flecha-abajo.png" alt="Abrir" />
+            </summary>
+
+            <p>
+              En el menú de Reportes, selecciona la pestaña Asignados a mi entidad.
+              Allí verás la lista de reportes pendientes o en proceso.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>¿Cómo actualizo el estado de un caso?</span>
+              <img src="icons/flecha-abajo.png" alt="Abrir" />
+            </summary>
+
+            <p>
+              Abre el detalle del reporte y utiliza la opción de actualizar estado
+              para registrar el avance correspondiente.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>¿Cómo derivo un caso a otra entidad?</span>
+              <img src="icons/flecha-abajo.png" alt="Abrir" />
+            </summary>
+
+            <p>
+              Desde el detalle del reporte puedes seleccionar la opción de derivar
+              caso y escoger la entidad que continuará con la atención.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>¿Cómo gestiono solicitudes de adopción?</span>
+              <img src="icons/flecha-abajo.png" alt="Abrir" />
+            </summary>
+
+            <p>
+              Ingresa a la sección Adopciones y abre la pestaña Solicitudes de adopción
+              para revisar, aprobar o rechazar las postulaciones recibidas.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.facebook.com/">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="https://x.com/">
+            <img src="icons/x.png" alt="X" />
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-entidad.js"></script>
+  </body>
+</html>

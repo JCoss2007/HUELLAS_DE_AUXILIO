@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaf3f2;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #082f3d;
+  overflow-x: hidden;
+}
+
+.mapa-apoyo-page {
+  width: 100%;
+  max-width: 1320px;
+  min-height: calc(100vh - 170px);
+  margin: 0 auto;
+  padding: 24px 46px 14px;
+}
+
+.mapa-apoyo-header {
+  margin-bottom: 18px;
+}
+
+.titulo-con-volver {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.btn-volver {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #d9dddd;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-volver img {
+  width: 22px;
+  height: 22px;
+}
+
+.mapa-apoyo-header h1 {
+  font-size: 34px;
+  color: #082f3d;
+  font-weight: 700;
+}
+
+.mapa-apoyo-header p {
+  font-size: 15px;
+  color: #676d68;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.mapa-apoyo-contenido {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.mapa-grande-card,
+.panel-entidades {
+  background-color: #ffffff;
+  border: 2px solid #d9dddd;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.mapa-grande {
+  width: 100%;
+  height: 610px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: #e4f1ef;
+}
+
+.mapa-grande > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pin {
+  width: 54px;
+  height: 66px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-50%, -100%);
+}
+
+.pin::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-color: #007476;
+  border: 4px solid #ffffff;
+  border-radius: 50% 50% 50% 0;
+  position: absolute;
+  left: 3px;
+  top: 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.pin img {
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  margin-top: 12px;
+}
+
+.pin.activo::before {
+  background-color: #0b5559;
+  box-shadow: 0 0 0 9px rgba(0, 116, 118, 0.22);
+}
+
+.pin-refugio {
+  left: 42%;
+  top: 62%;
+}
+
+.pin-veterinaria {
+  left: 78%;
+  top: 38%;
+}
+
+.pin-municipalidad {
+  left: 23%;
+  top: 42%;
+}
+
+.pin-asociacion {
+  left: 70%;
+  top: 67%;
+}
+
+.ubicacion-usuario {
+  width: 54px;
+  height: 54px;
+  background-color: rgba(45, 148, 212, 0.18);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ubicacion-usuario span {
+  width: 18px;
+  height: 18px;
+  background-color: #1e90ff;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.7);
+}
+
+.controles-mapa {
+  position: absolute;
+  right: 16px;
+  bottom: 92px;
+  display: flex;
+  flex-direction: column;
+}
+
+.controles-mapa button {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #d9dddd;
+  background-color: #ffffff;
+  color: #0b5559;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.controles-mapa button img {
+  width: 22px;
+  height: 22px;
+}
+
+.escala-mapa {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  width: 70px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  color: #676d68;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel-entidades {
+  padding: 18px;
+}
+
+.filtro-mapa {
+  height: 54px;
+  border: 2px solid #d9dddd;
+  border-radius: 8px;
+  padding: 8px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.filtro-mapa label {
+  font-size: 13px;
+  color: #676d68;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.filtro-mapa select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #676d68;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-limpiar {
+  border: none;
+  background-color: transparent;
+  color: #1b746f;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 8px 0 16px;
+}
+
+.panel-entidades h2 {
+  font-size: 21px;
+  color: #0b5559;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.lista-entidades-mapa {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.entidad-mapa-card {
+  min-height: 122px;
+  border: 2px solid #d9dddd;
+  border-radius: 12px;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 76px 1fr 128px;
+  gap: 12px;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.entidad-mapa-card.oculta {
+  display: none;
+}
+
+.entidad-mapa-card.activa {
+  border-color: #007476;
+  box-shadow: 0 0 0 2px rgba(0, 116, 118, 0.12);
+}
+
+.entidad-avatar {
+  width: 68px;
+  height: 68px;
+  background-color: #e4f1ef;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.entidad-avatar img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.entidad-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.entidad-title h3 {
+  font-size: 16px;
+  color: #1b746f;
+  font-weight: 800;
+}
+
+.badge {
+  min-width: 70px;
+  height: 24px;
+  border-radius: 14px;
+  padding: 3px 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-refugio {
+  background-color: #dff3ef;
+  color: #1b746f;
+}
+
+.badge-veterinaria {
+  background-color: #e4f1fb;
+  color: #005fae;
+}
+
+.badge-municipalidad {
+  background-color: #fff2dc;
+  color: #ff8a00;
+}
+
+.badge-asociacion {
+  background-color: #ece8fb;
+  color: #725bc7;
+}
+
+.entidad-info p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #111111;
+  margin-top: 5px;
+}
+
+.entidad-info p img {
+  width: 15px;
+  height: 15px;
+}
+
+.entidad-acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-detalle,
+.btn-llamar {
+  height: 34px;
+  border-radius: 8px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-detalle {
+  border: 2px solid #00666b;
+  background-color: #ffffff;
+  color: #00666b;
+  gap: 8px;
+}
+
+.btn-detalle img {
+  width: 13px;
+  height: 13px;
+}
+
+.btn-llamar {
+  border: 2px solid #00666b;
+  background-color: #00666b;
+  color: #ffffff;
+  gap: 8px;
+}
+
+.btn-llamar img {
+  width: 16px;
+  height: 16px;
+}
+
+.mensaje-vacio {
+  display: none;
+  background-color: #ffffff;
+  border: 2px solid #d9dddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #676d68;
+  font-weight: 700;
+}
+
+.btn-reporte-mobile {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .mapa-apoyo-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .mapa-grande {
+    height: 520px;
+  }
+}
+
+@media (max-width: 960px) {
+  .btn-reporte-mobile {
+    display: flex;
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90px;
+    height: 38px;
+    background-color: #007476;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .header-actions {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .mapa-apoyo-page {
+    padding: 22px 18px 24px;
+  }
+
+  .mapa-apoyo-header h1 {
+    font-size: 30px;
+  }
+
+  .mapa-grande {
+    height: 420px;
+  }
+
+  .entidad-mapa-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .entidad-avatar {
+    margin: 0 auto;
+  }
+
+  .entidad-title {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .entidad-info p {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Centro de ayuda</title>
+
+    <link rel="stylesheet" href="HE_Header_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Menu_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Ayuda.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-ciudadano">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Ciudadano.html" class="logo">
+          <img src="img/logo.png" alt="Huellas de Auxilio" />
+        </a>
+
+        <a href="Reportar.html" class="btn-reporte-mobile">
+          Reporte
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Ciudadano.html" class="nav-link">Inicio</a></li>
+          <li><a href="Mis_Solicitudes.html" class="nav-link">Mis reportes</a></li>
+          <li><a href="Directorio.html" class="nav-link">Directorio</a></li>
+          <li><a href="Adopciones.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Ayuda_Ciudadano.html" class="nav-link activo">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Reportar.html" class="btn-reportar">
+            Reportar
+          </a>
+
+          <a href="Notificaciones.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Ciudadano.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>HuellaAmiga247</h3>
+              <a href="Mi_Cuenta_Ciudadano.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Ciudadano.html">Inicio</a>
+          <a href="Mis_Solicitudes.html">Mis reportes</a>
+          <a href="Directorio.html">Directorio</a>
+          <a href="Adopciones.html">Adopciones</a>
+          <a href="Ayuda_Ciudadano.html">Ayuda</a>
+          <a href="Notificaciones.html">Notificaciones</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="ayuda-page">
+      <section class="hero-ayuda">
+        <div class="hero-img">
+          <img src="img/banner-ciudadano.png" alt="Animales de apoyo" />
+        </div>
+
+        <div class="hero-text">
+          <h1>Centro de ayuda</h1>
+          <p>
+            Encuentra orientación para reportar, dar seguimiento y usar la plataforma.
+          </p>
+        </div>
+      </section>
+
+      <section class="bloque-ayuda">
+        <h2>Accesos rápidos</h2>
+
+        <div class="accesos-grid">
+          <a href="Chat_Ayuda.html" class="acceso-card">
+            <div class="acceso-icono">
+              <img src="icons/chat-ayuda.png" alt="Chat de ayuda" />
+            </div>
+
+            <div class="acceso-info">
+              <h3>Chat de ayuda</h3>
+              <p>Recibe orientación rápida para resolver dudas sobre la plataforma.</p>
+            </div>
+
+            <img src="icons/flecha-verde.png" alt="Ir" class="flecha-acceso" />
+          </a>
+
+          <a href="Guia_Ayuda.html" class="acceso-card">
+            <div class="acceso-icono">
+              <img src="icons/guia.png" alt="Guía completa" />
+            </div>
+
+            <div class="acceso-info">
+              <h3>Guía completa</h3>
+              <p>Consulta los pasos para usar cada sección de la plataforma.</p>
+            </div>
+
+            <img src="icons/flecha-verde.png" alt="Ir" class="flecha-acceso" />
+          </a>
+        </div>
+      </section>
+
+      <section class="bloque-ayuda">
+        <h2>Tutorial de uso</h2>
+
+        <article class="tutorial-card">
+          <div class="video-box">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              title="Tutorial Huellas de Auxilio"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="tutorial-info">
+            <h3>Conoce cómo usar Huellas de Auxilio</h3>
+            <p>
+              Video guía que te explica de forma rápida y sencilla cómo reportar,
+              dar seguimiento y explorar todas las funciones de la plataforma.
+            </p>
+
+            <div class="duracion">
+              <img src="icons/reloj-azul.png" alt="Duración" />
+              <span>5:00 min</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="bloque-ayuda">
+        <h2>Preguntas frecuentes</h2>
+
+        <div class="faq-lista">
+          <details class="faq-item" open>
+            <summary>
+              <span>¿Cómo hago un reporte?</span>
+              <img src="icons/flecha-abajo.png" alt="Abrir" />
+            </summary>
+
+            <p>
+              Haz clic en el botón “Reportar” en la parte superior de la página
+              o en tu pantalla de inicio y completa el formulario con la mayor
+              cantidad de información posible. Puedes adjuntar fotos o videos como
+              evidencia. Una vez enviado, recibirás un código de reporte para dar
+              seguimiento.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>¿Puedo reportar de forma anónima?</span>
+              <img src="icons/flecha-abajo.png" alt="Abrir" />
+            </summary>
+
+            <p>
+              Sí. La plataforma permite registrar reportes manteniendo la identidad
+              del ciudadano protegida cuando sea necesario.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>¿Cómo reviso el estado de mi caso?</span>
+              <img src="icons/flecha-abajo.png" alt="Abrir" />
+            </summary>
+
+            <p>
+              Ingresa a la sección “Mis reportes” para revisar el avance del caso,
+              su estado actual y las respuestas de la entidad encargada.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>¿Cómo contacto una entidad de apoyo?</span>
+              <img src="icons/flecha-abajo.png" alt="Abrir" />
+            </summary>
+
+            <p>
+              Puedes ingresar al directorio, seleccionar una entidad y revisar sus
+              datos de contacto, ubicación y servicios disponibles.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.facebook.com/">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="https://x.com/">
+            <img src="icons/x.png" alt="X" />
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-ciudadano.js"></script>
+  </body>
+</html>

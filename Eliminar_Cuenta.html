@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Eliminar cuenta</title>
+
+    <link rel="stylesheet" href="HE_Header_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Menu_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Eliminar_Cuenta.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-ciudadano">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Ciudadano.html" class="logo">
+          <img src="img/logo.png" alt="Huellas de Auxilio" />
+        </a>
+
+        <a href="Reportar.html" class="btn-reporte-mobile">
+          Reporte
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Ciudadano.html" class="nav-link">Inicio</a></li>
+          <li><a href="Mis_Solicitudes.html" class="nav-link">Mis reportes</a></li>
+          <li><a href="Directorio.html" class="nav-link">Directorio</a></li>
+          <li><a href="Adopciones.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Ayuda_Ciudadano.html" class="nav-link">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Reportar.html" class="btn-reportar">
+            Reportar
+          </a>
+
+          <a href="Notificaciones_Ciudadano.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Ciudadano.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>HuellaAmiga247</h3>
+              <a href="Mi_Cuenta_Ciudadano.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Ciudadano.html">Inicio</a>
+          <a href="Mis_Solicitudes.html">Mis reportes</a>
+          <a href="Directorio.html">Directorio</a>
+          <a href="Adopciones.html">Adopciones</a>
+          <a href="Ayuda_Ciudadano.html">Ayuda</a>
+          <a href="Notificaciones_Ciudadano.html">Notificaciones</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="eliminar-cuenta-page">
+      <aside class="panel-lateral">
+        <div class="saludo-box">
+          <h2>¡Hola,</h2>
+          <p>HuellaAmiga247!</p>
+        </div>
+
+        <div class="linea"></div>
+
+        <nav class="menu-cuenta">
+          <a href="Mi_Cuenta_Ciudadano.html" class="opcion-cuenta">
+            <img src="icons/perfil-negro.png" alt="Perfil" class="icono-opcion" />
+            Perfil
+          </a>
+
+          <a href="Reportar_Problema.html" class="opcion-cuenta">
+            <img src="icons/reportar.png" alt="Reportar problema" class="icono-opcion" />
+            Reportar un problema
+          </a>
+
+          <a href="Login.html" class="opcion-cuenta">
+            <img src="icons/cerrar-sesion.png" alt="Cerrar sesión" class="icono-opcion" />
+            Cerrar sesión
+          </a>
+        </nav>
+
+        <div class="linea"></div>
+
+        <a href="Eliminar_cuenta.html" class="opcion-cuenta eliminar activa-eliminar">
+          <img src="icons/eliminar-rojo.png" alt="Eliminar cuenta" class="icono-opcion" />
+          Eliminar cuenta
+        </a>
+      </aside>
+
+      <section class="contenido-eliminar">
+        <h1>Eliminar Cuenta</h1>
+
+        <div class="confirmar-eliminar">
+          <h2>¿Estas seguro de que deseas eliminar tu cuenta?</h2>
+
+          <div class="acciones-eliminar">
+            <a href="Mi_Cuenta_Ciudadano.html" class="btn-cancelar">
+              Cancelar
+            </a>
+
+            <a href="Login.html" class="btn-eliminar">
+              Eliminar Cuenta
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.facebook.com/">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="https://x.com/">
+            <img src="icons/x.png" alt="X" />
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-ciudadano.js"></script>
+  </body>
+</html>

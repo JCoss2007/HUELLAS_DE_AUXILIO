@@ -3,168 +3,260 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat de Ayuda | Huellas de Auxilio</title>
-    <link rel="stylesheet" href="HE_Home_Entidad.css" />
-    <link rel="stylesheet" href="HE_ChatAyuda.css" />
-    <link rel="stylesheet" href="HE_Footer.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Huellas de Auxilio - Chat de ayuda entidad</title>
 
+    <link rel="stylesheet" href="HE_Header_Entidad.css" />
+    <link rel="stylesheet" href="HE_Menu_Entidad.css" />
+    <link rel="stylesheet" href="HE_Chat_Ayuda_Entidad.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
   </head>
+
   <body>
-    <!-- TOP NAVIGATION BAR -->
-    <header class="navbar container-fluid">
-      <div class="navbar-content max-width-container">
-        <div class="logo">
-          <img src="Imagenes/Logo.png" alt="logo" class="logo-img" />
+    <header class="header-entidad">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Entidad.html" class="logo">
+          <img src="img/logo.png" alt="Huellas de Auxilio" />
+        </a>
+
+        <a href="Notificaciones_Entidad.html" class="btn-campana-mobile">
+          <img src="icons/campana.png" alt="Notificaciones" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Entidad.html" class="nav-link">Inicio</a></li>
+          <li><a href="Reportes_Entidad.html" class="nav-link">Reportes</a></li>
+          <li><a href="Adopciones_Entidad.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Red_Apoyo.html" class="nav-link">Red de apoyo</a></li>
+          <li><a href="Ayuda_Entidad.html" class="nav-link activo">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Notificaciones_Entidad.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>Refugio Patitas</h3>
+              <a href="Mi_Cuenta_Entidad.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
         </div>
 
-        <nav class="nav-links">
+        <div class="menu-mobile-links">
           <a href="Home_Entidad.html">Inicio</a>
-          <a href="#">Reportes</a>
-          <a href="Adopciones.html">Adopciones</a>
-          <a href="#">Red de apoyo</a>
-          <a href="Centro_Ayuda_Entidad.html" class="active">Ayuda</a>
-        </nav>
-        <div class="user-actions">
-          <span class="notification-icon">
-            <img src="IMG/Vector.png" alt="campanita" />
-          </span>
-          <button class="btn-account">
-            <img src="IMG/CUENTA.png" alt="Cuenta" /> Mi Cuenta
-          </button>
+          <a href="Reportes_Entidad.html">Reportes</a>
+          <a href="Adopciones_Entidad.html">Adopciones</a>
+          <a href="Red_Apoyo.html">Red de apoyo</a>
+          <a href="Ayuda_Entidad.html">Ayuda</a>
         </div>
       </div>
     </header>
 
-    <main class="main-chat">
-
-    <!-- ENCABEZADO -->
-    <section class="hero-chat">
-
-        <div class="hero-texto">
-            <h1>Chat de ayuda</h1>
-
-            <p>
-                ¿Necesitas ayuda? Escríbenos y uno de nuestros asesores
-                responderá tus consultas sobre el uso de la plataforma.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- BOTÓN VOLVER -->
-    <section class="contenedor-chat">
-
-        <a href="Centro_Ayuda_Entidad.html" class="volver">
-
-            <i class="fa-solid fa-arrow-left"></i>
-
-            Volver al Centro de Ayuda
-
+    <main class="chat-entidad-page">
+      <section class="titulo-chat">
+        <a href="Ayuda_Entidad.html" class="btn-volver">
+          <img src="icons/flecha-volver.png" alt="Volver" />
         </a>
 
-    </section>
+        <div>
+          <h1>Chat de ayuda</h1>
+          <p>Resuelve dudas sobre el uso de la plataforma y procesos de atención.</p>
+        </div>
+      </section>
 
-    <!-- CHAT -->
-    <section class="contenedor-chat">
+      <section class="chat-layout">
+        <aside class="temas-card">
+          <h2>Temas sugeridos</h2>
 
-        <div class="ventana-chat">
-
-            <div class="cabecera-chat">
-
-                <div class="info-chat">
-
-                    <div class="avatar-chat">
-                        <i class="fa-solid fa-headset"></i>
-                    </div>
-
-                    <div>
-                        <h3>Soporte Huellas de Auxilio</h3>
-                        <span>En línea</span>
-                    </div>
-
-                </div>
-
+          <button type="button" class="tema-btn" data-tema="mascota">
+            <div class="tema-icono">
+              <img src="icons/registrar-mascota.png" alt="Registrar mascota" />
             </div>
 
-            <div class="mensajes">
+            <span>Registrar mascota</span>
 
-                <div class="mensaje soporte">
-                    ¡Hola! 👋 Bienvenido al centro de ayuda.
-                </div>
+            <img src="icons/flecha-verde.png" alt="Ir" class="flecha-tema" />
+          </button>
 
-                <div class="mensaje usuario">
-                    Necesito ayuda para actualizar un reporte.
-                </div>
-
-                <div class="mensaje soporte">
-                    Claro 😊. Ingresa a "Mis Reportes", selecciona el caso y
-                    presiona el botón "Actualizar Estado".
-                </div>
-
+          <button type="button" class="tema-btn" data-tema="solicitudes">
+            <div class="tema-icono">
+              <img src="icons/solicitudes.png" alt="Solicitudes" />
             </div>
 
-            <div class="escribir">
+            <span>Revisar solicitudes</span>
 
-                <input
-                    type="text"
-                    placeholder="Escribe tu mensaje..."
-                >
+            <img src="icons/flecha-verde.png" alt="Ir" class="flecha-tema" />
+          </button>
 
-                <button>
-
-                    <i class="fa-solid fa-paper-plane"></i>
-
-                </button>
-
+          <button type="button" class="tema-btn" data-tema="estado">
+            <div class="tema-icono">
+              <img src="icons/actualizar-estado.png" alt="Actualizar estado" />
             </div>
 
+            <span>Actualizar estado</span>
+
+            <img src="icons/flecha-verde.png" alt="Ir" class="flecha-tema" />
+          </button>
+
+          <button type="button" class="tema-btn" data-tema="red">
+            <div class="tema-icono">
+              <img src="icons/red-apoyo.png" alt="Red de apoyo" />
+            </div>
+
+            <span>Uso de directorio</span>
+
+            <img src="icons/flecha-verde.png" alt="Ir" class="flecha-tema" />
+          </button>
+        </aside>
+
+        <section class="chat-card">
+          <div class="chat-header">
+            <div class="chat-header-icono">
+              <img src="icons/chat-blanco.png" alt="Asistente virtual" />
+            </div>
+
+            <h2>Asistente virtual</h2>
+          </div>
+
+          <div class="chat-mensajes" id="chatMensajes">
+            <div class="fila-asistente">
+              <div class="avatar-asistente">
+                <img src="icons/huella-verde.png" alt="Asistente" />
+              </div>
+
+              <div>
+                <div class="mensaje asistente">
+                  <p>
+                    ¡Hola! Soy el asistente de Huellas de Auxilio. Estoy aquí para ayudarte
+                    con el uso de la plataforma y los procesos de atención. ¿Qué necesitas saber hoy?
+                  </p>
+                </div>
+
+                <span class="hora-asistente">10:02 a.m.</span>
+              </div>
+            </div>
+
+            <div class="mensaje usuario">
+              <p>¿Cómo puedo publicar una mascota en adopción?</p>
+              <span>10:03 a.m.</span>
+            </div>
+
+            <div class="fila-asistente">
+              <div class="avatar-asistente">
+                <img src="icons/huella-verde.png" alt="Asistente" />
+              </div>
+
+              <div>
+                <div class="mensaje asistente">
+                  <p>
+                    Para publicar una mascota en adopción, ve a la sección “Adopciones”
+                    y haz clic en “Publicar mascota”. Completa la información requerida
+                    y luego selecciona “Publicar”.
+                  </p>
+                </div>
+
+                <span class="hora-asistente">10:04 a.m.</span>
+              </div>
+            </div>
+
+            <div class="mensaje usuario">
+              <p>¿Cómo reviso las solicitudes que recibo?</p>
+              <span>10:05 a.m.</span>
+            </div>
+
+            <div class="fila-asistente">
+              <div class="avatar-asistente">
+                <img src="icons/huella-verde.png" alt="Asistente" />
+              </div>
+
+              <div>
+                <div class="mensaje asistente">
+                  <p>
+                    Ingresa a “Adopciones” y luego “Solicitudes”. Ahí podrás ver todas
+                    las solicitudes recibidas, revisar la información de cada interesado
+                    y actualizar el estado.
+                  </p>
+                </div>
+
+                <span class="hora-asistente">10:06 a.m.</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="chat-input-area" id="formChat">
+            <input
+              type="text"
+              id="inputChat"
+              placeholder="Escribe tu consulta..."
+              autocomplete="off"
+            />
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
         </div>
 
-    </section>
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
 
-</main>
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-brand">
-  <img src="Imagenes/Logo2.png" alt="Logo Huellas de Auxilio" />
-  <p>© 2026 Huellas de Auxilio.<br />Todos los derechos reservados.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
 
-  <div class="footer-social">
-    <a href="#"><img src="Iconos/facebook.png" alt="Facebook" /></a>
-    <a href="#"><img src="Iconos/twiter.png" alt="X" /></a>
-    <a href="#"><img src="Iconos/instagram.png" alt="Instagram" /></a>
-  </div>
-</div>
+          <a href="https://x.com/">
+            <img src="icons/x.png" alt="X" />
+          </a>
 
-<div class="footer-links">
-  <h4>Legal</h4>
-  <a href="documentos/politica-privacidad.pdf">Política de privacidad</a>
-  <a href="documentos/terminos-condiciones.pdf">Términos y condiciones</a>
-  <a href="documentos/libro-reclamaciones.pdf">Libro de Reclamaciones</a>
-</div>
-
-<div class="footer-contacto">
-  <h4>Contáctanos</h4>
-
-  <div class="contacto-item">
-    <img src="Iconos/email.png" alt="Correo" />
-    <span>hola@huellasdeauxilio.pe</span>
-  </div>
-
-  <div class="contacto-item">
-    <img src="Iconos/llamar.png" alt="Teléfono" />
-    <span>+51 987 654 321 Lima, Perú</span>
-  </div>
-
-  <div class="contacto-item">
-    <img src="Iconos/map.png" alt="Ubicación" />
-    <span>Lima, Perú</span>
-  </div>
-</div>
+          <a href="https://www.instagram.com/">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
+        </div>
       </div>
     </footer>
+
+    <script src="menu-entidad.js"></script>
+    <script src="chat-ayuda-entidad.js"></script>
   </body>
 </html>

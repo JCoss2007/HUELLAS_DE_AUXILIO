@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaf3f2;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #082f3d;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.libro-page {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 34px 50px 60px;
+}
+
+.titulo-libro {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.btn-volver {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #d9dddd;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-volver img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.btn-volver:hover {
+  background-color: #f7fbfa;
+}
+
+.titulo-libro h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1b746f;
+  margin-bottom: 6px;
+}
+
+.titulo-libro p {
+  font-size: 16px;
+  color: #263b3b;
+  font-weight: 500;
+}
+
+.intro-libro {
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 14px;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+.intro-icono {
+  width: 62px;
+  height: 62px;
+  background-color: #dcebdd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.intro-icono img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.intro-libro h2 {
+  font-size: 22px;
+  color: #1b746f;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.intro-libro p {
+  font-size: 15px;
+  color: #676d68;
+  line-height: 1.5;
+}
+
+.form-libro {
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 14px;
+  padding: 32px 38px 34px;
+}
+
+.form-bloque {
+  margin-bottom: 32px;
+}
+
+.form-bloque h2 {
+  font-size: 24px;
+  color: #1b746f;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 28px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo label {
+  font-size: 15px;
+  color: #676d68;
+  font-weight: 700;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  border: 2px solid #d9dddd;
+  border-radius: 9px;
+  background-color: #ffffff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #263b3b;
+  outline: none;
+}
+
+.campo input,
+.campo select {
+  height: 48px;
+  padding: 0 16px;
+}
+
+.campo textarea {
+  height: 130px;
+  resize: none;
+  padding: 16px;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+  color: #9a9a9a;
+}
+
+.campo-completo {
+  margin-top: 22px;
+}
+
+.aviso-libro {
+  background-color: #eef5f4;
+  border: 1.5px solid #ccd8d7;
+  border-radius: 9px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.aviso-icono {
+  width: 34px;
+  height: 34px;
+  border: 2px solid #1b746f;
+  border-radius: 50%;
+  color: #1b746f;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.aviso-libro p {
+  font-size: 14px;
+  color: #263b3b;
+  font-weight: 500;
+}
+
+.acciones-libro {
+  display: flex;
+  justify-content: flex-end;
+  gap: 22px;
+}
+
+.btn-cancelar,
+.btn-enviar {
+  width: 230px;
+  height: 46px;
+  border-radius: 7px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-cancelar {
+  background-color: #ffffff;
+  color: #0b5559;
+  border: 2px solid #0b5559;
+}
+
+.btn-cancelar:hover {
+  background-color: #eaf3f2;
+}
+
+.btn-enviar {
+  background-color: #0b5559;
+  color: #ffffff;
+  border: 2px solid #0b5559;
+  cursor: pointer;
+}
+
+.btn-enviar:hover {
+  background-color: #004a4d;
+}
+
+@media (max-width: 960px) {
+  .libro-page {
+    padding: 28px 24px 50px;
+  }
+
+  .intro-libro {
+    align-items: flex-start;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .acciones-libro {
+    flex-direction: column-reverse;
+  }
+
+  .btn-cancelar,
+  .btn-enviar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .libro-page {
+    padding: 24px 20px 46px;
+  }
+
+  .titulo-libro h1 {
+    font-size: 28px;
+  }
+
+  .titulo-libro p {
+    font-size: 14px;
+  }
+
+  .intro-libro {
+    flex-direction: column;
+    padding: 22px;
+  }
+
+  .intro-libro h2 {
+    font-size: 20px;
+  }
+
+  .intro-libro p {
+    font-size: 14px;
+  }
+
+  .form-libro {
+    padding: 26px 20px;
+  }
+
+  .form-bloque h2 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 430px) {
+  .libro-page {
+    padding: 22px 18px 42px;
+  }
+
+  .titulo-libro {
+    gap: 12px;
+  }
+
+  .btn-volver {
+    width: 42px;
+    height: 42px;
+  }
+
+  .btn-volver img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .titulo-libro h1 {
+    font-size: 25px;
+  }
+
+  .campo input,
+  .campo select {
+    height: 46px;
+  }
+
+  .btn-cancelar,
+  .btn-enviar {
+    height: 44px;
+    font-size: 15px;
+  }
+}

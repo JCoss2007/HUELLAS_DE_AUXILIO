@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaf3f2;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #082f3d;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.confirmacion-reporte-entidad-page {
+  width: 100%;
+  max-width: 1360px;
+  min-height: calc(100vh - 215px);
+  margin: 0 auto;
+  padding: 92px 40px 50px;
+  display: grid;
+  grid-template-columns: 395px 1fr;
+  gap: 24px;
+}
+
+.panel-lateral {
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 9px;
+  min-height: 640px;
+  padding: 70px 28px 34px;
+}
+
+.saludo-box h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.saludo-box p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1b746f;
+  margin-top: 4px;
+}
+
+.linea {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  margin: 26px 0 34px;
+}
+
+.menu-cuenta {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.opcion-cuenta {
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff;
+  border: 1.8px solid #d9dddd;
+  border-radius: 9px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 18px;
+  white-space: nowrap;
+}
+
+.opcion-cuenta.activa {
+  background-color: #e5f1ec;
+  color: #1b746f;
+}
+
+.opcion-cuenta.eliminar {
+  color: #ed1c24;
+}
+
+.icono-opcion {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.contenido-confirmacion {
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 9px;
+  min-height: 640px;
+  padding: 40px 40px 34px;
+}
+
+.titulo-confirmacion {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+.btn-volver {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #d9dddd;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-volver img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.titulo-confirmacion h1 {
+  font-size: 34px;
+  color: #1b746f;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.titulo-confirmacion p {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.confirmacion-card {
+  width: 100%;
+  background-color: #f7fbfa;
+  border: 2px solid #d9dddd;
+  border-radius: 12px;
+  padding: 34px 40px 38px;
+  text-align: center;
+}
+
+.check-principal {
+  width: 86px;
+  height: 86px;
+  background-color: #dcebdd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 22px;
+}
+
+.check-principal span {
+  width: 32px;
+  height: 17px;
+  border-left: 5px solid #0b5559;
+  border-bottom: 5px solid #0b5559;
+  transform: rotate(-45deg);
+  margin-top: -8px;
+}
+
+.confirmacion-card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1b746f;
+  margin-bottom: 10px;
+}
+
+.mensaje-confirmacion {
+  max-width: 650px;
+  margin: 0 auto 28px;
+  font-size: 15px;
+  color: #676d68;
+  line-height: 1.5;
+}
+
+.resumen-confirmacion {
+  border: 2px solid #d9dddd;
+  border-radius: 12px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.resumen-item {
+  min-height: 112px;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-align: left;
+  border-right: 1.5px solid #d9dddd;
+}
+
+.resumen-item:last-child {
+  border-right: none;
+}
+
+.resumen-icono {
+  width: 52px;
+  height: 52px;
+  background-color: #dcebdd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.resumen-icono img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.resumen-item p {
+  font-size: 14px;
+  color: #676d68;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.resumen-item h3 {
+  font-size: 17px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.estado {
+  min-width: 110px;
+  height: 26px;
+  border-radius: 20px;
+  background-color: #edf7ff;
+  border: 1px solid #9bbbd4;
+  color: #005aa0;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aviso-confirmacion {
+  background-color: #eef5f4;
+  border: 1.5px solid #ccd8d7;
+  border-radius: 9px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.aviso-icono {
+  width: 34px;
+  height: 34px;
+  border: 2px solid #1b746f;
+  border-radius: 50%;
+  color: #1b746f;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.aviso-confirmacion p {
+  font-size: 14px;
+  color: #263b3b;
+  font-weight: 500;
+}
+
+.acciones-confirmacion {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.btn-principal,
+.btn-secundario {
+  width: 220px;
+  height: 44px;
+  border-radius: 8px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-principal {
+  background-color: #007476;
+  color: #ffffff;
+  border: 2px solid #007476;
+}
+
+.btn-secundario {
+  background-color: #ffffff;
+  color: #1b746f;
+  border: 2px solid #1b746f;
+}
+
+.btn-campana-mobile {
+  display: none;
+}
+
+.btn-campana-mobile img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+@media (max-width: 960px) {
+  .confirmacion-reporte-entidad-page {
+    padding: 24px 26px 36px;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .btn-campana-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .panel-lateral {
+    min-height: auto;
+    padding: 30px 24px 44px;
+  }
+
+  .saludo-box {
+    text-align: center;
+  }
+
+  .saludo-box h2 {
+    font-size: 22px;
+  }
+
+  .saludo-box p {
+    font-size: 21px;
+  }
+
+  .linea {
+    margin: 24px 0 26px;
+  }
+
+  .opcion-cuenta {
+    height: 60px;
+    font-size: 18px;
+    gap: 18px;
+  }
+
+  .icono-opcion {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contenido-confirmacion {
+    min-height: auto;
+    padding: 30px 26px 36px;
+  }
+
+  .resumen-confirmacion {
+    grid-template-columns: 1fr;
+  }
+
+  .resumen-item {
+    border-right: none;
+    border-bottom: 1.5px solid #d9dddd;
+  }
+
+  .resumen-item:last-child {
+    border-bottom: none;
+  }
+
+  .acciones-confirmacion {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .btn-principal,
+  .btn-secundario {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .confirmacion-reporte-entidad-page {
+    padding: 24px 26px 0;
+  }
+
+  .contenido-confirmacion {
+    padding: 28px 20px 34px;
+  }
+
+  .titulo-confirmacion {
+    gap: 14px;
+  }
+
+  .btn-volver {
+    width: 44px;
+    height: 44px;
+  }
+
+  .btn-volver img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .titulo-confirmacion h1 {
+    font-size: 27px;
+  }
+
+  .titulo-confirmacion p {
+    font-size: 13px;
+  }
+
+  .confirmacion-card {
+    padding: 30px 20px 32px;
+  }
+
+  .confirmacion-card h2 {
+    font-size: 24px;
+  }
+
+  .mensaje-confirmacion {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 430px) {
+  .confirmacion-reporte-entidad-page {
+    padding: 24px 25px 0;
+  }
+
+  .panel-lateral {
+    padding: 30px 23px 46px;
+  }
+
+  .opcion-cuenta {
+    height: 60px;
+    font-size: 17px;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .icono-opcion {
+    width: 29px;
+    height: 29px;
+  }
+
+  .titulo-confirmacion h1 {
+    font-size: 25px;
+  }
+
+  .check-principal {
+    width: 76px;
+    height: 76px;
+  }
+
+  .check-principal span {
+    width: 28px;
+    height: 15px;
+  }
+}
