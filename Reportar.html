@@ -37,7 +37,7 @@
         <div class="header-actions">
           <a href="Reportar.html" class="btn-reportar">Reportar</a>
 
-          <a href="Notificaciones_Ciudadano.html" class="btn-campana">
+          <a href="Notificaciones.html" class="btn-campana">
             <img src="icons/campana.png" alt="Notificaciones" />
           </a>
 
@@ -70,7 +70,7 @@
           <a href="Directorio.html">Directorio</a>
           <a href="Adopciones.html">Adopciones</a>
           <a href="Ayuda.html">Ayuda</a>
-          <a href="Notificaciones_Ciudadano.html">Notificaciones</a>
+          <a href="Notificaciones.html">Notificaciones</a>
         </div>
       </div>
     </header>
@@ -87,196 +87,96 @@
             <p>Completa la información del caso en pocos pasos</p>
           </div>
 
-          <section class="paso-form activo" id="paso1">
-            <div class="subtitulo-form">
-              <img src="icons/ubicacion-verde.png" alt="Ubicación" />
-              <h2>Ubicación actual</h2>
-            </div>
+          <div class="subtitulo-form">
+            <img src="icons/ubicacion-verde.png" alt="Ubicación" />
+            <h2>Ubicación actual</h2>
+          </div>
 
-            <div class="campo-form">
-              <label for="direccion">Dirección o referencia</label>
-              <input
-                type="text"
-                id="direccion"
-                placeholder="Ej: Av. Arequipa, frente al parque"
-              />
-            </div>
+          <div class="campo-form">
+            <label for="direccion">Dirección o referencia</label>
+            <input
+              type="text"
+              id="direccion"
+              placeholder="Ej: Av. Arequipa, frente al parque"
+            />
+          </div>
 
-            <div class="campo-form">
-              <label for="distrito">Distrito</label>
+          <div class="campo-form">
+            <label for="distrito">Distrito</label>
 
-              <input
-                type="text"
-                id="distrito"
-                list="listaDistritos"
-                placeholder="Escribe o selecciona un distrito"
-              />
+            <input
+              type="text"
+              id="distrito"
+              list="listaDistritos"
+              placeholder="Escribe o selecciona un distrito"
+            />
 
-              <datalist id="listaDistritos">
-                <option value="Lince"></option>
-                <option value="Santiago de Surco"></option>
-                <option value="Miraflores"></option>
-                <option value="San Miguel"></option>
-                <option value="Pueblo Libre"></option>
-                <option value="Jesús María"></option>
-              </datalist>
-            </div>
+            <datalist id="listaDistritos">
+              <option value="Lince"></option>
+              <option value="Santiago de Surco"></option>
+              <option value="Miraflores"></option>
+              <option value="San Miguel"></option>
+              <option value="Pueblo Libre"></option>
+              <option value="Jesús María"></option>
+            </datalist>
+          </div>
 
-            <div class="campo-form">
-              <label for="referencia">Referencia adicional</label>
-              <input
-                type="text"
-                id="referencia"
-                placeholder="Ej: cerca a una veterinaria"
-              />
-            </div>
+          <div class="campo-form">
+            <label for="referencia">Referencia adicional</label>
+            <input
+              type="text"
+              id="referencia"
+              placeholder="Ej: cerca a una veterinaria"
+            />
+          </div>
 
-            <button type="button" class="btn-elegir-ubicacion" id="btnElegirUbicacion">
-              Mover ubicación en el mapa
+          <button type="button" class="btn-elegir-ubicacion" id="btnElegirUbicacion">
+            Mover ubicación en el mapa
+          </button>
+
+          <div class="subtitulo-form evidencia-title">
+            <img src="icons/camara-verde.png" alt="Evidencia" />
+            <h2>Evidencia</h2>
+          </div>
+
+          <div class="tabs-evidencia">
+            <button type="button" class="tab-evidencia activo" id="btnAbrirFotos">
+              <img src="icons/camara-verde.png" alt="Foto" />
+              Subir foto
             </button>
 
-            <div class="subtitulo-form evidencia-title">
-              <img src="icons/camara-verde.png" alt="Evidencia" />
-              <h2>Evidencia</h2>
+            <button type="button" class="tab-evidencia" id="btnAbrirVideos">
+              <img src="icons/video-verde.png" alt="Video" />
+              Subir video
+            </button>
+          </div>
+
+          <div class="preview-evidencia" id="previewEvidencia">
+            <div class="preview-vacio">
+              <span>+</span>
+              <strong>Aún no agregaste evidencia</strong>
+              <p>Selecciona una foto o video usando los botones superiores</p>
             </div>
-
-            <div class="tabs-evidencia">
-              <button type="button" class="tab-evidencia activo" id="btnAbrirFotos">
-                <img src="icons/camara-verde.png" alt="Foto" />
-                Subir foto
-              </button>
-
-              <button type="button" class="tab-evidencia" id="btnAbrirVideos">
-                <img src="icons/video-verde.png" alt="Video" />
-                Subir video
-              </button>
-            </div>
-
-            <div class="preview-evidencia" id="previewEvidencia">
-              <div class="preview-vacio">
-                <span>+</span>
-                <strong>Aún no agregaste evidencia</strong>
-                <p>Selecciona una foto o video usando los botones superiores</p>
-              </div>
-            </div>
-          </section>
-
-          <section class="paso-form" id="paso2">
-  <div class="subtitulo-form">
-    <img src="icons/check-verde.png" alt="Detalles" />
-    <h2>Detalles del caso</h2>
-  </div>
-
-  <div class="campo-form">
-    <label for="tipoCaso">Tipo de caso</label>
-    <select id="tipoCaso">
-      <option value="">Selecciona una opción</option>
-      <option value="Maltrato animal">Maltrato animal</option>
-      <option value="Abandono animal">Abandono animal</option>
-      <option value="Animal herido">Animal herido</option>
-      <option value="Rescate urgente">Rescate urgente</option>
-    </select>
-  </div>
-
-  <div class="campo-form">
-    <label>Nivel de urgencia</label>
-
-    <div class="urgencia-opciones">
-      <button type="button" class="btn-urgencia baja activo" data-urgencia="Baja">
-        <span></span>
-        Baja
-      </button>
-
-      <button type="button" class="btn-urgencia media" data-urgencia="Media">
-        <span></span>
-        Media
-      </button>
-
-      <button type="button" class="btn-urgencia alta" data-urgencia="Alta">
-        <span></span>
-        Alta
-      </button>
-    </div>
-  </div>
-
-  <div class="campo-form">
-    <label for="descripcion">Descripción</label>
-    <small>Explica brevemente qué ocurrió</small>
-
-    <textarea
-      id="descripcion"
-      maxlength="500"
-      placeholder="Describe los hechos de forma clara y breve..."
-    ></textarea>
-
-    <p class="contador-texto">
-      <span id="contadorDescripcion">0</span>/500
-    </p>
-  </div>
-
-  <div class="aviso-identidad">
-    <img src="icons/info-verde.png" alt="Información" />
-    <p>Tu alias protegerá tu identidad frente al agresor</p>
-  </div>
-
-  <div class="audio-box">
-    <div class="audio-icono">
-      <img src="icons/audio-verde.png" alt="Audio" />
-    </div>
-
-    <div>
-      <h3>Adjuntar audio <span>(opcional)</span></h3>
-      <p>Graba un audio con más detalles del caso</p>
-    </div>
-
-    <button type="button" class="btn-subir-audio" id="btnAbrirAudio">
-      <img src="icons/subir-verde.png" alt="Grabar audio" />
-      Grabar audio
-    </button>
-  </div>
-
-  <div class="preview-audio" id="previewAudio"></div>
-</section>
-
-          <section class="paso-form" id="paso3">
-            <div class="subtitulo-form">
-              <img src="icons/check-verde.png" alt="Confirmar" />
-              <h2>Confirmar reporte</h2>
-            </div>
-
-            <p class="texto-confirmar">
-              Revisa la información antes de enviar el reporte. Esta simulación enviará
-              el caso a la entidad más cercana.
-            </p>
-
-            <div class="confirmar-card">
-              <h3>Datos del reporte</h3>
-
-              <p><strong>Distrito:</strong> <span id="confirmDistrito">Sin seleccionar</span></p>
-              <p><strong>Ubicación:</strong> <span id="confirmUbicacion">Sin seleccionar</span></p>
-              <p><strong>Tipo de caso:</strong> <span id="confirmTipo">Sin seleccionar</span></p>
-              <p><strong>Urgencia:</strong> <span id="confirmUrgencia">Baja</span></p>
-            </div>
-          </section>
+          </div>
         </section>
 
         <section class="panel-resumen">
           <div class="pasos-indicador">
-            <div class="paso-num activo" data-step="1">
+            <div class="paso-num activo">
               <span>1</span>
               <p>Ubicación y evidencia</p>
             </div>
 
             <div class="linea-paso"></div>
 
-            <div class="paso-num" data-step="2">
+            <div class="paso-num">
               <span>2</span>
               <p>Detalles</p>
             </div>
 
             <div class="linea-paso"></div>
 
-            <div class="paso-num" data-step="3">
+            <div class="paso-num">
               <span>3</span>
               <p>Confirmar</p>
             </div>
@@ -289,28 +189,7 @@
               <span></span>
             </button>
 
-            <div class="mapa-ayuda">
-              Haz clic o arrastra el pin para simular la ubicación
-            </div>
-          </div>
-
-          <div class="resumen-box">
-            <h2>Resumen del reporte</h2>
-
-            <div class="resumen-dato">
-              <span>Distrito</span>
-              <p id="resumenDistrito">Sin seleccionar</p>
-            </div>
-
-            <div class="resumen-dato">
-              <span>Ubicación</span>
-              <p id="resumenUbicacion">Sin seleccionar</p>
-            </div>
-
-            <div class="resumen-evidencia">
-              <h3>Evidencia</h3>
-              <div class="mini-evidencias" id="miniEvidencias"></div>
-            </div>
+            <div class="mapa-ayuda">Selecciona la ubicación del caso</div>
           </div>
 
           <div class="aviso-entidad">
@@ -319,13 +198,11 @@
           </div>
 
           <div class="acciones-reporte">
-            <button type="button" class="btn-cancelar" id="btnCancelar">
-              Cancelar
-            </button>
+            <a href="Home_Ciudadano.html" class="btn-cancelar">Cancelar</a>
 
-            <button type="button" class="btn-continuar" id="btnContinuar">
+            <a href="Reporte_Detalles.html" class="btn-continuar" id="btnIrDetalles">
               Continuar
-            </button>
+            </a>
           </div>
         </section>
       </section>
@@ -392,26 +269,24 @@
 
         <div class="footer-compacto-links">
           <a href="#">Soporte</a>
-
           <a href="documentos/politica-privacidad.pdf" target="_blank">
             Política de Privacidad
           </a>
-
           <a href="documentos/terminos-condiciones.pdf" target="_blank">
             Términos y condiciones
           </a>
         </div>
 
         <div class="footer-social">
-          <a href="#">
+          <a href="https://www.facebook.com/">
             <img src="icons/facebook.png" alt="Facebook" />
           </a>
 
-          <a href="#">
+          <a href="https://x.com/">
             <img src="icons/x.png" alt="X" />
           </a>
 
-          <a href="#">
+          <a href="https://www.instagram.com/">
             <img src="icons/instagram.png" alt="Instagram" />
           </a>
         </div>

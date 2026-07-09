@@ -3,23 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detalle del Reporte - Huellas de Auxilio</title>
+    <title>Huellas de Auxilio - Detalle del reporte</title>
 
     <link rel="stylesheet" href="HE_Header_Entidad.css" />
     <link rel="stylesheet" href="HE_Menu_Entidad.css" />
+    <link rel="stylesheet" href="HE_Detalle_Reporte_Entidad.css" />
     <link rel="stylesheet" href="HE_Footer.css" />
-    <link rel="stylesheet" href="HE_Detalle_Reporte.css" />
   </head>
 
   <body>
     <header class="header-entidad">
       <nav class="navbar">
         <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
-          <span></span><span></span><span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
         <a href="Home_Entidad.html" class="logo">
           <img src="img/logo.png" alt="Logo Huellas de Auxilio" />
+        </a>
+
+        <a href="Notificaciones_Entidad.html" class="btn-campana-mobile">
+          <img src="icons/campana.png" alt="Notificaciones" />
         </a>
 
         <ul class="nav-links">
@@ -34,399 +40,349 @@
           <a href="Notificaciones_Entidad.html" class="btn-campana">
             <img src="icons/campana.png" alt="Notificaciones" />
           </a>
+
           <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
             <img src="icons/user-circle.png" alt="Mi cuenta" />
             <span>Mi cuenta</span>
           </a>
         </div>
       </nav>
-    </header>
 
-    <main class="max-width-container detalle-reporte">
-      
-      <div class="page-header">
-        <a href="Reportes_Entidad.html" class="btn-back" aria-label="Volver">
-          <img src="icons/flecha-volver.png" alt="Volver" />
-        </a>
-        <div class="header-text">
-          <h1>Detalle del reporte</h1>
-        </div>
-      </div>
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
 
-      <section class="content-grid">
-        
-        <div class="main-col">
-          
-          <article class="card-box summary-card">
-            <div class="summary-top">
-              <div class="summary-item">
-                <span class="label">Código del reporte</span>
-                <div class="code-box">
-                  <span class="font-bold">HA-0241</span>
-                  <button class="btn-copy" aria-label="Copiar código">
-                    <img src="icons/copiar.png" alt="Copiar" />
-                  </button>
-                </div>
-              </div>
-
-              <div class="summary-item divider-left">
-                <span class="label">Estado actual</span>
-                <span class="badge badge-revision">
-                  <span class="dot bg-blue"></span> En revisión
-                </span>
-              </div>
-
-              <div class="summary-item divider-left">
-                <span class="label">Urgencia</span>
-                <span class="badge badge-media">
-                  <span class="dot bg-orange"></span> Media
-                </span>
-              </div>
+            <div>
+              <h3>Refugio Patitas</h3>
+              <a href="Mi_Cuenta_Entidad.html">Ver mi perfil</a>
             </div>
-
-            <div class="summary-bottom">
-              <div class="info-chunk">
-                <div class="info-icon"><img src="icons/user-circle.png" alt="Usuario" /></div>
-                <div>
-                  <span class="label">Alias del ciudadano</span>
-                  <p class="font-bold">HuellaAmiga247</p>
-                </div>
-              </div>
-              <div class="info-chunk divider-left">
-                <div class="info-icon"><img src="icons/mapa-ubi.png" alt="Ubicación" /></div>
-                <div>
-                  <span class="label">Distrito</span>
-                  <p class="font-bold">San Miguel, Lima</p>
-                </div>
-              </div>
-              <div class="info-chunk divider-left">
-                <div class="info-icon"><img src="icons/calendario.png" alt="Fecha" /></div>
-                <div>
-                  <span class="label">Fecha y hora del reporte</span>
-                  <p class="font-bold">12 may. 2026, 09:47 a.m.</p>
-                </div>
-              </div>
-              <div class="info-chunk divider-left">
-                <div class="info-icon"><img src="icons/casita-icon.png" alt="Entidad" /></div>
-                <div>
-                  <span class="label">Entidad asignada</span>
-                  <p class="font-bold">Refugio Patitas</p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <div class="middle-grid">
-            
-            <div class="middle-left-col">
-              <article class="card-box small-pad">
-                <h3 class="card-title-small">
-                  <img src="icons/documento-verde.png" alt="" /> Descripción del caso
-                </h3>
-                <p class="text-body">
-                  El ciudadano reporta haber visto a un perro de pelaje claro, sin collar, deambulando solo cerca de un parque. Se presume posible caso de abandono. El animal se mostraba asustado y buscaba refugio entre los arbustos.
-                </p>
-              </article>
-
-              <article class="card-box small-pad">
-                <h3 class="card-title-small">
-                  <img src="icons/camara.png" alt="" /> Evidencias del ciudadano
-                </h3>
-                <div class="evidence-gallery">
-                  <img src="img/evidencia1.png" alt="Evidencia 1" class="evidence-img" />
-                  <img src="img/evidencia2.png" alt="Evidencia 2" class="evidence-img" />
-                </div>
-                <p class="evidence-footer">
-                  <img src="icons/foto.png" alt="" /> 2 fotos adjuntas
-                </p>
-              </article>
-            </div>
-
-            <div class="middle-right-col">
-              <article class="card-box small-pad h-100 flex-col">
-                <h3 class="card-title-small">
-                  <img src="icons/mapa-ubi.png" alt="" /> Ubicación del reporte
-                </h3>
-                <div class="map-container-large">
-                  <img src="img/mapa_reporte.png" alt="Mapa" />
-                </div>
-                <div class="map-footer mt-auto">
-                  <div class="location-text">
-                    <img src="icons/mapa-ubi.png" alt="" /> Parque Acosta, San Miguel, Lima
-                  </div>
-                  <a href="#" class="link-action">ver en mapa →</a>
-                </div>
-              </article>
-            </div>
-
           </div>
 
-          <article class="card-box small-pad">
-            <h3 class="card-title-small">
-              <img src="icons/carga.png" alt="" /> Progreso del reporte
-            </h3>
-            
-            <div class="timeline">
-              <div class="timeline-item active">
-                <div class="timeline-dot bg-blue border-blue"></div>
-                <div class="timeline-content">
-                  <div class="tl-header">
-                    <h4 class="c-blue">En revisión</h4>
-                    <span class="badge-actual">Actual</span>
-                  </div>
-                  <p>La entidad está evaluando la información del caso.</p>
-                </div>
-                <div class="timeline-time">12 may, 2026, 10:15 a.m.</div>
-              </div>
-
-              <div class="timeline-item">
-                <div class="timeline-dot bg-gray"></div>
-                <div class="timeline-content">
-                  <h4>Recibido</h4>
-                  <p>El reporte fue recibido por la entidad.</p>
-                </div>
-                <div class="timeline-time">12 may, 2026, 09:47 a.m.</div>
-              </div>
-
-              <div class="timeline-item">
-                <div class="timeline-dot bg-green"></div>
-                <div class="timeline-content">
-                  <h4 class="c-green">Reporte creado</h4>
-                </div>
-                <div class="timeline-time">12 may, 2026, 09:47 a.m.</div>
-              </div>
-            </div>
-          </article>
-
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
         </div>
 
-        <aside class="sidebar-col">
-          
-          <article class="card-box panel-actualizar">
-            <h3 class="card-title-small">
-              <img src="icons/actualizar.png" alt="" /> Actualizar estado del reporte
-              <button class="btn-solid-green w-100" id="btnActualizarEstado">Actualizar estado</button>
-            </h3>
-            
-            <div class="form-group-sidebar">
-              <label>Estado actual</label>
-              
-              <div class="custom-dropdown" id="statusDropdown">
-                <div class="dropdown-header" id="dropdownHeader">
-                  <span><span class="dot bg-blue"></span> En revisión</span>
-                  <img src="icons/chevron-down.png" alt="Desplegar" class="chevron" />
+        <div class="menu-mobile-links">
+          <a href="Home_Entidad.html">Inicio</a>
+          <a href="Reportes_Entidad.html">Reportes</a>
+          <a href="Adopciones_Entidad.html">Adopciones</a>
+          <a href="Red_Apoyo_Entidad.html">Red de apoyo</a>
+          <a href="Ayuda_Entidad.html">Ayuda</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="detalle-reporte-entidad-page">
+      <section class="detalle-header">
+        <div class="titulo-con-volver">
+          <a href="Reportes_Entidad.html" class="btn-volver">
+            <img src="icons/flecha-volver.png" alt="Volver" />
+          </a>
+
+          <h1>Detalle del reporte</h1>
+        </div>
+      </section>
+
+      <section class="detalle-contenido">
+        <section class="detalle-columna-principal">
+          <article class="resumen-reporte-card">
+            <div class="resumen-top">
+              <div class="bloque-resumen">
+                <span>Código del reporte</span>
+                <div class="codigo-copia">
+                  <strong>HA-0241</strong>
+                  <img src="icons/copiar-gris.png" alt="Copiar código" />
                 </div>
-                
-                <ul class="dropdown-list" id="dropdownList">
-                  <li data-value="recibido">
-                    <span class="dot bg-gray"></span> Recibido
-                  </li>
-                  <li data-value="revision" class="selected">
-                    <span class="dot bg-blue"></span> En revisión
-                    <img src="icons/check-azul.png" class="check-icon" alt="Seleccionado" />
-                  </li>
-                  <li data-value="derivado">
-                    <span class="dot bg-purple"></span> Derivado
-                  </li>
-                  <li data-value="atendido">
-                    <span class="dot bg-green"></span> Atendido
-                  </li>
-                </ul>
+              </div>
+
+              <div class="bloque-resumen">
+                <span>Estado actual</span>
+                <strong class="estado-actual-badge" id="estadoResumen">En revisión</strong>
+              </div>
+
+              <div class="bloque-resumen">
+                <span>Urgencia</span>
+                <strong class="urgencia-media">
+                  <span></span>
+                  Media
+                </strong>
               </div>
             </div>
 
-            <button class="btn-solid-green w-100" id="btnActualizarEstado">Actualizar estado</button>
-            
-            <div class="info-alert mt-15">
-              <img src="icons/info-circle.png" alt="Info" />
-              <p>Al cambiar el estado se registrará la fecha y hora de la actualización y se notificará al ciudadano.</p>
-            </div>
-          </article>
-
-          <article class="card-box small-pad">
-            <h3 class="card-title-small">
-              <img src="icons/huellita.png" alt="" /> Información adicional
-            </h3>
-            
-            <div class="info-section">
-              <label>Tipo de reporte</label>
-              <p class="font-medium">Abandono / Posible maltrato</p>
-            </div>
-
-            <div class="info-grid-2">
-              <div class="info-section">
-                <label>Especie</label>
-                <p class="font-medium"><img src="icons/perro.png" alt="" class="icon-inline" /> Perro</p>
+            <div class="resumen-bottom">
+              <div class="dato-resumen">
+                <img src="icons/user-verde.png" alt="Alias" />
+                <div>
+                  <span>Alias del ciudadano</span>
+                  <strong>HuellaAmiga247</strong>
+                </div>
               </div>
-              <div class="info-section">
-                <label>Raza estimada</label>
-                <p class="font-medium">Mestizo</p>
+
+              <div class="dato-resumen">
+                <img src="icons/ubicacion-verde.png" alt="Distrito" />
+                <div>
+                  <span>Distrito</span>
+                  <strong>San Miguel, Lima</strong>
+                </div>
               </div>
-              <div class="info-section">
-                <label>Color</label>
-                <p class="font-medium flex-align">
-                  <span class="color-dot" style="background-color: #d2b48c;"></span> Beige claro
-                </p>
+
+              <div class="dato-resumen">
+                <img src="icons/calendario-verde.png" alt="Fecha" />
+                <div>
+                  <span>Fecha y hora del reporte</span>
+                  <strong>12 may. 2026, 09:47 a.m.</strong>
+                </div>
+              </div>
+
+              <div class="dato-resumen">
+                <img src="icons/edificio-verde.png" alt="Entidad" />
+                <div>
+                  <span>Entidad asignada</span>
+                  <strong>Refugio Patitas</strong>
+                </div>
               </div>
             </div>
           </article>
 
+          <section class="cards-detalle-grid">
+            <article class="card-detalle descripcion-card">
+              <div class="card-titulo">
+                <img src="icons/documento-verde.png" alt="Descripción" />
+                <h2>Descripción del caso</h2>
+              </div>
+
+              <p>
+                El ciudadano reporta haber visto a un perro de pelaje claro, sin collar,
+                deambulando solo cerca de un parque. Se presume posible caso de abandono.
+                El animal se mostraba asustado y buscaba refugio entre los arbustos.
+              </p>
+            </article>
+
+            <article class="card-detalle ubicacion-card">
+              <div class="card-titulo">
+                <img src="icons/ubicacion-verde.png" alt="Ubicación" />
+                <h2>Ubicación del reporte</h2>
+              </div>
+
+              <div class="mapa-reporte">
+                <img src="img/mapa.png" alt="Mapa del reporte" />
+                <span class="pin-mapa"></span>
+              </div>
+
+              <div class="mapa-info">
+                <div>
+                  <img src="icons/ubicacion-verde.png" alt="Dirección" />
+                  <span>Parque Acosta, San Miguel, Lima</span>
+                </div>
+
+                <a href="Ubicacion_Reporte.html">ver en mapa</a>
+              </div>
+            </article>
+
+            <article class="card-detalle evidencia-card">
+              <div class="card-titulo">
+                <img src="icons/camara-verde.png" alt="Evidencias" />
+                <h2>Evidencias del ciudadano</h2>
+              </div>
+
+              <div class="evidencias-grid">
+                <img src="img/evidencia-foto-1.png" alt="Evidencia 1" />
+                <img src="img/evidencia-foto-2.png" alt="Evidencia 2" />
+              </div>
+
+              <p class="contador-evidencia">
+                <img src="icons/imagen-verde.png" alt="Fotos" />
+                2 fotos adjuntas
+              </p>
+            </article>
+          </section>
+
+          <article class="progreso-card">
+            <div class="card-titulo">
+              <img src="icons/reloj-verde.png" alt="Progreso" />
+              <h2>Progreso del reporte</h2>
+            </div>
+
+            <div class="progreso-lista" id="progresoLista">
+              <div class="progreso-item activo">
+                <span class="punto azul"></span>
+
+                <div>
+                  <strong id="estadoProgresoPrincipal">En revisión</strong>
+                  <span class="actual">Actual</span>
+                  <p id="textoProgresoPrincipal">
+                    La entidad está evaluando la información del caso.
+                  </p>
+                </div>
+
+                <time id="fechaProgresoPrincipal">12 may. 2026, 10:15 a.m.</time>
+              </div>
+
+              <div class="progreso-item">
+                <span class="punto gris"></span>
+
+                <div>
+                  <strong>Recibido</strong>
+                  <p>El reporte fue recibido por la entidad.</p>
+                </div>
+
+                <time>12 may. 2026, 09:47 a.m.</time>
+              </div>
+
+              <div class="progreso-item">
+                <span class="punto verde"></span>
+
+                <div>
+                  <strong>Reporte creado</strong>
+                </div>
+
+                <time>12 may. 2026, 09:47 a.m.</time>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <aside class="detalle-columna-lateral">
+          <article class="actualizar-card">
+            <div class="actualizar-titulo">
+              <img src="icons/actualizar-verde.png" alt="Actualizar" />
+              <h2>Actualizar estado del reporte</h2>
+            </div>
+
+            <label for="estadoReporte">Estado actual</label>
+
+            <div class="select-estado-box">
+              <select id="estadoReporte">
+                <option value="recibido">Recibido</option>
+                <option value="revision" selected>En revisión</option>
+                <option value="derivado">Derivado</option>
+                <option value="atendido">Atendido</option>
+              </select>
+            </div>
+
+            <div class="opciones-estado">
+              <button type="button" class="opcion-estado" data-estado="recibido">
+                <span class="circulo gris"></span>
+                Recibido
+              </button>
+
+              <button type="button" class="opcion-estado activo" data-estado="revision">
+                <span class="circulo azul"></span>
+                En revisión
+                <img src="icons/check-azul.png" alt="Seleccionado" />
+              </button>
+
+              <button type="button" class="opcion-estado" data-estado="derivado">
+                <span class="circulo morado"></span>
+                Derivado
+              </button>
+
+              <button type="button" class="opcion-estado" data-estado="atendido">
+                <span class="circulo verde"></span>
+                Atendido
+              </button>
+            </div>
+
+            <button type="button" class="btn-actualizar" id="btnAbrirConfirmacion">
+              Actualizar estado
+            </button>
+
+            <div class="aviso-actualizacion">
+              <img src="icons/info-verde.png" alt="Información" />
+              <p>
+                Al cambiar el estado se registrará la fecha y hora de la actualización
+                y se notificará al ciudadano.
+              </p>
+            </div>
+          </article>
+
+          <article class="info-adicional-card">
+            <div class="card-titulo">
+              <img src="icons/huella-verde.png" alt="Información adicional" />
+              <h2>Información adicional</h2>
+            </div>
+
+            <div class="info-adicional-grid">
+              <div>
+                <span>Tipo de reporte</span>
+                <strong>Abandono / Posible maltrato</strong>
+              </div>
+
+              <div>
+                <span>Especie</span>
+                <strong>
+                  <img src="icons/huella-verde.png" alt="Perro" />
+                  Perro
+                </strong>
+              </div>
+
+              <div>
+                <span>Raza estimada</span>
+                <strong>mestizo</strong>
+              </div>
+
+              <div>
+                <span>Color</span>
+                <strong>
+                  <span class="color-animal"></span>
+                  Beige claro
+                </strong>
+              </div>
+            </div>
+          </article>
         </aside>
       </section>
     </main>
 
-    <div class="modal-overlay" id="modalConfirmarEstado">
-      <div class="modal-content modal-confirmar">
-        <div class="modal-header">
-          <h2 class="modal-title">Confirmar actualización de estado</h2>
-          <button class="btn-close-modal" id="btnCerrarConfirmar">×</button>
-        </div>
+    <section class="modal-confirmacion" id="modalConfirmacion">
+      <div class="modal-contenido">
+        <button type="button" class="btn-cerrar-modal" id="btnCerrarModal">
+          ×
+        </button>
 
-        <div class="modal-body">
-          <p class="confirm-text">
-            El reporte cambiará de <strong>"En revisión"</strong> a <strong id="textoNuevoEstado">"Atendido"</strong>.
-          </p>
-          
-          <div class="form-group-modal">
-            <label class="field-label">Observación (opcional)</label>
-            <textarea class="standard-textarea" placeholder="Se coordinó la atención del caso."></textarea>
-          </div>
-        </div>
+        <h2>Confirmar actualización de estado</h2>
 
-        <div class="modal-footer">
-          <button class="btn-outline" id="btnCancelarConfirmar">Cancelar</button>
-          <button class="btn-solid" id="btnGuardarConfirmar">Guardar cambios</button>
+        <p>
+          El reporte cambiará de <strong>“En revisión”</strong> a
+          <strong id="textoNuevoEstado">“Atendido”</strong>.
+        </p>
+
+        <label for="observacionEstado">Observación (opcional)</label>
+
+        <textarea id="observacionEstado">Se coordinó la atención del caso.</textarea>
+
+        <div class="acciones-modal">
+          <button type="button" class="btn-cancelar" id="btnCancelarModal">
+            Cancelar
+          </button>
+
+          <button type="button" class="btn-guardar" id="btnGuardarCambios">
+            Guardar cambios
+          </button>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="modal-overlay" id="modalConfirmarEstado">
-  <div class="modal-content modal-confirmar">
-    <div class="modal-header">
-      <h2 class="modal-title">Confirmar actualización de estado</h2>
-      <button class="btn-close-modal" id="btnCerrarConfirmar">×</button>
-    </div>
-
-    <div class="modal-body">
-      <p class="confirm-text">
-        El reporte cambiará de <strong>"En revisión"</strong> a <strong id="textoNuevoEstado">"Atendido"</strong>.
-      </p>
-      
-      <div class="form-group-modal">
-        <label class="field-label">Observación (opcional)</label>
-        <textarea class="standard-textarea" placeholder="Se coordinó la atención del caso."></textarea>
-      </div>
-    </div>
-
-    <div class="modal-footer">
-      <button class="btn-outline" id="btnCancelarConfirmar">Cancelar</button>
-      <button class="btn-solid" id="btnGuardarConfirmar">Guardar cambios</button>
-    </div>
-  </div>
-</div>
     <footer class="footer-compacto">
       <div class="footer-compacto-container">
         <div class="footer-compacto-brand">
           <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
           <p>© 2026 Huellas de Auxilio. Todos<br />los derechos reservados.</p>
         </div>
+
         <div class="footer-compacto-links">
           <a href="#">Soporte</a>
           <a href="documentos/politica-privacidad.pdf" target="_blank">Política de Privacidad</a>
           <a href="documentos/terminos-condiciones.pdf" target="_blank">Términos y condiciones</a>
         </div>
-        <div class="footer-social">
-          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="icons/x.png" alt="X" /></a>
-          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
-        </div>
+
+        
       </div>
     </footer>
 
     <script src="menu-entidad.js"></script>
-    <script>
-      // Lógica del Dropdown Personalizado
-      const dropdownHeader = document.getElementById('dropdownHeader');
-      const dropdownList = document.getElementById('dropdownList');
-      const dropdownItems = dropdownList.querySelectorAll('li');
-
-      // Abrir/Cerrar menú
-      dropdownHeader.addEventListener('click', () => {
-        dropdownList.classList.toggle('show');
-        dropdownHeader.classList.toggle('active');
-      });
-
-      // Seleccionar opción
-      dropdownItems.forEach(item => {
-        item.addEventListener('click', () => {
-          dropdownItems.forEach(el => {
-            el.classList.remove('selected');
-            const check = el.querySelector('.check-icon');
-            if(check) check.remove();
-          });
-
-          item.classList.add('selected');
-          
-          const checkIcon = document.createElement('img');
-          checkIcon.src = 'icons/check-azul.png'; 
-          checkIcon.className = 'check-icon';
-          item.appendChild(checkIcon);
-
-          // Copiamos el contenido para el header (el punto + texto)
-          const colorDot = item.querySelector('.dot').cloneNode(true);
-          const text = item.innerText.trim();
-          
-          dropdownHeader.innerHTML = `
-            <span>
-              ${colorDot.outerHTML} ${text}
-            </span>
-            <img src="icons/chevron-down.png" class="chevron" alt="v" />
-          `;
-          
-          dropdownList.classList.remove('show');
-          dropdownHeader.classList.remove('active');
-        });
-      });
-
-      // Cerrar si haces clic afuera
-      document.addEventListener('click', (e) => {
-        if (!document.getElementById('statusDropdown').contains(e.target)) {
-          dropdownList.classList.remove('show');
-          dropdownHeader.classList.remove('active');
-        }
-      });
-
-      // ==========================================
-      // LÓGICA DEL MODAL DE CONFIRMACIÓN
-      // ==========================================
-      const btnActualizar = document.getElementById('btnActualizarEstado');
-      const modalConfirmar = document.getElementById('modalConfirmarEstado');
-      const btnCerrar = document.getElementById('btnCerrarConfirmar');
-      const btnCancelar = document.getElementById('btnCancelarConfirmar');
-      const btnGuardar = document.getElementById('btnGuardarConfirmar');
-      const textoNuevoEstado = document.getElementById('textoNuevoEstado');
-
-      function abrirModalConfirmacion() {
-        // Extraemos solo el texto del dropdown para ponerlo en el modal
-        const textToInject = dropdownHeader.innerText.trim();
-        textoNuevoEstado.innerText = `"${textToInject}"`;
-        
-        modalConfirmar.classList.add('activo');
-      }
-
-      function cerrarModalConfirmacion() {
-        modalConfirmar.classList.remove('activo');
-      }
-
-      btnActualizar.addEventListener('click', abrirModalConfirmacion);
-      btnCerrar.addEventListener('click', cerrarModalConfirmacion);
-      btnCancelar.addEventListener('click', cerrarModalConfirmacion);
-
-      btnGuardar.addEventListener('click', () => {
-        alert("¡Estado actualizado correctamente!");
-        cerrarModalConfirmacion();
-        // Aquí iría el código real para guardar en base de datos y recargar la página
-      });
-    </script>
+    <script src="detalle-reporte-entidad.js"></script>
   </body>
 </html>

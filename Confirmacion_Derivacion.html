@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Reporte derivado</title>
+
+    <link rel="stylesheet" href="HE_Header_Entidad.css" />
+    <link rel="stylesheet" href="HE_Menu_Entidad.css" />
+    <link rel="stylesheet" href="HE_Confirmacion_Derivacion.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-entidad">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Entidad.html" class="logo">
+          <img src="img/logo.png" alt="Logo Huellas de Auxilio" />
+        </a>
+
+        <a href="Notificaciones_Entidad.html" class="btn-campana-mobile">
+          <img src="icons/campana.png" alt="Notificaciones" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Entidad.html" class="nav-link">Inicio</a></li>
+          <li><a href="Reportes_Entidad.html" class="nav-link">Reportes</a></li>
+          <li><a href="Adopciones_Entidad.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Red_Apoyo_Entidad.html" class="nav-link activo">Red de apoyo</a></li>
+          <li><a href="Ayuda_Entidad.html" class="nav-link">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Notificaciones_Entidad.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>Refugio Patitas</h3>
+              <a href="Mi_Cuenta_Entidad.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Entidad.html">Inicio</a>
+          <a href="Reportes_Entidad.html">Reportes</a>
+          <a href="Adopciones_Entidad.html">Adopciones</a>
+          <a href="Red_Apoyo_Entidad.html">Red de apoyo</a>
+          <a href="Ayuda_Entidad.html">Ayuda</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="confirmacion-derivacion-page">
+      <a href="Detalle_Entidad_Aliada.html" class="btn-volver">
+        <img src="icons/flecha-volver.png" alt="Volver" />
+      </a>
+
+      <section class="confirmacion-card">
+        <div class="confirmacion-header">
+          <h1>Reporte enviado</h1>
+          <p>El caso fue derivado correctamente</p>
+        </div>
+
+        <div class="confirmacion-centro">
+          <div class="icono-confirmacion">
+            <img src="icons/check.png" alt="Reporte derivado" />
+          </div>
+
+          <h2>Caso derivado correctamente</h2>
+        </div>
+
+        <div class="linea-separadora"></div>
+
+        <section class="resumen-derivacion">
+          <article class="resumen-item">
+            <div class="resumen-icono">
+              <img src="icons/ticket-verde.png" alt="Código de reporte" />
+            </div>
+
+            <div>
+              <h3>Código de reporte:</h3>
+              <p>HA-0251</p>
+            </div>
+          </article>
+
+          <article class="resumen-item">
+            <div class="resumen-icono">
+              <img src="icons/ubicacion-verde.png" alt="Ubicación" />
+            </div>
+
+            <div>
+              <h3>Ubicación:</h3>
+              <p>San Miguel</p>
+            </div>
+          </article>
+
+          <article class="resumen-item">
+            <div class="resumen-icono">
+              <img src="icons/user-verde.png" alt="Entidad destino" />
+            </div>
+
+            <div>
+              <h3>Entidad destino:</h3>
+              <p>Refugio Esperanza Animal</p>
+            </div>
+          </article>
+
+          <article class="resumen-item">
+            <div class="resumen-icono">
+              <img src="icons/imagen-verde.png" alt="Evidencia" />
+            </div>
+
+            <div>
+              <h3>Evidencia de capturas</h3>
+              <p>2 fotos</p>
+            </div>
+          </article>
+
+          <article class="resumen-item">
+            <div class="resumen-icono">
+              <img src="icons/reloj-verde.png" alt="Fecha y hora" />
+            </div>
+
+            <div>
+              <h3>Fecha y horas:</h3>
+              <p>26 de mayo de 2026, 10:35 a.m</p>
+            </div>
+          </article>
+        </section>
+
+        <div class="mensaje-confirmacion">
+          La entidad receptora ha sido notificada sobre la derivación del caso.
+          La persona ciudadana podrá ver la actualización en su reporte
+        </div>
+
+        <div class="acciones-confirmacion">
+          <a href="Detalle_Reporte_Entidad.html" class="btn-secundario">
+            Ver detalle del caso
+          </a>
+
+          <a href="Red_Apoyo_Entidad.html" class="btn-principal">
+            Volver a red de apoyo
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.facebook.com/">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="https://x.com/">
+            <img src="icons/x.png" alt="X" />
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-entidad.js"></script>
+  </body>
+</html>

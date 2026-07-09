@@ -3,248 +3,248 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detalle de Entidad - Huellas de Auxilio</title>
-    
-    <link rel="stylesheet" href="HE_Header_Entidad.css" />
-    <link rel="stylesheet" href="HE_Menu_Entidad.css" />
-    <link rel="stylesheet" href="HE_Footer.css" />
+    <title>Huellas de Auxilio - Detalle de entidad</title>
+
+    <link rel="stylesheet" href="HE_Header_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Menu_Ciudadano.css" />
     <link rel="stylesheet" href="HE_Detalle_Entidad.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
   </head>
 
   <body>
-    <header class="header-entidad">
+    <header class="header-ciudadano">
       <nav class="navbar">
         <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
-          <span></span><span></span><span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <a href="Home_Entidad.html" class="logo">
+
+        <a href="Home_Ciudadano.html" class="logo">
           <img src="img/logo.png" alt="Logo Huellas de Auxilio" />
         </a>
+
+        <a href="Reportar.html" class="btn-reporte-mobile">Reporte</a>
+
         <ul class="nav-links">
-          <li><a href="Home_Entidad.html" class="nav-link">Inicio</a></li>
-          <li><a href="Reportes_Entidad.html" class="nav-link">Reportes</a></li>
-          <li><a href="Adopciones_Entidad.html" class="nav-link">Adopciones</a></li>
-          <li><a href="Red_Apoyo_Entidad.html" class="nav-link activo">Red de apoyo</a></li>
-          <li><a href="Ayuda_Entidad.html" class="nav-link">Ayuda</a></li>
+          <li><a href="Home_Ciudadano.html" class="nav-link">Inicio</a></li>
+          <li><a href="Mis_Reportes.html" class="nav-link">Mis reportes</a></li>
+          <li><a href="Directorio.html" class="nav-link activo">Directorio</a></li>
+          <li><a href="Adopciones.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Ayuda.html" class="nav-link">Ayuda</a></li>
         </ul>
+
         <div class="header-actions">
-          <a href="Notificaciones_Entidad.html" class="btn-campana">
+          <a href="Reportar.html" class="btn-reportar">Reportar</a>
+
+          <a href="Notificaciones.html" class="btn-campana">
             <img src="icons/campana.png" alt="Notificaciones" />
           </a>
-          <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
+
+          <a href="Mi_Cuenta.html" class="btn-cuenta">
             <img src="icons/user-circle.png" alt="Mi cuenta" />
             <span>Mi cuenta</span>
           </a>
         </div>
       </nav>
-    </header>
 
-    <main class="max-width-container">
-      
-      <div class="page-header">
-        <a href="Red_Apoyo_Entidad.html" class="btn-back">
-          <img src="icons/flecha-volver.png" alt="Volver" />
-        </a>
-        <div class="header-text">
-          <h1>Detalle de entidad aliada</h1>
-          <p>Información detallada de la entidad para una derivación informada y segura</p>
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>HuellaAmiga247</h3>
+              <a href="Mi_Cuenta.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Ciudadano.html">Inicio</a>
+          <a href="Mis_Reportes.html">Mis reportes</a>
+          <a href="Directorio.html">Directorio</a>
+          <a href="Adopciones.html">Adopciones</a>
+          <a href="Ayuda.html">Ayuda</a>
+          <a href="Notificaciones.html">Notificaciones</a>
         </div>
       </div>
+    </header>
 
-      <section class="content-grid">
-        
-        <div class="main-col">
-          <article class="entity-detail-card">
-            
-            <div class="entity-top">
-              <div class="entity-avatar-large">
-                <img src="img/banner-ciudadano.png" alt="Refugio Esperanza Animal" />
-              </div>
+    <main class="detalle-entidad-page">
+      <section class="detalle-entidad-header">
+        <div class="titulo-con-volver">
+          <a href="Directorio.html" class="btn-volver">
+            <img src="icons/flecha-volver.png" alt="Volver" />
+          </a>
 
-              <div class="entity-info">
-                <h2>Refugio Esperanza Animal</h2>
-                <span class="badge badge-refugio">Refugio</span>
+          <h1>Detalle de entidad</h1>
+        </div>
+      </section>
 
-                <div class="info-list">
-                  <div class="info-row">
-                    <img src="icons/mapa-ubi.png" alt="Ubicación" />
-                    <span>San Miguel</span>
-                  </div>
-                  <div class="info-row">
-                    <img src="icons/llamar2.png" alt="Teléfono" />
-                    <span>987 657 321</span>
-                  </div>
-                  <div class="info-row">
-                    <img src="icons/email2.png" alt="Correo" />
-                    <span>contacto@refugiosesperanza.pe</span>
-                  </div>
-                  <div class="info-row">
-                    <img src="icons/mapa-ubi.png" alt="Dirección" />
-                    <span>Av. La Paz 1234, San Miguel, Lima</span>
-                  </div>
-                  <div class="info-row">
-                    <img src="icons/reloj-azul.png" alt="Horario" />
-                    <span>Lunes a Sábado: 9:00 a.m - 6:00 p.m<br>Domingo: 10:00 a.m - 2:00 p.m</span>
-                  </div>
-                </div>
-              </div>
+      <section class="detalle-entidad-contenido">
+        <section class="bloque-principal">
+          <article class="card-presentacion">
+            <div class="entidad-imagen">
+              <img src="icons/home-verde.png" alt="Refugio Patitas" />
             </div>
 
-            <p class="entity-desc-large">
-              Refugio dedicado al rescate, recuperación y adopción responsable de perros y gatos en situación de abandono. Promovemos el bienestar animal y la tenencia responsable a través de campañas de esterilización, educación y adopción.
-            </p>
-
-            <div class="features-grid">
-              
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <img src="icons/huella-corazon.png" alt="Servicios" />
-                </div>
-                <h4>Servicios disponibles</h4>
-                <p>Rescate y acogida, veterinaria básica.</p>
+            <div class="entidad-datos">
+              <div class="entidad-titulo">
+                <h2>Refugio Patitas</h2>
+                <span>Refugio</span>
               </div>
 
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <img src="icons/mapa-ubi.png" alt="Cobertura" />
-                </div>
-                <h4>Cobertura</h4>
-                <p>San Miguel, Pueblo Libre, Magdalena.</p>
-              </div>
+              <ul class="lista-datos">
+                <li>
+                  <img src="icons/ubicacion-verde.png" alt="Distrito" />
+                  San Miguel
+                </li>
 
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <img src="icons/user-circle.png" alt="Capacidad" />
-                </div>
-                <h4>Capacidad de apoyo</h4>
-                <p>10 animales</p>
-              </div>
+                <li>
+                  <img src="icons/direccion_negro.png" alt="Dirección" />
+                  Av. La Marina 2575, San Miguel, Lima 15087
+                </li>
 
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <img src="icons/documento-verde.png" alt="Requisitos" />
-                </div>
-                <h4>Requisitos de derivación</h4>
-                <p>Formulario de evaluación previa.</p>
-              </div>
+                <li>
+                  <img src="icons/telefono-negro.png" alt="Teléfono" />
+                  987 657 342
+                </li>
 
+                <li>
+                  <img src="icons/email2.png" alt="Correo" />
+                  contacto@refugiopatitas.pe
+                </li>
+
+                <li>
+                  <img src="icons/reloj-verde.png" alt="Horario" />
+                  Lun a Dom, 9:00 a.m - 6:00 p.m
+                </li>
+              </ul>
+
+              <p>
+                Refugio temporal que brinda resguardo, alimentación y atención
+                veterinaria a animales en situación de abandono. Promovemos la
+                adopción responsable y la tenencia consciente.
+              </p>
+
+              <div class="acciones-principales">
+                <a href="Simlular_Llamada.html" class="btn-llamar">
+                  <img src="icons/llamar.png" alt="Llamar" />
+                  Llamar
+                </a>
+
+                <button type="button" class="btn-guardar" id="btnGuardarContacto">
+                  Guardar contacto
+                </button>
+              </div>
             </div>
           </article>
 
-          <div class="bottom-actions">
-            <button class="btn-solid" id="btnAbrirDerivar">Derivar caso</button>
-            <a href="Red_Apoyo_Entidad.html" class="btn-outline">
-              <img src="icons/flecha-volver.png" alt="Volver" class="icon-small" />
-              Volver al directorio
+          <section class="cards-inferiores">
+            <article class="info-card contacto-card">
+              <div class="card-titulo">
+                <img src="icons/user-verde.png" alt="Contacto" />
+                <h2>Datos de contacto</h2>
+              </div>
+
+              <ul>
+                <li>
+                  <img src="icons/telefono-negro.png" alt="Teléfono" />
+                  987 675 465
+                </li>
+
+                <li>
+                  <img src="icons/email2.png" alt="Correo" />
+                  contacto@refugiopatitas.pe
+                </li>
+
+                <li>
+                  <img src="icons/mundo-verde.png" alt="Web" />
+                  www.refugiopatitas.pe
+                </li>
+
+                <li>
+                  <img src="icons/ubicacion-verde.png" alt="Ubicación" />
+                  San Miguel, Lima
+                </li>
+              </ul>
+            </article>
+
+            <article class="info-card horario-card">
+              <div class="card-titulo">
+                <img src="icons/reloj-verde.png" alt="Horario" />
+                <h2>Horario de atención</h2>
+              </div>
+
+              <p>Lun a Dom: 9:00 a.m. - 6:00 p.m.</p>
+
+              <div class="horario-linea">
+                <span>Lun - Viernes</span>
+                <strong>9:00 a.m. - 6:00 p.m.</strong>
+              </div>
+
+              <div class="horario-linea">
+                <span>Sábado</span>
+                <strong>9:00 a.m. - 6:00 p.m.</strong>
+              </div>
+
+              <div class="horario-linea">
+                <span>Domingo</span>
+                <strong>9:00 a.m. - 6:00 p.m.</strong>
+              </div>
+            </article>
+
+            <article class="info-card atencion-card">
+              <div class="card-titulo">
+                <img src="icons/corazon-verde.png" alt="Tipos de atención" />
+                <h2>Tipos de atención</h2>
+              </div>
+
+              <ul class="tipos-atencion">
+                <li>Rescate</li>
+                <li>Albergue temporal</li>
+                <li>Orientación</li>
+              </ul>
+            </article>
+          </section>
+        </section>
+
+        <aside class="bloque-lateral">
+          <article class="card-mapa">
+            <h2>Ubicación</h2>
+
+            <div class="mapa-entidad">
+              <img src="img/mapa.png" alt="Mapa de la entidad" />
+
+              <button type="button" class="pin-entidad">
+                <img src="icons/huella.png" alt="Refugio" />
+              </button>
+
+              <div class="controles-mapa">
+                <button type="button">+</button>
+                <button type="button">−</button>
+              </div>
+            </div>
+
+            <a href="Mapa_Apoyo.html" class="link-mapa">
+              Ver mapa completo
+              <img src="icons/salir.png" alt="Abrir mapa" />
             </a>
-          </div>
-        </div>
-
-        <aside class="sidebar-col">
-          
-          <div class="side-card">
-            <h3>Ubicación</h3>
-            <div class="map-container">
-              <img src="img/mapa_ubicacion.png" alt="Mapa" class="map-img" />
-            </div>
-            <div class="address-row">
-              <img src="icons/mapa-ubi.png" alt="Ubicación" />
-              <span>Av. La Paz 1234, San Miguel, Lima</span>
-            </div>
-            <button class="btn-outline w-100">Ver en Google Maps</button>
-          </div>
-
-          <div class="side-card">
-            <h3>Estado de disponibilidad</h3>
-            <div class="status-container">
-              <div class="status-icon">
-                <img src="icons/check-verde.png" alt="Disponible" />
-              </div>
-              <div class="status-text">
-                <h4 class="text-success">Disponibilidad para derivación</h4>
-                <p>Esta entidad puede recibir casos en estos momento.</p>
-              </div>
-            </div>
-          </div>
-
+          </article>
         </aside>
-
       </section>
     </main>
-<div class="modal-overlay" id="modalDerivar">
-      <div class="modal-content modal-derivar">
-        <div class="modal-header">
-          <h2 class="modal-title">Derivar caso a entidad aliada</h2>
-          <button class="btn-close-modal" id="btnCerrarDerivar">×</button>
-        </div>
-
-        <div class="modal-body">
-          <div class="form-group">
-            <label class="field-label">Entidad aliada seleccionada</label>
-            <div class="custom-select-readonly">
-              <img src="icons/perrito-verde.png" alt="Refugio" class="icon-small" />
-              <span class="entity-name">Refugio Esperanza Animal</span>
-              <span class="badge badge-refugio">Refugio</span>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="field-label">Código de reporte</label>
-            <select class="standard-select">
-              <option>HA - 0243</option>
-              <option>HA - 0244</option>
-              <option>HA - 0245</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label class="field-label">Tipo de apoyo</label>
-            <div class="support-options">
-              
-              <label class="support-label">
-                <input type="radio" name="tipo_apoyo" value="refugio" checked>
-                <div class="support-box">
-                  <span class="radio-circle"></span>
-                  <span class="support-text">Refugio</span>
-                </div>
-              </label>
-
-              <label class="support-label">
-                <input type="radio" name="tipo_apoyo" value="veterinaria">
-                <div class="support-box">
-                  <span class="radio-circle"></span>
-                  <span class="support-text">Atención veterinaria</span>
-                </div>
-              </label>
-
-              <label class="support-label">
-                <input type="radio" name="tipo_apoyo" value="coordinacion">
-                <div class="support-box">
-                  <span class="radio-circle"></span>
-                  <span class="support-text">Coordinación</span>
-                </div>
-              </label>
-
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="field-label">Observación opcional</label>
-            <textarea class="standard-textarea" placeholder="Agregar información relevante para entidad..."></textarea>
-          </div>
-        </div>
-
-        <div class="modal-footer">
-          <button class="btn-outline" id="btnCancelarDerivar">Cancelar</button>
-          <button class="btn-solid" id="btnConfirmarDerivar">Confirmar derivación</button>
-        </div>
-      </div>
-    </div>
 
     <footer class="footer-compacto">
       <div class="footer-compacto-container">
         <div class="footer-compacto-brand">
           <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
           <p>
             © 2026 Huellas de Auxilio. Todos<br />
             los derechos reservados.
@@ -253,20 +253,32 @@
 
         <div class="footer-compacto-links">
           <a href="#">Soporte</a>
-          <a href="documentos/politica-privacidad.pdf" target="_blank">Política de Privacidad</a>
-          <a href="documentos/terminos-condiciones.pdf" target="_blank">Términos y condiciones</a>
-        </div>
 
-        <div class="footer-social">
-          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="icons/x.png" alt="X" /></a>
-          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+<div class="footer-social">
+          <a href="https://www.facebook.com/">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="https://x.com/">
+            <img src="icons/x.png" alt="X" />
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
         </div>
       </div>
     </footer>
 
-    <script src="menu-entidad.js"></script>
-
-    <script src="derivar.js"></script>
+    <script src="menu-ciudadano.js"></script>
+    <script src="detalle-entidad.js"></script>
   </body>
 </html>

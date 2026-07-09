@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaf3f2;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #082f3d;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.reportes-page {
+  width: 100%;
+  max-width: 1320px;
+  min-height: calc(100vh - 170px);
+  margin: 0 auto;
+  padding: 30px 46px 16px;
+}
+
+.reportes-header {
+  margin-bottom: 24px;
+}
+
+.titulo-con-volver {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.btn-volver {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #d9dddd;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-volver img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.reportes-header h1 {
+  font-size: 34px;
+  color: #1b746f;
+  font-weight: 800;
+}
+
+.reportes-header p {
+  font-size: 15px;
+  color: #263b3b;
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+.resumen-reportes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 20px;
+}
+
+.card-resumen {
+  height: 108px;
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 14px;
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.icono-resumen {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono-resumen img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.icono-resumen.verde {
+  background-color: #e2f1ef;
+}
+
+.icono-resumen.naranja {
+  background-color: #fff0de;
+}
+
+.icono-resumen.verde-claro {
+  background-color: #e8f4e3;
+}
+
+.card-resumen h3 {
+  font-size: 14px;
+  color: #082f3d;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.card-resumen strong {
+  font-size: 34px;
+  color: #007476;
+  line-height: 1;
+}
+
+.card-resumen .texto-naranja {
+  color: #ff9416;
+}
+
+.card-resumen .texto-verde-claro {
+  color: #73a663;
+}
+
+.filtros-reportes {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr 1fr 0.75fr;
+  gap: 28px;
+  margin-bottom: 18px;
+  align-items: center;
+}
+
+.buscador-reporte,
+.filtro-item {
+  height: 58px;
+  background-color: #ffffff;
+  border: 2px solid #d9dddd;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+}
+
+.buscador-reporte {
+  padding: 0 18px;
+  gap: 12px;
+}
+
+.buscador-reporte img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.buscador-reporte input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #263b3b;
+}
+
+.filtro-item {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 18px;
+}
+
+.filtro-item label {
+  font-size: 14px;
+  color: #676d68;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.filtro-item select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #676d68;
+  cursor: pointer;
+}
+
+.btn-limpiar-filtros {
+  border: none;
+  background-color: transparent;
+  color: #1b746f;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: underline;
+  cursor: pointer;
+  justify-self: center;
+}
+
+.btn-limpiar-filtros:hover {
+  color: #005d60;
+}
+
+.tabla-reportes-card {
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.tabla-reportes {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-reportes th {
+  height: 48px;
+  font-size: 14px;
+  color: #676d68;
+  font-weight: 800;
+  text-align: left;
+  padding: 0 12px;
+  border-bottom: 2px solid #d9dddd;
+}
+
+.tabla-reportes td {
+  height: 48px;
+  font-size: 14px;
+  color: #676d68;
+  font-weight: 700;
+  padding: 0 12px;
+  border-bottom: 2px solid #d9dddd;
+}
+
+.tabla-reportes tr:last-child td {
+  border-bottom: none;
+}
+
+.badge {
+  min-width: 82px;
+  height: 27px;
+  border-radius: 18px;
+  padding: 3px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid transparent;
+}
+
+.urgencia-alta {
+  background-color: #fde4df;
+  color: #ed1c24;
+  border-color: #d9a8a0;
+}
+
+.urgencia-media {
+  background-color: #fff2dc;
+  color: #ff8a00;
+  border-color: #d8b98b;
+}
+
+.urgencia-baja {
+  background-color: #f0f8eb;
+  color: #27856f;
+  border-color: #b9c8aa;
+}
+
+.estado-recibido,
+.estado-revision {
+  background-color: #e4f1fb;
+  color: #005fae;
+  border-color: #98b7cb;
+}
+
+.estado-atendido {
+  background-color: #eef7e8;
+  color: #27856f;
+  border-color: #b9c8aa;
+}
+
+.btn-detalle {
+  width: 132px;
+  height: 32px;
+  border: 2px solid #00666b;
+  border-radius: 9px;
+  color: #00666b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-detalle img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.mensaje-vacio {
+  display: none;
+  text-align: center;
+  padding: 24px;
+  color: #676d68;
+  font-weight: 600;
+}
+
+.paginacion-reportes {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  margin: 0 6px;
+}
+
+.paginacion-reportes p {
+  font-size: 14px;
+  color: #676d68;
+  font-weight: 500;
+}
+
+.paginas {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagina {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #d9dddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #676d68;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.pagina.activa {
+  background-color: #1b746f;
+  border-color: #1b746f;
+  color: #ffffff;
+}
+
+.pagina img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.por-pagina {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.por-pagina select {
+  width: 90px;
+  height: 38px;
+  border: 2px solid #d9dddd;
+  border-radius: 9px;
+  background-color: #ffffff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #676d68;
+  padding: 0 14px;
+}
+
+.por-pagina span {
+  font-size: 14px;
+  color: #676d68;
+}
+
+.btn-reporte-mobile {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .reportes-page {
+    padding: 28px 28px 22px;
+  }
+
+  .resumen-reportes {
+    grid-template-columns: 1fr;
+  }
+
+  .filtros-reportes {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .btn-limpiar-filtros {
+    justify-self: start;
+  }
+
+  .tabla-reportes-card {
+    overflow-x: auto;
+  }
+
+  .tabla-reportes {
+    min-width: 900px;
+  }
+
+  .paginacion-reportes {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .paginas,
+  .por-pagina {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .btn-reporte-mobile {
+    display: flex;
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90px;
+    height: 38px;
+    background-color: #007476;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .header-actions {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .reportes-page {
+    padding: 22px 18px 24px;
+  }
+
+  .titulo-con-volver {
+    align-items: flex-start;
+  }
+
+  .reportes-header h1 {
+    font-size: 30px;
+  }
+
+  .reportes-header p {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .card-resumen {
+    height: auto;
+    padding: 18px;
+  }
+
+  .filtros-reportes {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-limpiar-filtros {
+    justify-self: center;
+  }
+}

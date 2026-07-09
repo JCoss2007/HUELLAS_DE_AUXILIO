@@ -73,25 +73,19 @@ body {
   margin-bottom: 24px;
 }
 
-.titulo-reporte h1 {
+.titulo-reporte h1,
+.confirmacion-top h1 {
   font-size: 28px;
   color: #005d60;
   font-weight: 800;
   margin-bottom: 4px;
 }
 
-.titulo-reporte p {
+.titulo-reporte p,
+.confirmacion-top p {
   font-size: 15px;
   color: #000000;
   font-weight: 400;
-}
-
-.paso-form {
-  display: none;
-}
-
-.paso-form.activo {
-  display: block;
 }
 
 .subtitulo-form {
@@ -189,10 +183,6 @@ body {
   font-weight: 700;
   cursor: pointer;
   margin: 2px 0 8px;
-}
-
-.btn-elegir-ubicacion:hover {
-  background-color: #005d60;
 }
 
 .tabs-evidencia {
@@ -409,10 +399,10 @@ body {
   font-weight: 800;
   margin-bottom: 4px;
 }
+
 .audio-box h3 span {
   font-size: 14px;
   font-weight: 700;
-  color: #0b5559;
 }
 
 .audio-box p {
@@ -435,11 +425,6 @@ body {
   justify-content: center;
   gap: 10px;
   cursor: pointer;
-}
-
-.btn-subir-audio:hover {
-  border-color: #007476;
-  background-color: #eef7f6;
 }
 
 .btn-subir-audio img {
@@ -489,32 +474,6 @@ body {
   font-size: 18px;
   font-weight: 800;
   cursor: pointer;
-}
-
-.texto-confirmar {
-  font-size: 15px;
-  color: #263b3b;
-  line-height: 1.5;
-  margin-bottom: 24px;
-}
-
-.confirmar-card {
-  background-color: #f7fbfa;
-  border: 2px solid #d9dddd;
-  border-radius: 10px;
-  padding: 24px;
-}
-
-.confirmar-card h3 {
-  font-size: 20px;
-  color: #0b5559;
-  margin-bottom: 18px;
-}
-
-.confirmar-card p {
-  font-size: 15px;
-  color: #263b3b;
-  margin-bottom: 12px;
 }
 
 .pasos-indicador {
@@ -605,10 +564,6 @@ body {
   z-index: 5;
 }
 
-.pin-mapa:active {
-  cursor: grabbing;
-}
-
 .pin-mapa::before {
   content: "";
   width: 30px;
@@ -634,6 +589,10 @@ body {
   z-index: 2;
 }
 
+.pin-mini {
+  pointer-events: none;
+}
+
 .mapa-ayuda {
   position: absolute;
   left: 16px;
@@ -646,18 +605,6 @@ body {
   font-size: 12px;
   font-weight: 700;
   pointer-events: none;
-}
-
-.resumen-box {
-  display: none;
-}
-
-.panel-resumen.mostrar-resumen .resumen-box {
-  display: block;
-}
-
-.panel-resumen.mostrar-resumen .mapa-preview {
-  height: 130px;
 }
 
 .resumen-box h2 {
@@ -685,7 +632,16 @@ body {
   margin-top: 5px;
 }
 
-.resumen-evidencia h3 {
+.icono-linea {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.resumen-evidencia h3,
+.titulo-mapa-mini {
   font-size: 16px;
   color: #000000;
   font-weight: 700;
@@ -713,6 +669,10 @@ body {
   object-fit: cover;
 }
 
+.mapa-mini {
+  height: 130px;
+}
+
 .aviso-entidad {
   min-height: 52px;
   background-color: #eef7f6;
@@ -737,7 +697,8 @@ body {
   font-weight: 500;
 }
 
-.acciones-reporte {
+.acciones-reporte,
+.acciones-confirmacion {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 72px;
@@ -751,6 +712,10 @@ body {
   font-size: 20px;
   font-weight: 800;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-cancelar {
@@ -763,10 +728,6 @@ body {
   background-color: #1d5556;
   border: 2px solid #1d5556;
   color: #ffffff;
-}
-
-.btn-continuar:hover {
-  background-color: #0b5559;
 }
 
 .modal-reporte {
@@ -836,10 +797,6 @@ body {
   cursor: pointer;
 }
 
-.opcion-foto:hover {
-  border-color: #007476;
-}
-
 .opcion-foto img {
   width: 100%;
   height: 100%;
@@ -860,10 +817,6 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-.opcion-video:hover {
-  border-color: #007476;
-}
-
 .opcion-video video {
   width: 100%;
   height: 230px;
@@ -879,12 +832,120 @@ body {
   font-weight: 700;
 }
 
+.confirmacion-reporte {
+  max-width: 1160px;
+  min-height: 650px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 14px;
+  padding: 34px 70px;
+}
+
+.confirmacion-top {
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  align-items: start;
+  gap: 30px;
+}
+
+.confirmacion-centro {
+  text-align: center;
+  max-width: 620px;
+  margin: 48px auto 34px;
+}
+
+.check-grande {
+  width: 95px;
+  height: 95px;
+  background-color: #d7e8e2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+}
+
+.check-grande img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.confirmacion-centro h2 {
+  font-size: 24px;
+  color: #0b5559;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.confirmacion-centro p {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.datos-confirmacion {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 90px;
+}
+
+.dato-confirmacion {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.dato-confirmacion img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.dato-confirmacion span {
+  display: block;
+  font-size: 15px;
+  color: #000000;
+}
+
+.dato-confirmacion strong {
+  font-size: 15px;
+  color: #005d60;
+}
+
+.aviso-confirmacion {
+  max-width: 670px;
+  min-height: 56px;
+  margin: 28px auto 20px;
+  background-color: #d7e8e2;
+  border-radius: 8px;
+  color: #1b746f;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+}
+
+.acciones-confirmacion {
+  max-width: 670px;
+  margin: 0 auto;
+}
+
 .btn-reporte-mobile {
   display: none;
 }
 
 @media (max-width: 1100px) {
-  .reportar-contenedor {
+  .reportar-contenedor,
+  .confirmacion-top {
     grid-template-columns: 1fr;
     gap: 20px;
   }
@@ -901,6 +962,10 @@ body {
 
   .reportar-page {
     padding: 24px 34px 42px;
+  }
+
+  .confirmacion-reporte {
+    padding: 30px 34px;
   }
 }
 
@@ -940,7 +1005,8 @@ body {
     height: 280px;
   }
 
-  .acciones-reporte {
+  .acciones-reporte,
+  .acciones-confirmacion {
     gap: 20px;
   }
 }
@@ -951,17 +1017,21 @@ body {
   }
 
   .panel-formulario,
-  .panel-resumen {
+  .panel-resumen,
+  .confirmacion-reporte {
     padding: 24px 20px;
   }
 
-  .titulo-reporte h1 {
+  .titulo-reporte h1,
+  .confirmacion-top h1 {
     font-size: 27px;
   }
 
   .tabs-evidencia,
   .urgencia-opciones,
-  .acciones-reporte {
+  .acciones-reporte,
+  .acciones-confirmacion,
+  .datos-confirmacion {
     grid-template-columns: 1fr;
   }
 
@@ -997,29 +1067,5 @@ body {
 
   .opcion-video video {
     height: 180px;
-  }
-}
-
-@media (max-width: 430px) {
-  .reportar-page {
-    padding: 20px 14px 42px;
-  }
-
-  .panel-formulario,
-  .panel-resumen {
-    padding: 22px 16px;
-  }
-
-  .titulo-reporte h1 {
-    font-size: 25px;
-  }
-
-  .subtitulo-form h2 {
-    font-size: 17px;
-  }
-
-  .btn-cancelar,
-  .btn-continuar {
-    font-size: 17px;
   }
 }

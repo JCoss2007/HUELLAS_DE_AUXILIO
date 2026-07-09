@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Ubicación del reporte</title>
+
+    <link rel="stylesheet" href="HE_Header_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Menu_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Ubicacion_Reporte.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-ciudadano">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Ciudadano.html" class="logo">
+          <img src="img/logo.png" alt="Huellas de Auxilio" />
+        </a>
+
+        <a href="Reportar.html" class="btn-reporte-mobile">Reporte</a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Ciudadano.html" class="nav-link">Inicio</a></li>
+          <li><a href="Mis_Reportes.html" class="nav-link activo">Mis reportes</a></li>
+          <li><a href="Directorio.html" class="nav-link">Directorio</a></li>
+          <li><a href="Adopciones.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Ayuda.html" class="nav-link">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Reportar.html" class="btn-reportar">Reportar</a>
+
+          <a href="Notificaciones_Ciudadano.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Ciudadano.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>HuellaAmiga247</h3>
+              <a href="Mi_Cuenta_Ciudadano.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Ciudadano.html">Inicio</a>
+          <a href="Mis_Reportes.html">Mis reportes</a>
+          <a href="Directorio.html">Directorio</a>
+          <a href="Adopciones.html">Adopciones</a>
+          <a href="Ayuda.html">Ayuda</a>
+          <a href="Notificaciones_Ciudadano.html">Notificaciones</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="ubicacion-page">
+      <section class="ubicacion-header">
+        <div class="titulo-con-volver">
+          <a href="Detalle_Reporte.html" class="btn-volver">
+            <img src="icons/flecha-volver.png" alt="Volver" />
+          </a>
+
+          <h1>Ubicación del reporte</h1>
+        </div>
+
+        <p>Consulta la ubicación referencial del caso reportado</p>
+      </section>
+
+      <section class="resumen-superior">
+        <article class="resumen-item">
+          <div class="resumen-icono">
+            <img src="icons/documento-verde.png" alt="Código" />
+          </div>
+
+          <div>
+            <h3>Código del caso</h3>
+            <strong>HA-0241</strong>
+          </div>
+        </article>
+
+        <article class="resumen-item">
+          <div class="resumen-icono azul">
+            <img src="icons/reloj-verde.png" alt="Estado" />
+          </div>
+
+          <div>
+            <h3>Estado actual</h3>
+            <span class="badge estado-revision">En revisión</span>
+          </div>
+        </article>
+
+        <article class="resumen-item">
+          <div class="resumen-icono naranja">
+            <img src="icons/alerta-naranja.png" alt="Urgencia" />
+          </div>
+
+          <div>
+            <h3>Urgencia</h3>
+            <span class="badge urgencia-media">Media</span>
+          </div>
+        </article>
+
+        <article class="resumen-item">
+          <div class="resumen-icono">
+            <img src="icons/ubicacion-verde.png" alt="Ubicación" />
+          </div>
+
+          <div>
+            <h3>Ubicación</h3>
+            <p>San Miguel, Lima</p>
+          </div>
+        </article>
+
+        <article class="resumen-item">
+          <div class="resumen-icono">
+            <img src="icons/calendario-verde.png" alt="Fecha" />
+          </div>
+
+          <div>
+            <h3>Fecha y hora</h3>
+            <p>12 may. 2026,<br />10:34 a.m.</p>
+          </div>
+        </article>
+
+        <article class="resumen-item">
+          <div class="resumen-icono">
+            <img src="icons/edificio-verde.png" alt="Entidad" />
+          </div>
+
+          <div>
+            <h3>Entidad asignada</h3>
+            <p>Refugio Patitas</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="ubicacion-contenido">
+        <section class="mapa-grande">
+          <img src="img/mapa.png" alt="Mapa del reporte" />
+          <span class="pin-grande"></span>
+
+          <div class="mensaje-mapa">
+            La ubicación mostrada es referencial y puede tener un margen de error.
+          </div>
+
+          <div class="controles-mapa">
+            <button type="button">+</button>
+            <button type="button">−</button>
+          </div>
+        </section>
+
+        <aside class="info-caso">
+          <article class="card-info">
+            <h2>Información del caso</h2>
+
+            <div class="info-bloque">
+              <div class="mini-icono">
+                <img src="icons/ubicacion-verde.png" alt="Ubicación" />
+              </div>
+
+              <div>
+                <h3>Ubicación referencial</h3>
+                <p>Parque John F. Kennedy<br />San Miguel, Lima</p>
+              </div>
+            </div>
+
+            <div class="info-bloque">
+              <div class="mini-icono">
+                <img src="icons/documento-verde.png" alt="Descripción" />
+              </div>
+
+              <div>
+                <h3>Descripción del caso</h3>
+                <p>
+                  Perro en aparente estado de abandono en el Parque John F. Kennedy.
+                  Se observa delgado y sin collar. Necesita atención.
+                </p>
+              </div>
+            </div>
+
+            <div class="info-bloque evidencia-info">
+              <div class="mini-icono">
+                <img src="icons/camara-verde.png" alt="Evidencia" />
+              </div>
+
+              <div>
+                <h3>Evidencia del ciudadano</h3>
+
+                <div class="evidencias-info">
+                  <img src="img/evidencia-foto-1.png" alt="Evidencia 1" />
+                  <img src="img/evidencia-foto-2.png" alt="Evidencia 2" />
+                </div>
+              </div>
+            </div>
+
+            <div class="acciones-rapidas">
+              <h3>Acciones rápidas</h3>
+
+              <a href="Detalle_Reporte.html" class="btn-volver-detalle">
+                Volver al detalle
+              </a>
+
+              <a href="Seguimiento_Reporte.html" class="btn-ver-seguimiento">
+                Ver seguimiento
+                <img src="icons/flecha-derecha-blanca.png" alt="Seguimiento" />
+              </a>
+            </div>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.facebook.com/">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="https://x.com/">
+            <img src="icons/x.png" alt="X" />
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-ciudadano.js"></script>
+  </body>
+</html>

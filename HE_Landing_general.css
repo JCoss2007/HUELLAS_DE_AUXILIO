@@ -32,7 +32,7 @@ section h2 {
 .header {
   width: 100%;
   height: 75px;
-  background-color: #F8F7F2;
+  background-color: #f8f7f2;
 }
 
 .navbar {
@@ -183,7 +183,7 @@ section h2 {
 }
 
 .funciona-card {
-  background-color: #FBFAF6;
+  background-color: #fbfaf6;
   border: 3px solid #e1e3e0;
   border-radius: 13px;
   text-align: center;
@@ -341,7 +341,7 @@ section h2 {
 }
 
 .faq-item {
-  background-color: #FCFBF7;
+  background-color: #fcfbf7;
   border: 3px solid #e1e3e0;
   border-radius: 12px;
   margin-bottom: 22px;
@@ -525,6 +525,39 @@ section h2 {
 
 .footer-libro img:hover {
   opacity: 0.9;
+}
+
+/* ===== BOTÓN VOLVER ARRIBA ===== */
+.btn-back-top {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #0b4f59;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #0b4f59;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  z-index: 999;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-back-top:hover {
+  background-color: #f1f7f5;
+  color: #073b46;
+  transform: translateY(-4px);
+}
+
+.btn-back-top.show {
+  display: flex;
 }
 
 /* ===== RESPONSIVE TABLET ===== */
@@ -764,6 +797,13 @@ section h2 {
   .footer-libro img {
     width: 145px;
   }
+
+  .btn-back-top {
+    right: 20px;
+    bottom: 20px;
+    width: 46px;
+    height: 46px;
+    font-size: 27px;
 }
 
 /* ===== RESPONSIVE CELULAR PEQUEÑO ===== */
@@ -810,4 +850,4 @@ section h2 {
   .footer-libro img {
     width: 135px;
   }
-}
+}}

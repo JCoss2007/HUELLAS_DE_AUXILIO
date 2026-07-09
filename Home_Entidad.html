@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio Entidad - Huellas de Auxilio</title>
+    <title>Huellas de Auxilio - Home Entidad</title>
 
     <link rel="stylesheet" href="HE_Header_Entidad.css" />
     <link rel="stylesheet" href="HE_Menu_Entidad.css" />
-    <link rel="stylesheet" href="HE_Footer.css" />
     <link rel="stylesheet" href="HE_Home_Entidad.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
   </head>
 
   <body>
     <header class="header-entidad">
       <nav class="navbar">
         <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
-          <span></span><span></span><span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
         <a href="Home_Entidad.html" class="logo">
@@ -35,25 +37,55 @@
             <img src="icons/campana.png" alt="Notificaciones" />
           </a>
 
-          <a href="Mi" class="btn-cuenta">
+          <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
             <img src="icons/user-circle.png" alt="Mi cuenta" />
             <span>Mi cuenta</span>
           </a>
         </div>
+
+        <a href="Notificaciones_Entidad.html" class="btn-campana-mobile">
+          <img src="icons/campana.png" alt="Notificaciones" />
+        </a>
       </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>Refugio Patitas</h3>
+              <a href="Mi_Cuenta_Entidad.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Entidad.html" class="activo">Inicio</a>
+          <a href="Reportes_Entidad.html">Reportes</a>
+          <a href="Adopciones_Entidad.html">Adopciones</a>
+          <a href="Red_Apoyo_Entidad.html">Red de apoyo</a>
+          <a href="Ayuda_Entidad.html">Ayuda</a>
+        </div>
+      </div>
     </header>
 
-    <main class="max-width-container home-entidad">
-      
+    <main class="home-entidad">
       <section class="hero-entidad">
         <div class="hero-imagen">
-          <img src="img/banner-entidad.png" alt="Refugio" />
+          <img src="img/banner-entidad.png" alt="Panel de entidad" />
         </div>
 
         <div class="hero-texto">
           <h1>Bienvenido, Refugio Patitas</h1>
+
           <p>
-            Gestiona reportes recibidos, revisa casos urgentes y coordina procesos de adopción desde un solo panel.
+            Gestiona reportes recibidos, revisa casos urgentes y coordina
+            procesos de adopción desde un solo panel
           </p>
 
           <div class="hero-botones">
@@ -61,8 +93,9 @@
               <img src="icons/documento-blanco.png" alt="Reportes" />
               Ver reportes pendientes
             </a>
+
             <a href="Adopciones_Entidad.html" class="btn-secundario">
-              <img src="icons/huella-corazon.png" alt="Adopciones" />
+              <img src="icons/corazon-verde.png" alt="Adopciones" />
               Gestionar adopciones
             </a>
           </div>
@@ -72,11 +105,12 @@
       <section class="resumen-entidad">
         <article class="card-resumen">
           <div class="resumen-icono fondo-verde-suave">
-            <img src="icons/documento-verde.png" alt="Reportes" />
+            <img src="icons/documento-verde.png" alt="Reportes recibidos" />
           </div>
+
           <div class="resumen-info">
             <h3>Reportes recibidos</h3>
-            <p class="numero c-teal">12</p>
+            <p class="numero verde">12</p>
           </div>
         </article>
 
@@ -84,19 +118,21 @@
           <div class="resumen-icono fondo-naranja-suave">
             <img src="icons/alerta-naranja.png" alt="Urgentes" />
           </div>
+
           <div class="resumen-info">
             <h3>Urgentes</h3>
-            <p class="numero c-naranja">3</p>
+            <p class="numero naranja">3</p>
           </div>
         </article>
 
         <article class="card-resumen">
           <div class="resumen-icono fondo-azul-suave">
-            <img src="icons/reloj-azul.png" alt="Revisión" />
+            <img src="icons/reloj-azul.png" alt="En revisión" />
           </div>
+
           <div class="resumen-info">
             <h3>En revisión</h3>
-            <p class="numero c-azul">5</p>
+            <p class="numero azul">5</p>
           </div>
         </article>
 
@@ -104,142 +140,152 @@
           <div class="resumen-icono fondo-verde-suave">
             <img src="icons/check-verde.png" alt="Atendidos" />
           </div>
+
           <div class="resumen-info">
             <h3>Atendidos</h3>
-            <p class="numero c-verde">4</p>
+            <p class="numero atendido">4</p>
           </div>
         </article>
       </section>
 
       <section class="reportes-section">
         <h2>Reportes recientes</h2>
-        
-        <div class="table-responsive-wrapper">
-          <div class="tabla-reportes">
-            <div class="tabla-encabezado">
-              <div>Código</div>
-              <div>Distrito</div>
-              <div>Urgencia</div>
-              <div>Estado</div>
-              <div>Acción</div>
-            </div>
 
-            <div class="tabla-fila">
-              <div class="font-medium">HA-0241</div>
-              <div>San Miguel</div>
-              <div><span class="badge-tag tag-alta">Alta</span></div>
-              <div><span class="badge-tag tag-recibido">Recibido</span></div>
-              <div>
-                <a href="Detalle_Reporte_Entidad.html" class="link-detalle">
-                  Ver detalle ›
-                </a>
-              </div>
-            </div>
+        <div class="tabla-reportes">
+          <div class="tabla-encabezado">
+            <div>Código</div>
+            <div>Distrito</div>
+            <div>Urgencia</div>
+            <div>Estado</div>
+            <div>Acción</div>
+          </div>
 
-            <div class="tabla-fila">
-              <div class="font-medium">HA-0238</div>
-              <div>Surco</div>
-              <div><span class="badge-tag tag-media">Media</span></div>
-              <div><span class="badge-tag tag-revision">En revisión</span></div>
-              <div>
-                <a href="Detalle_Reporte_Entidad.html" class="link-detalle">
-                  Ver detalle ›
-                </a>
-              </div>
+          <div class="tabla-fila">
+            <div>HA-0241</div>
+            <div>San Miguel</div>
+            <div><span class="badge-urgencia alta">Alta</span></div>
+            <div><span class="badge-estado recibido">Recibido</span></div>
+            <div>
+              <a href="Detalle_Reporte_Entidad.html" class="link-detalle">
+                Ver detalle
+                <img src="icons/flecha-verde.png" alt="Ver detalle" />
+              </a>
             </div>
+          </div>
 
-            <div class="tabla-fila">
-              <div class="font-medium">HA-0234</div>
-              <div>Chorrillos</div>
-              <div><span class="badge-tag tag-baja">Baja</span></div>
-              <div><span class="badge-tag tag-atendido">Atendido</span></div>
-              <div>
-                <a href="Detalle_Reporte_Entidad.html" class="link-detalle">
-                  Ver detalle ›
-                </a>
-              </div>
+          <div class="tabla-fila">
+            <div>HA-0238</div>
+            <div>Surco</div>
+            <div><span class="badge-urgencia media">Media</span></div>
+            <div><span class="badge-estado revision">En revisión</span></div>
+            <div>
+              <a href="Detalle_Reporte_Entidad.html" class="link-detalle">
+                Ver detalle
+                <img src="icons/flecha-verde.png" alt="Ver detalle" />
+              </a>
+            </div>
+          </div>
+
+          <div class="tabla-fila">
+            <div>HA-0234</div>
+            <div>Chorrillos</div>
+            <div><span class="badge-urgencia baja">Baja</span></div>
+            <div><span class="badge-estado atendido">Atendido</span></div>
+            <div>
+              <a href="Detalle_Reporte_Entidad.html" class="link-detalle">
+                Ver detalle
+                <img src="icons/flecha-verde.png" alt="Ver detalle" />
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       <section class="paneles-entidad">
-        
         <article class="panel-card">
           <div class="panel-titulo">
-            <div class="panel-icono bg-light-green">
-              <img src="icons/huella-corazon.png" alt="Adopciones" />
+            <div class="panel-icono">
+              <img src="icons/corazon-verde.png" alt="Adopciones" />
             </div>
+
             <div>
               <h3>Solicitudes de adopción</h3>
               <p>4 solicitudes pendientes</p>
             </div>
           </div>
 
-          <div class="solicitud-list">
-            <div class="solicitud-item">
-              <div class="mascota-avatar bg-gray"></div>
-              <div class="solicitud-texto">
-                <h4>Luna</h4>
-                <p>Revisión de hogar</p>
-              </div>
-              <span class="badge-tag tag-pendiente">Pendiente ›</span>
+          <div class="solicitud-item">
+            <div class="mascota-avatar">
+              <img src="img/luna.png" alt="Luna" />
             </div>
 
-            <div class="solicitud-item">
-              <div class="mascota-avatar bg-gray"></div>
-              <div class="solicitud-texto">
-                <h4>Simba</h4>
-                <p>Entrevista programada</p>
-              </div>
-              <span class="badge-tag tag-pendiente">Pendiente ›</span>
+            <div class="solicitud-texto">
+              <h4>Luna</h4>
             </div>
+
+            <span class="estado-pendiente">Pendiente</span>
+
+            <img src="icons/flecha-verde.png" alt="Ver solicitud" class="flecha-item" />
           </div>
 
-          <a href="Adopciones_Entidad.html" class="btn-panel">
+          <div class="solicitud-item">
+            <div class="mascota-avatar">
+              <img src="img/simba.png" alt="Simba" />
+            </div>
+
+            <div class="solicitud-texto">
+              <h4>Simba</h4>
+            </div>
+
+            <span class="estado-pendiente">Pendiente</span>
+
+            <img src="icons/flecha-verde.png" alt="Ver solicitud" class="flecha-item" />
+          </div>
+
+          <a href="Solicitudes_Generales_Entidad.html" class="btn-panel">
             Revisar solicitudes
             <img src="icons/flecha-verde.png" alt="Revisar solicitudes" />
           </a>
         </article>
+<article class="panel-card">
+  <div class="panel-titulo">
+    <div class="panel-icono">
+      <img src="icons/campana.png" alt="Avisos internos" />
+    </div>
 
+    <div>
+      <h3>Avisos internos</h3>
+    </div>
+  </div>
+
+  <ul class="lista-avisos">
+    <li>
+      <p>Nuevo reporte urgente recibido.</p>
+      <span>Hace 10 min</span>
+    </li>
+
+    <li>
+      <p>El ciudadano agregó nueva evidencia.</p>
+      <span>Hace 1 h</span>
+    </li>
+
+    <li>
+      <p>Se recibió una nueva solicitud de adopción.</p>
+      <span>Hace 2 h</span>
+    </li>
+  </ul>
+
+  <a href="Notificaciones_Entidad.html" class="btn-panel">
+    Ver todos los avisos
+    <img src="icons/flecha-verde.png" alt="Ver avisos" />
+  </a>
+</article>
         <article class="panel-card">
           <div class="panel-titulo">
-            <div class="panel-icono bg-light-green">
-              <img src="icons/campana.png" alt="Avisos internos" />
+            <div class="panel-icono">
+              <img src="icons/compartir verde.png" alt="Red de apoyo" />
             </div>
-            <div>
-              <h3>Avisos internos</h3>
-            </div>
-          </div>
 
-          <ul class="lista-avisos">
-            <li>
-              <span class="dot-green"></span>
-              <p>Nuevo reporte urgente recibido.</p>
-              <span class="time-text">Hace 10 min</span>
-            </li>
-            <li>
-              <span class="dot-green"></span>
-              <p>El ciudadano agregó nueva evidencia.</p>
-              <span class="time-text">Hace 1 h</span>
-            </li>
-            <li>
-              <span class="dot-green"></span>
-              <p>Se recibió una nueva solicitud de adopción.</p>
-              <span class="time-text">Hace 2 h</span>
-            </li>
-          </ul>
-
-          <a href="Notificaciones_Entidad.html" class="btn-panel btn-outline-full">
-            Ver todos los avisos ›
-          </a>
-        </article>
-
-        <article class="panel-card">
-          <div class="panel-titulo">
-            <div class="panel-icono bg-light-green">
-              <img src="icons/mundo.png" alt="Red de apoyo" />
-            </div>
             <div>
               <h3>Red de apoyo</h3>
             </div>
@@ -249,29 +295,47 @@
             Trabaja junto a otras entidades para brindar más ayuda.
           </p>
 
-          <a href="Red_Apoyo_Entidad.html" class="btn-panel btn-outline-full mt-auto">
-            Ver entidades aliadas ›
+          <a href="Red_Apoyo_Entidad.html" class="btn-panel">
+            Ver entidades aliadas
+            <img src="icons/flecha-verde.png" alt="Ver entidades" />
           </a>
         </article>
-
       </section>
     </main>
 
     <footer class="footer-compacto">
       <div class="footer-compacto-container">
         <div class="footer-compacto-brand">
-          <img src="img/logo-blanco.png" alt="Logo" />
-          <p>© 2026 Huellas de Auxilio. Todos<br />los derechos reservados.</p>
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
         </div>
+
         <div class="footer-compacto-links">
           <a href="#">Soporte</a>
-          <a href="documentos/politica-privacidad.pdf" target="_blank">Política de Privacidad</a>
-          <a href="documentos/terminos-condiciones.pdf" target="_blank">Términos y condiciones</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
         </div>
+
         <div class="footer-social">
-          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="icons/x.png" alt="X" /></a>
-          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
+          <a href="https://www.facebook.com/">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="https://x.com/">
+            <img src="icons/x.png" alt="X" />
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
         </div>
       </div>
     </footer>

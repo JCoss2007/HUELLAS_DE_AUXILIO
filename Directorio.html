@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Directorio de apoyo</title>
+
+    <link rel="stylesheet" href="HE_Header_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Menu_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Directorio.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-ciudadano">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Ciudadano.html" class="logo">
+          <img src="img/logo.png" alt="Logo Huellas de Auxilio" />
+        </a>
+
+        <a href="Reportar.html" class="btn-reporte-mobile">Reporte</a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Ciudadano.html" class="nav-link">Inicio</a></li>
+          <li><a href="Mis_Reportes.html" class="nav-link">Mis reportes</a></li>
+          <li><a href="Directorio.html" class="nav-link activo">Directorio</a></li>
+          <li><a href="Adopciones.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Ayuda.html" class="nav-link">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Reportar.html" class="btn-reportar">Reportar</a>
+
+          <a href="Notificaciones.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>HuellaAmiga247</h3>
+              <a href="Mi_Cuenta.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Ciudadano.html">Inicio</a>
+          <a href="Mis_Reportes.html">Mis reportes</a>
+          <a href="Directorio.html">Directorio</a>
+          <a href="Adopciones.html">Adopciones</a>
+          <a href="Ayuda.html">Ayuda</a>
+          <a href="Notificaciones.html">Notificaciones</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="directorio-page">
+      <section class="hero-directorio">
+        <div class="hero-img">
+          <img src="img/banner-ciudadano.png" alt="Directorio de apoyo" />
+        </div>
+
+        <div class="hero-text">
+          <h1>Directorio <span>de apoyo</span></h1>
+          <p>
+            Encuentra entidades y contactos de ayuda para orientar o atender
+            casos de maltrato animal.
+          </p>
+        </div>
+      </section>
+
+      <section class="busqueda-directorio">
+        <div class="buscador-principal">
+          <img src="icons/buscar.png" alt="Buscar" />
+          <input
+            type="text"
+            id="buscarDirectorio"
+            placeholder="Buscar entidad, distrito o tipo de atención"
+          />
+        </div>
+
+        <div class="filtros-directorio">
+          <div class="filtro-box">
+            <label for="filtroDistrito">Distrito</label>
+            <select id="filtroDistrito">
+              <option value="">Todos los distritos</option>
+              <option value="san miguel">San Miguel</option>
+              <option value="surco">Surco</option>
+              <option value="miraflores">Miraflores</option>
+              <option value="pueblo libre">Pueblo Libre</option>
+              <option value="magdalena">Magdalena</option>
+              <option value="lince">Lince</option>
+            </select>
+          </div>
+
+          <div class="filtro-box">
+            <label for="filtroTipo">Tipo de atención</label>
+            <select id="filtroTipo">
+              <option value="">Todos los tipos</option>
+              <option value="refugio">Refugio</option>
+              <option value="veterinaria">Veterinaria</option>
+              <option value="asociacion">Asociación</option>
+              <option value="municipalidad">Municipalidad</option>
+            </select>
+          </div>
+
+          <button type="button" id="btnLimpiarDirectorio" class="btn-limpiar">
+            Limpiar filtros
+          </button>
+        </div>
+      </section>
+
+      <section class="directorio-contenido">
+        <section class="entidades-directorio" id="entidadesDirectorio">
+          <article
+            class="entidad-card"
+            data-nombre="refugio patitas"
+            data-distrito="san miguel"
+            data-tipo="refugio"
+            data-descripcion="refugio temporal resguardo alimentacion atencion veterinaria abandono"
+            data-pin="pin1"
+          >
+            <div class="entidad-avatar">
+              <img src="icons/casita.png" alt="Refugio Patitas" />
+            </div>
+
+            <div class="entidad-info">
+              <div class="entidad-title">
+                <h2>Refugio Patitas</h2>
+                <span class="badge badge-refugio">Refugio</span>
+              </div>
+
+              <p class="entidad-ubicacion">
+                <img src="icons/ubicacion-verde.png" alt="Ubicación" />
+                San Miguel
+              </p>
+
+              <p class="entidad-descripcion">
+                Refugio temporal que brinda resguardo, alimentación y atención
+                veterinaria a animales en situación de abandono.
+              </p>
+
+              <div class="entidad-contacto">
+                <span>
+                  <img src="icons/telefono-negro.png" alt="Teléfono" />
+                  987 654 321
+                </span>
+
+                <span>
+                  <img src="icons/reloj-verde.png" alt="Horario" />
+                  Lun a Vie: 8:00 am - 4:00 pm.
+                </span>
+              </div>
+
+              <div class="entidad-acciones">
+                <a href="Detalle_Entidad.html" class="btn-detalle">
+                  Ver detalle
+                  <img src="icons/flecha-verde.png" alt="Ver detalle" />
+                </a>
+
+                <a href="Simular_Llamada.html" class="btn-llamar">
+  <img src="icons/llamar.png" alt="Llamar" />
+  Llamar
+</a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="entidad-card"
+            data-nombre="hogar seguro"
+            data-distrito="san miguel"
+            data-tipo="veterinaria"
+            data-descripcion="cuidado integral perros gatos rescatados recuperacion adopcion responsable"
+            data-pin="pin2"
+          >
+            <div class="entidad-avatar">
+              <img src="img/banner-ayuda-entidad.png" alt="Hogar Seguro" />
+            </div>
+
+            <div class="entidad-info">
+              <div class="entidad-title">
+                <h2>Hogar Seguro</h2>
+                <span class="badge badge-veterinaria">Veterinaria</span>
+              </div>
+
+              <p class="entidad-ubicacion">
+                <img src="icons/ubicacion-verde.png" alt="Ubicación" />
+                San Miguel
+              </p>
+
+              <p class="entidad-descripcion">
+                Brinda refugio y cuidado integral a perros y gatos rescatados,
+                promoviendo su recuperación y adopción responsable.
+              </p>
+
+              <div class="entidad-contacto">
+                <span>
+                  <img src="icons/telefono-negro.png" alt="Teléfono" />
+                  987 654 321
+                </span>
+
+                <span>
+                  <img src="icons/reloj-verde.png" alt="Horario" />
+                  Lun a Vie: 8:30 am - 5:30 pm.
+                </span>
+              </div>
+
+              <div class="entidad-acciones">
+                <a href="Detalle_Entidad.html" class="btn-detalle">
+                  Ver detalle
+                  <img src="icons/flecha-verde.png" alt="Ver detalle" />
+                </a>
+
+                <a href="Simular_Llamada.html" class="btn-llamar">
+  <img src="icons/llamar.png" alt="Llamar" />
+  Llamar
+</a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="entidad-card"
+            data-nombre="huellas de auxilio"
+            data-distrito="pueblo libre"
+            data-tipo="municipalidad"
+            data-descripcion="bienestar animal campañas esterilizacion rescate"
+            data-pin="pin3"
+          >
+            <div class="entidad-avatar">
+              <img src="icons/edificio-verde.png" alt="Huellas de Auxilio" />
+            </div>
+
+            <div class="entidad-info">
+              <div class="entidad-title">
+                <h2>Huellas de Auxilio</h2>
+                <span class="badge badge-municipalidad">Municipalidad</span>
+              </div>
+
+              <p class="entidad-ubicacion">
+                <img src="icons/ubicacion-verde.png" alt="Ubicación" />
+                Pueblo Libre
+              </p>
+
+              <p class="entidad-descripcion">
+                Entidad pública que promueve el bienestar animal y coordina
+                campañas de esterilización y rescate.
+              </p>
+
+              <div class="entidad-contacto">
+                <span>
+                  <img src="icons/telefono-negro.png" alt="Teléfono" />
+                  987 654 321
+                </span>
+
+                <span>
+                  <img src="icons/reloj-verde.png" alt="Horario" />
+                  Lun a Vie: 8:00 am - 4:00 pm.
+                </span>
+              </div>
+
+              <div class="entidad-acciones">
+                <a href="Detalle_Entidad.html" class="btn-detalle">
+                  Ver detalle
+                  <img src="icons/flecha-verde.png" alt="Ver detalle" />
+                </a>
+
+                <a href="Simular_Llamada.html" class="btn-llamar">
+  <img src="icons/llamar.png" alt="Llamar" />
+  Llamar
+</a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="entidad-card"
+            data-nombre="patitas en buenas manos"
+            data-distrito="magdalena"
+            data-tipo="asociacion"
+            data-descripcion="organizacion sin fines de lucro rescata rehabilita hogares responsables"
+            data-pin="pin4"
+          >
+            <div class="entidad-avatar">
+              <img src="img/banner-entidad.png" alt="Patitas en Buenas Manos" />
+            </div>
+
+            <div class="entidad-info">
+              <div class="entidad-title">
+                <h2>Patitas en Buenas Manos</h2>
+                <span class="badge badge-asociacion">Asociación</span>
+              </div>
+
+              <p class="entidad-ubicacion">
+                <img src="icons/ubicacion-verde.png" alt="Ubicación" />
+                Magdalena
+              </p>
+
+              <p class="entidad-descripcion">
+                Organización sin fines de lucro que rescata, rehabilita y busca
+                hogares responsables para animales.
+              </p>
+
+              <div class="entidad-contacto">
+                <span>
+                  <img src="icons/telefono-negro.png" alt="Teléfono" />
+                  987 654 321
+                </span>
+
+                <span>
+                  <img src="icons/reloj-verde.png" alt="Horario" />
+                  Lun a Vie: 8:30 am - 5:30 pm.
+                </span>
+              </div>
+
+              <div class="entidad-acciones">
+                <a href="Detalle_Entidad.html" class="btn-detalle">
+                  Ver detalle
+                  <img src="icons/flecha-verde.png" alt="Ver detalle" />
+                </a>
+
+                <a href="Simular_Llamada.html" class="btn-llamar">
+  <img src="icons/llamar.png" alt="Llamar" />
+  Llamar
+</a>
+              </div>
+            </div>
+          </article>
+
+          <p class="mensaje-vacio" id="mensajeVacioDirectorio">
+            No se encontraron entidades con esos filtros.
+          </p>
+        </section>
+
+        <aside class="mapa-directorio-card">
+          <h2>Ubicación</h2>
+
+          <div class="mapa-directorio">
+            <img src="img/mapa.png" alt="Mapa de entidades cercanas" />
+
+            <button type="button" class="pin pin1 activo" data-pin="pin1">
+              <img src="icons/huella.png" alt="Refugio" />
+            </button>
+
+            <button type="button" class="pin pin2" data-pin="pin2">
+              <img src="icons/huella.png" alt="Veterinaria" />
+            </button>
+
+            <button type="button" class="pin pin3" data-pin="pin3">
+              <img src="icons/huella.png" alt="Municipalidad" />
+            </button>
+
+            <button type="button" class="pin pin4" data-pin="pin4">
+              <img src="icons/huella.png" alt="Asociación" />
+            </button>
+          </div>
+
+          <div class="entidad-mapa-activa" id="entidadMapaActiva">
+            <strong>Refugio Patitas</strong>
+            <span>San Miguel · Refugio</span>
+          </div>
+
+          <a href="Mapa_Apoyo.html" class="link-mapa-completo">
+            Ver mapa completo
+            <img src="icons/salir.png" alt="Abrir mapa" />
+          </a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.facebook.com/">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="https://x.com/">
+            <img src="icons/x.png" alt="X" />
+          </a>
+
+          <a href="https://www.instagram.com/">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-ciudadano.js"></script>
+    <script src="directorio.js"></script>
+  </body>
+</html>
