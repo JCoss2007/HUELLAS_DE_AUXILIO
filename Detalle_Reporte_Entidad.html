@@ -107,7 +107,7 @@
                 </div>
               </div>
               <div class="info-chunk divider-left">
-                <div class="info-icon"><img src="icons/casita-icon.png" alt="Entidad" /></div>
+                <div class="info-icon"><img src="icons/escudo2.png" alt="Entidad" /></div>
                 <div>
                   <span class="label">Entidad asignada</span>
                   <p class="font-bold">Refugio Patitas</p>
@@ -205,7 +205,6 @@
           <article class="card-box panel-actualizar">
             <h3 class="card-title-small">
               <img src="icons/actualizar.png" alt="" /> Actualizar estado del reporte
-              <button class="btn-solid-green w-100" id="btnActualizarEstado">Actualizar estado</button>
             </h3>
             
             <div class="form-group-sidebar">
@@ -214,7 +213,7 @@
               <div class="custom-dropdown" id="statusDropdown">
                 <div class="dropdown-header" id="dropdownHeader">
                   <span><span class="dot bg-blue"></span> En revisión</span>
-                  <img src="icons/chevron-down.png" alt="Desplegar" class="chevron" />
+                  <img src="icons/flecha_arriba.png" alt="Desplegar" class="chevron" />
                 </div>
                 
                 <ul class="dropdown-list" id="dropdownList">
@@ -223,7 +222,7 @@
                   </li>
                   <li data-value="revision" class="selected">
                     <span class="dot bg-blue"></span> En revisión
-                    <img src="icons/check-azul.png" class="check-icon" alt="Seleccionado" />
+                    <img src="icons/check-verde.png" class="check-icon" alt="Seleccionado" />
                   </li>
                   <li data-value="derivado">
                     <span class="dot bg-purple"></span> Derivado
@@ -238,14 +237,14 @@
             <button class="btn-solid-green w-100" id="btnActualizarEstado">Actualizar estado</button>
             
             <div class="info-alert mt-15">
-              <img src="icons/info-circle.png" alt="Info" />
+              <img src="icons/aviso.png" alt="Info" />
               <p>Al cambiar el estado se registrará la fecha y hora de la actualización y se notificará al ciudadano.</p>
             </div>
           </article>
 
           <article class="card-box small-pad">
             <h3 class="card-title-small">
-              <img src="icons/huellita.png" alt="" /> Información adicional
+              <img src="icons/patita.png" alt="" /> Información adicional
             </h3>
             
             <div class="info-section">
@@ -275,6 +274,7 @@
       </section>
     </main>
 
+    <!-- MODAL DE CONFIRMACIÓN (Uno solo) -->
     <div class="modal-overlay" id="modalConfirmarEstado">
       <div class="modal-content modal-confirmar">
         <div class="modal-header">
@@ -300,30 +300,6 @@
       </div>
     </div>
 
-    <div class="modal-overlay" id="modalConfirmarEstado">
-  <div class="modal-content modal-confirmar">
-    <div class="modal-header">
-      <h2 class="modal-title">Confirmar actualización de estado</h2>
-      <button class="btn-close-modal" id="btnCerrarConfirmar">×</button>
-    </div>
-
-    <div class="modal-body">
-      <p class="confirm-text">
-        El reporte cambiará de <strong>"En revisión"</strong> a <strong id="textoNuevoEstado">"Atendido"</strong>.
-      </p>
-      
-      <div class="form-group-modal">
-        <label class="field-label">Observación (opcional)</label>
-        <textarea class="standard-textarea" placeholder="Se coordinó la atención del caso."></textarea>
-      </div>
-    </div>
-
-    <div class="modal-footer">
-      <button class="btn-outline" id="btnCancelarConfirmar">Cancelar</button>
-      <button class="btn-solid" id="btnGuardarConfirmar">Guardar cambios</button>
-    </div>
-  </div>
-</div>
     <footer class="footer-compacto">
       <div class="footer-compacto-container">
         <div class="footer-compacto-brand">
@@ -344,89 +320,6 @@
     </footer>
 
     <script src="menu-entidad.js"></script>
-    <script>
-      // Lógica del Dropdown Personalizado
-      const dropdownHeader = document.getElementById('dropdownHeader');
-      const dropdownList = document.getElementById('dropdownList');
-      const dropdownItems = dropdownList.querySelectorAll('li');
-
-      // Abrir/Cerrar menú
-      dropdownHeader.addEventListener('click', () => {
-        dropdownList.classList.toggle('show');
-        dropdownHeader.classList.toggle('active');
-      });
-
-      // Seleccionar opción
-      dropdownItems.forEach(item => {
-        item.addEventListener('click', () => {
-          dropdownItems.forEach(el => {
-            el.classList.remove('selected');
-            const check = el.querySelector('.check-icon');
-            if(check) check.remove();
-          });
-
-          item.classList.add('selected');
-          
-          const checkIcon = document.createElement('img');
-          checkIcon.src = 'icons/check-azul.png'; 
-          checkIcon.className = 'check-icon';
-          item.appendChild(checkIcon);
-
-          // Copiamos el contenido para el header (el punto + texto)
-          const colorDot = item.querySelector('.dot').cloneNode(true);
-          const text = item.innerText.trim();
-          
-          dropdownHeader.innerHTML = `
-            <span>
-              ${colorDot.outerHTML} ${text}
-            </span>
-            <img src="icons/chevron-down.png" class="chevron" alt="v" />
-          `;
-          
-          dropdownList.classList.remove('show');
-          dropdownHeader.classList.remove('active');
-        });
-      });
-
-      // Cerrar si haces clic afuera
-      document.addEventListener('click', (e) => {
-        if (!document.getElementById('statusDropdown').contains(e.target)) {
-          dropdownList.classList.remove('show');
-          dropdownHeader.classList.remove('active');
-        }
-      });
-
-      // ==========================================
-      // LÓGICA DEL MODAL DE CONFIRMACIÓN
-      // ==========================================
-      const btnActualizar = document.getElementById('btnActualizarEstado');
-      const modalConfirmar = document.getElementById('modalConfirmarEstado');
-      const btnCerrar = document.getElementById('btnCerrarConfirmar');
-      const btnCancelar = document.getElementById('btnCancelarConfirmar');
-      const btnGuardar = document.getElementById('btnGuardarConfirmar');
-      const textoNuevoEstado = document.getElementById('textoNuevoEstado');
-
-      function abrirModalConfirmacion() {
-        // Extraemos solo el texto del dropdown para ponerlo en el modal
-        const textToInject = dropdownHeader.innerText.trim();
-        textoNuevoEstado.innerText = `"${textToInject}"`;
-        
-        modalConfirmar.classList.add('activo');
-      }
-
-      function cerrarModalConfirmacion() {
-        modalConfirmar.classList.remove('activo');
-      }
-
-      btnActualizar.addEventListener('click', abrirModalConfirmacion);
-      btnCerrar.addEventListener('click', cerrarModalConfirmacion);
-      btnCancelar.addEventListener('click', cerrarModalConfirmacion);
-
-      btnGuardar.addEventListener('click', () => {
-        alert("¡Estado actualizado correctamente!");
-        cerrarModalConfirmacion();
-        // Aquí iría el código real para guardar en base de datos y recargar la página
-      });
-    </script>
+    <script src="detalle_reporte.js"></script>
   </body>
 </html>

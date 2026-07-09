@@ -396,44 +396,6 @@ body {
   justify-content: center;
   z-index: 1000;
 }
-/* ========================================================
-   MODAL DE CONFIRMACIÓN DE ESTADO
-   ======================================================== */
-.modal-confirmar {
-  background-color: var(--white);
-  width: 90%;
-  max-width: 480px;
-  border-radius: 16px;
-  padding: 30px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.confirm-text {
-  font-size: 14px;
-  color: var(--text-body);
-}
-
-.form-group-modal {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.modal-footer .btn-outline,
-.modal-footer .btn-solid {
-  flex: 1;
-  justify-content: center;
-  text-align: center;
-}
-
-@media (max-width: 600px) {
-  .modal-footer {
-    flex-direction: column-reverse;
-  }
-}
 
 .modal-overlay.activo {
   display: flex;

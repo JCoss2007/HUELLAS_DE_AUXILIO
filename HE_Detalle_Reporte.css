@@ -27,7 +27,7 @@ body {
   font-family: "Poppins", Arial, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-body);
-  overflow-x: hidden; /* 🛑 ELIMINA EL SCROLL HORIZONTAL */
+  overflow-x: hidden; /* ELIMINA EL SCROLL HORIZONTAL */
 }
 
 .max-width-container {
@@ -90,7 +90,6 @@ body {
   width: 100%;
 }
 
-/* min-width: 0 evita que un elemento hijo estire el grid y cause scroll */
 .main-col, .sidebar-col {
   display: flex;
   flex-direction: column;
@@ -124,7 +123,7 @@ body {
 
 .summary-top {
   display: flex;
-  flex-wrap: wrap; /* Permite que bajen si no caben */
+  flex-wrap: wrap; 
   padding: 22px;
   border-bottom: 1px solid var(--border-color);
   gap: 15px;
@@ -132,7 +131,7 @@ body {
 
 .summary-item {
   flex: 1;
-  min-width: 140px; /* Evita que se aplasten demasiado */
+  min-width: 140px; 
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -251,7 +250,7 @@ body {
 .link-action:hover { text-decoration: underline; }
 
 /* ========================================================
-   LÍNEA DE TIEMPO (TOTALMENTE REPARADA)
+   LÍNEA DE TIEMPO (REPARADA)
    ======================================================== */
 .timeline {
   position: relative;
@@ -259,7 +258,6 @@ body {
   margin-top: 15px;
 }
 
-/* La raya gris vertical */
 .timeline::before {
   content: '';
   position: absolute;
@@ -283,7 +281,7 @@ body {
 
 .timeline-dot {
   position: absolute;
-  left: -28px; /* Lo jala exactamente sobre la línea */
+  left: -28px; 
   top: 4px;
   width: 14px;
   height: 14px;
@@ -311,7 +309,7 @@ body {
   font-size: 11px;
   color: #999;
   text-align: right;
-  white-space: nowrap; /* Evita que la hora se parta en dos líneas */
+  white-space: nowrap; 
   padding-top: 2px;
 }
 
@@ -340,7 +338,6 @@ body {
 .form-group-sidebar { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
 .form-group-sidebar label { font-size: 12px; color: var(--text-dark); font-weight: 600; }
 
-/* Dropdown blindado */
 .custom-dropdown { position: relative; width: 100%; }
 
 .dropdown-header {
@@ -370,7 +367,7 @@ body {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   list-style: none;
   z-index: 10;
-  display: none; /* Mejor usar display none nativo para no romper cajas */
+  display: none; 
 }
 .dropdown-list.show { display: block; }
 
@@ -407,7 +404,6 @@ body {
 .info-alert img { width: 16px; margin-top: 2px; flex-shrink:0;}
 .info-alert p { font-size: 11px; color: #555; line-height: 1.4; margin: 0; }
 
-/* Info Adicional */
 .info-section { margin-bottom: 15px; }
 .info-section:last-child { margin-bottom: 0; }
 .info-section label { display: block; font-size: 11px; color: #777; margin-bottom: 4px; }
@@ -417,6 +413,125 @@ body {
 .icon-inline { width: 14px; vertical-align: middle; margin-right: 4px; opacity: 0.7; }
 .flex-align { display: flex; align-items: center; gap: 6px; }
 .color-dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; border: 1px solid rgba(0,0,0,0.1); flex-shrink:0;}
+
+/* ========================================================
+   MODAL DE CONFIRMACIÓN DE ESTADO
+   ======================================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-overlay.activo {
+  display: flex;
+}
+
+.modal-confirmar {
+  background-color: var(--white);
+  width: 90%;
+  max-width: 480px;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-size: 18px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.btn-close-modal {
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #666;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.btn-close-modal:hover { color: var(--primary); }
+
+.confirm-text {
+  font-size: 14px;
+  color: var(--text-body);
+  margin-bottom: 20px;
+}
+
+.form-group-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-label {
+  font-size: 13px;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.standard-textarea {
+  width: 100%;
+  min-height: 80px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--text-body);
+  resize: vertical;
+  outline: none;
+}
+
+.standard-textarea:focus { border-color: var(--primary); }
+
+.modal-footer {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.modal-footer .btn-outline {
+  flex: 1;
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.modal-footer .btn-solid {
+  flex: 1;
+  background-color: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.modal-footer .btn-outline:hover { background-color: var(--primary-light); }
+.modal-footer .btn-solid:hover { background-color: #015256; }
 
 /* ========================================================
    RESPONSIVE
@@ -430,4 +545,10 @@ body {
   .middle-grid { grid-template-columns: 1fr; }
   .timeline-item { flex-direction: column; gap: 4px; }
   .timeline-time { text-align: left; }
+}
+
+@media (max-width: 600px) {
+  .modal-footer {
+    flex-direction: column-reverse;
+  }
 }

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directorio de Apoyo - Huellas de Auxilio</title>
+
+    <!-- 👇 ESTOS 3 LINKS FALTABAN PARA QUE SE VEA BIEN EL MENÚ Y EL FOOTER 👇 -->
+    <link rel="stylesheet" href="HE_Header_Entidad.css" />
+    <link rel="stylesheet" href="HE_Menu_Entidad.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+    
+    <!-- El CSS propio de esta pantalla -->
+    <link rel="stylesheet" href="HC_Directorio.css" />
+  </head>
+
+  <body>
+    <!-- HEADER CIUDADANO (Nota el botón "Reportar") -->
+    <header class="header-main">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+
+        <a href="Home_Ciudadano.html" class="logo">
+          <img src="img/logo.png" alt="Logo Huellas de Auxilio" />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Ciudadano.html" class="nav-link">Inicio</a></li>
+          <li><a href="Mis_Reportes.html" class="nav-link">Mis reportes</a></li>
+          <li><a href="Directorio_Ciudadano.html" class="nav-link activo">Directorio</a></li>
+          <li><a href="Adopciones.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Ayuda.html" class="nav-link">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="btn-reportar">Reportar</button>
+          <a href="Notificaciones.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+          <a href="Mi_Cuenta.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="max-width-container directorio-page">
+      
+     <!-- 1. HERO SECTION (Banner principal) -->
+      <section class="hero-banner">
+        <div class="hero-img">
+          <img src="img/banner-ciudadano.png" alt="Mascotas" />
+        </div>
+        <div class="hero-content">
+          <h1>Directorio <span class="text-teal">de apoyo</span></h1>
+          <p>Encuentra entidades y contactos de ayuda para orientar o atender casos de maltrato animal</p>
+        </div>
+      </section>
+
+      <!-- 2. BARRA DE BÚSQUEDA Y FILTROS -->
+      <section class="search-section">
+        <!-- Barra larga de búsqueda -->
+        <div class="search-bar-full">
+          <img src="icons/buscar.png" alt="Buscar" />
+          <input type="text" placeholder="Buscar entidad, distrito o tipo de atención" />
+        </div>
+
+        <!-- Aquí continúan tus filtros... -->
+        <div class="filters-row">
+          <div class="filter-box">
+            <label>Distrito</label>
+            <select>
+              <option value="todos">Todos los distritos</option>
+              <option value="san-miguel">San Miguel</option>
+              <option value="surco">Surco</option>
+            </select>
+          </div>
+
+          <div class="filter-box">
+            <label>Tipo de atención</label>
+            <select>
+              <option value="todos">Todos los tipos</option>
+              <option value="refugio">Refugio</option>
+              <option value="veterinaria">Veterinaria</option>
+            </select>
+          </div>
+
+          <a href="#" class="link-limpiar">Limpiar filtros</a>
+        </div>
+      </section>
+
+      <!-- 3. GRID DE TARJETAS Y MAPA -->
+      <section class="directorio-grid">
+        
+        <!-- Columna de Tarjetas -->
+        <div class="cards-column">
+          
+          <!-- Tarjeta 1 -->
+          <article class="entity-card">
+            <div class="card-avatar bg-gray"></div>
+            <div class="card-info">
+              <div class="card-title-row">
+                <h3>Refugio Patitas</h3>
+                <span class="badge badge-refugio">Refugio</span>
+              </div>
+              <p class="location-text"><img src="icons/mapa-ubi.png" alt="Pin" /> San Miguel</p>
+              <p class="desc-text">Refugio temporal que brinda resguardo, alimentación y atención veterinaria a animales en situación de abandono.</p>
+              
+              <div class="contact-row">
+                <span><img src="icons/llamar2.png" alt="Tel" /> 987 654 321</span>
+                <span><img src="icons/reloj-azul.png" alt="Horario" /> Lun a Vie: 8:00 am - 4:00 pm.</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="Detalle_Entidad.html" class="btn-outline">Ver detalle ›</a>
+                <button class="btn-solid-icon"><img src="icons/llamar.png" alt="Llamar" /> Llamar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta 2 -->
+          <article class="entity-card">
+            <div class="card-avatar bg-gray"></div>
+            <div class="card-info">
+              <div class="card-title-row">
+                <h3>Hogar Seguro</h3>
+                <span class="badge badge-veterinaria">Veterinaria</span>
+              </div>
+              <p class="location-text"><img src="icons/mapa-ubi.png" alt="Pin" /> San Miguel</p>
+              <p class="desc-text">Brinda refugio y cuidado integral a perros y gatos rescatados, promoviendo su recuperación y adopción responsable.</p>
+              
+              <div class="contact-row">
+                <span><img src="icons/llamar2.png" alt="Tel" /> 987 654 321</span>
+                <span><img src="icons/reloj-azul.png" alt="Horario" /> Lun a Vie: 8:30 am - 5:30 pm.</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="Detalle_Entidad.html" class="btn-outline">Ver detalle ›</a>
+                <button class="btn-solid-icon"><img src="icons/llamar.png" alt="Llamar" /> Llamar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta 3 -->
+          <article class="entity-card">
+            <div class="card-avatar bg-gray"></div>
+            <div class="card-info">
+              <div class="card-title-row">
+                <h3>Huellas de Auxilio</h3>
+                <span class="badge badge-refugio">Refugio</span>
+              </div>
+              <p class="location-text"><img src="icons/mapa-ubi.png" alt="Pin" /> San Miguel</p>
+              <p class="desc-text">Entidad pública que promueve el bienestar animal y coordina campañas de esterilización y rescate.</p>
+              
+              <div class="contact-row">
+                <span><img src="icons/llamar2.png" alt="Tel" /> 987 654 321</span>
+                <span><img src="icons/reloj-azul.png" alt="Horario" /> Lun a Vie: 8:00 am - 4:00 pm.</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="Detalle_Entidad.html" class="btn-outline">Ver detalle ›</a>
+                <button class="btn-solid-icon"><img src="icons/llamar.png" alt="Llamar" /> Llamar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tarjeta 4 -->
+          <article class="entity-card">
+            <div class="card-avatar bg-gray"></div>
+            <div class="card-info">
+              <div class="card-title-row">
+                <h3>Patitas en Buenas Manos</h3>
+                <span class="badge badge-asociacion">Asociación</span>
+              </div>
+              <p class="location-text"><img src="icons/mapa-ubi.png" alt="Pin" /> San Miguel</p>
+              <p class="desc-text">Organización sin fines de lucro que rescata, rehabilita y busca hogares responsables para animales.</p>
+              
+              <div class="contact-row">
+                <span><img src="icons/llamar2.png" alt="Tel" /> 987 654 321</span>
+                <span><img src="icons/reloj-azul.png" alt="Horario" /> Lun a Vie: 8:30 am - 5:30 pm.</span>
+              </div>
+
+              <div class="card-actions">
+                <a href="Detalle_Entidad.html" class="btn-outline">Ver detalle ›</a>
+                <button class="btn-solid-icon"><img src="icons/llamar.png" alt="Llamar" /> Llamar</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Columna del Mapa Interactivo -->
+        <aside class="map-column">
+          <div class="map-box">
+            <h3>Ubicación</h3>
+            
+            <!-- Mapa interactivo de OpenStreetMap -->
+            <div class="interactive-map">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0" 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-77.100%2C-12.090%2C-77.080%2C-12.070&amp;layer=mapnik&amp;marker=-12.080%2C-77.090" 
+                style="border: none;">
+              </iframe>
+            </div>
+            
+            <a href="#" class="link-full-map">Ver mapa completo <img src="icons/abrir-link.png" alt="Abrir" /></a>
+          </div>
+        </aside>
+
+      </section>
+    </main>
+
+    <!-- FOOTER MODULAR -->
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+          <p>© 2026 Huellas de Auxilio. Todos<br />los derechos reservados.</p>
+        </div>
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">Política de Privacidad</a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">Términos y condiciones</a>
+        </div>
+        <div class="footer-social">
+          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="icons/x.png" alt="X" /></a>
+          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html> 
