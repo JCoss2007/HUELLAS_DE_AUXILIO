@@ -1,0 +1,307 @@
+/* ========================================================
+   VARIABLES Y BASE (NUESTRO ESTÁNDAR)
+   ======================================================== */
+:root {
+  --primary: #01666c;
+  --primary-light: #edf4f3;
+  --text-dark: #1d5053;
+  --text-body: #333333;
+  --border-color: #d9d9d9;
+  --white: #ffffff;
+  --bg-color: #f7f9f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: var(--white); /* Esta pantalla es blanca */
+  color: var(--text-body);
+}
+
+.max-width-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========================================================
+   HERO BANNER (Misma clase que usamos antes)
+   ======================================================== */
+.hero-banner {
+  background-color: var(--primary-light);
+  border-radius: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 40px;
+}
+
+.hero-text h1 {
+  color: var(--text-dark);
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.hero-text p {
+  color: #555;
+  font-size: 15px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* ========================================================
+   BARRA DE FILTROS Y PILLS
+   ======================================================== */
+.filters-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0 15px;
+  flex: 1;
+  max-width: 350px;
+}
+
+.search-box img { width: 18px; height: 18px; opacity: 0.5; }
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 12px 10px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.pills-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  color: #666;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pill:hover { border-color: var(--primary); color: var(--primary); }
+
+.pill.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+.select-box select {
+  padding: 10px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background-color: var(--white);
+  font-size: 14px;
+  color: var(--text-body);
+  outline: none;
+  cursor: pointer;
+}
+
+/* ========================================================
+   GRID PRINCIPAL
+   ======================================================== */
+.content-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr; /* Tarjetas más anchas, sidebar a la derecha */
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+/* --- Tarjetas de Entidades --- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.entity-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.entity-header {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.entity-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #e6f2f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.entity-avatar img { width: 30px; height: 30px; object-fit: contain; }
+.bg-gray { background-color: #f0f0f0; } /* Para las que no tienen foto */
+
+.entity-title h3 {
+  font-size: 16px;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+/* Etiquetas personalizadas */
+.badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+.badge-refugio { background-color: #eaf4f1; color: #1e7060; }
+.badge-vet { background-color: #e3eff8; color: #3167a6; }
+.badge-muni { background-color: #fef3de; color: #b3791c; }
+.badge-asoc { background-color: #eae7fb; color: #6b4fcb; }
+
+.entity-info-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #666;
+}
+
+.entity-info-row span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.entity-info-row img { width: 14px; opacity: 0.6; }
+
+.entity-desc {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Empuja los botones hacia abajo */
+}
+
+/* Botones estándar de Huellas de Auxilio */
+.entity-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-solid {
+  background-color: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--border-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.btn-solid:hover { background-color: #015256; }
+.btn-outline:hover { border-color: var(--primary); background-color: var(--primary-light); }
+
+/* --- SIDEBAR --- */
+.sidebar-card {
+  background-color: #f3f6f6;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.sidebar-card h3 {
+  font-size: 16px;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.sidebar-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.sidebar-icon {
+  width: 36px;
+  height: 36px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.sidebar-icon img { width: 18px; }
+
+.sidebar-text h4 {
+  font-size: 14px;
+  color: var(--text-dark);
+  margin: 0 0 4px 0;
+}
+
+.sidebar-text p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.w-100 {
+  width: 100%;
+  border-color: var(--primary); /* El botón de la guía tiene el borde verde */
+}
+
+/* ========================================================
+   RESPONSIVE
+   ======================================================== */
+@media (max-width: 990px) {
+  .content-grid { grid-template-columns: 1fr; }
+  .cards-grid { grid-template-columns: 1fr; }
+}

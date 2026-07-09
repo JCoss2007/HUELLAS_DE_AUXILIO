@@ -12,6 +12,9 @@ body {
   color: #082f3d;
   width: 100%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header-login {
@@ -53,6 +56,7 @@ body {
   padding: 0 16px 45px;
   position: relative;
   z-index: 5;
+  flex: 1;
 }
 
 .login-card {
