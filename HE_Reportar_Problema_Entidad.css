@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaf3f2;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #082f3d;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.reportar-problema-entidad-page {
+  width: 100%;
+  max-width: 1360px;
+  min-height: calc(100vh - 215px);
+  margin: 0 auto;
+  padding: 92px 40px 50px;
+  display: grid;
+  grid-template-columns: 395px 1fr;
+  gap: 24px;
+}
+
+.panel-lateral {
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 9px;
+  min-height: 640px;
+  padding: 70px 28px 34px;
+}
+
+.saludo-box h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.saludo-box p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1b746f;
+  margin-top: 4px;
+}
+
+.linea {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  margin: 26px 0 34px;
+}
+
+.menu-cuenta {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.opcion-cuenta {
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff;
+  border: 1.8px solid #d9dddd;
+  border-radius: 9px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 18px;
+  white-space: nowrap;
+}
+
+.opcion-cuenta.activa {
+  background-color: #e5f1ec;
+  color: #1b746f;
+}
+
+.opcion-cuenta.eliminar {
+  color: #ed1c24;
+}
+
+.icono-opcion {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.contenido-reporte {
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 9px;
+  min-height: 640px;
+  padding: 40px 40px 34px;
+}
+
+.titulo-reporte {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+.btn-volver {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #d9dddd;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-volver img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.titulo-reporte h1 {
+  font-size: 34px;
+  color: #1b746f;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.titulo-reporte p {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.form-reporte {
+  background-color: #e5f1f0;
+  border-radius: 8px;
+  padding: 32px 38px 70px;
+}
+
+.form-reporte label {
+  display: block;
+  font-size: 22px;
+  color: #1b746f;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.form-reporte textarea {
+  width: 100%;
+  height: 206px;
+  background-color: #ffffff;
+  border: 3px solid #0b5559;
+  border-radius: 8px;
+  resize: none;
+  outline: none;
+  padding: 18px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #263b3b;
+}
+
+.acciones-reporte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 190px;
+  margin-top: 26px;
+}
+
+.btn-cancelar,
+.btn-enviar {
+  width: 188px;
+  height: 40px;
+  border-radius: 8px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-cancelar {
+  color: #1b746f;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-enviar {
+  background-color: #007476;
+  color: #ffffff;
+  border: 2px solid #007476;
+  cursor: pointer;
+}
+
+.btn-enviar:hover {
+  background-color: #005d60;
+}
+
+.btn-campana-mobile {
+  display: none;
+}
+
+.btn-campana-mobile img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+@media (max-width: 960px) {
+  .reportar-problema-entidad-page {
+    padding: 24px 26px 36px;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .btn-campana-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .panel-lateral {
+    min-height: auto;
+    padding: 30px 24px 44px;
+  }
+
+  .saludo-box {
+    text-align: center;
+  }
+
+  .saludo-box h2 {
+    font-size: 22px;
+  }
+
+  .saludo-box p {
+    font-size: 21px;
+  }
+
+  .linea {
+    margin: 24px 0 26px;
+  }
+
+  .opcion-cuenta {
+    height: 60px;
+    min-height: 60px;
+    font-size: 18px;
+    gap: 18px;
+    padding: 0 18px;
+  }
+
+  .icono-opcion {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contenido-reporte {
+    min-height: auto;
+    padding: 30px 26px 36px;
+  }
+
+  .titulo-reporte {
+    gap: 16px;
+  }
+
+  .titulo-reporte h1 {
+    font-size: 30px;
+  }
+
+  .form-reporte {
+    padding: 28px 24px 36px;
+  }
+
+  .acciones-reporte {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reportar-problema-entidad-page {
+    padding: 24px 26px 0;
+  }
+
+  .contenido-reporte {
+    padding: 28px 20px 34px;
+  }
+
+  .titulo-reporte {
+    align-items: flex-start;
+  }
+
+  .btn-volver {
+    width: 44px;
+    height: 44px;
+  }
+
+  .btn-volver img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .titulo-reporte h1 {
+    font-size: 27px;
+  }
+
+  .titulo-reporte p {
+    font-size: 13px;
+  }
+
+  .form-reporte label {
+    font-size: 20px;
+  }
+
+  .form-reporte textarea {
+    height: 190px;
+  }
+
+  .acciones-reporte {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+
+  .btn-cancelar,
+  .btn-enviar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .reportar-problema-entidad-page {
+    padding: 24px 25px 0;
+  }
+
+  .panel-lateral {
+    padding: 30px 23px 46px;
+  }
+
+  .opcion-cuenta {
+    height: 60px;
+    font-size: 17px;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .icono-opcion {
+    width: 29px;
+    height: 29px;
+  }
+
+  .titulo-reporte h1 {
+    font-size: 25px;
+  }
+
+  .form-reporte {
+    padding: 24px 18px 30px;
+  }
+
+  .form-reporte textarea {
+    height: 180px;
+  }
+}

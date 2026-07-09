@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaf3f2;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #082f3d;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.confirmacion-libro-page {
+  width: 100%;
+  max-width: 1360px;
+  min-height: calc(100vh - 215px);
+  margin: 0 auto;
+  padding: 34px 50px 60px;
+}
+
+.titulo-confirmacion-libro {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 34px;
+}
+
+.btn-volver {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #d9dddd;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-volver img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.btn-volver:hover {
+  background-color: #f7fbfa;
+}
+
+.titulo-confirmacion-libro h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1b746f;
+  margin-bottom: 6px;
+}
+
+.titulo-confirmacion-libro p {
+  font-size: 16px;
+  color: #263b3b;
+  font-weight: 500;
+}
+
+.confirmacion-card {
+  width: 850px;
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 14px;
+  margin: 0 auto;
+  padding: 38px 42px 42px;
+  text-align: center;
+}
+
+.check-principal {
+  width: 86px;
+  height: 86px;
+  background-color: #dcebdd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.check-principal span {
+  width: 32px;
+  height: 17px;
+  border-left: 5px solid #0b5559;
+  border-bottom: 5px solid #0b5559;
+  transform: rotate(-45deg);
+  margin-top: -8px;
+}
+
+.confirmacion-card h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1b746f;
+  margin-bottom: 12px;
+}
+
+.mensaje-confirmacion {
+  max-width: 680px;
+  margin: 0 auto 32px;
+  font-size: 16px;
+  color: #676d68;
+  line-height: 1.5;
+}
+
+.resumen-confirmacion {
+  width: 100%;
+  border: 3px solid #d9dddd;
+  border-radius: 14px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 26px;
+}
+
+.resumen-item {
+  min-height: 112px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  padding: 22px 28px;
+  border-bottom: 1.5px solid #d9dddd;
+}
+
+.resumen-item:nth-child(1),
+.resumen-item:nth-child(3) {
+  border-right: 1.5px solid #d9dddd;
+}
+
+.resumen-item:nth-child(3),
+.resumen-item:nth-child(4) {
+  border-bottom: none;
+}
+
+.resumen-icono {
+  width: 52px;
+  height: 52px;
+  background-color: #dcebdd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.resumen-icono img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.resumen-item p {
+  font-size: 15px;
+  color: #676d68;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.resumen-item h3 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.estado {
+  min-width: 110px;
+  height: 26px;
+  border-radius: 20px;
+  background-color: #edf7ff;
+  border: 1px solid #9bbbd4;
+  color: #005aa0;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aviso-confirmacion {
+  background-color: #eef5f4;
+  border: 1.5px solid #ccd8d7;
+  border-radius: 9px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.aviso-icono {
+  width: 34px;
+  height: 34px;
+  border: 2px solid #1b746f;
+  border-radius: 50%;
+  color: #1b746f;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.aviso-confirmacion p {
+  font-size: 14px;
+  color: #263b3b;
+  font-weight: 500;
+}
+
+.acciones-confirmacion {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.btn-principal,
+.btn-secundario {
+  width: 240px;
+  height: 46px;
+  border-radius: 7px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-principal {
+  background-color: #0b5559;
+  color: #ffffff;
+  border: 2px solid #0b5559;
+}
+
+.btn-principal:hover {
+  background-color: #004a4d;
+}
+
+.btn-secundario {
+  background-color: #ffffff;
+  color: #0b5559;
+  border: 2px solid #0b5559;
+}
+
+.btn-secundario:hover {
+  background-color: #eaf3f2;
+}
+
+@media (max-width: 960px) {
+  .confirmacion-libro-page {
+    padding: 28px 24px 50px;
+  }
+
+  .confirmacion-card {
+    width: 100%;
+    padding: 34px 28px 38px;
+  }
+
+  .resumen-confirmacion {
+    grid-template-columns: 1fr;
+  }
+
+  .resumen-item {
+    border-right: none;
+    border-bottom: 1.5px solid #d9dddd;
+  }
+
+  .resumen-item:nth-child(1),
+  .resumen-item:nth-child(3) {
+    border-right: none;
+  }
+
+  .resumen-item:nth-child(3) {
+    border-bottom: 1.5px solid #d9dddd;
+  }
+
+  .resumen-item:nth-child(4) {
+    border-bottom: none;
+  }
+
+  .acciones-confirmacion {
+    flex-direction: column;
+  }
+
+  .btn-principal,
+  .btn-secundario {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .titulo-confirmacion-libro h1 {
+    font-size: 28px;
+  }
+
+  .titulo-confirmacion-libro p {
+    font-size: 14px;
+  }
+
+  .confirmacion-card h2 {
+    font-size: 25px;
+  }
+
+  .mensaje-confirmacion {
+    font-size: 14px;
+  }
+
+  .resumen-item {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .confirmacion-libro-page {
+    padding: 22px 18px 42px;
+  }
+
+  .titulo-confirmacion-libro {
+    gap: 12px;
+  }
+
+  .btn-volver {
+    width: 42px;
+    height: 42px;
+  }
+
+  .btn-volver img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .titulo-confirmacion-libro h1 {
+    font-size: 25px;
+  }
+
+  .check-principal {
+    width: 74px;
+    height: 74px;
+  }
+
+  .check-principal span {
+    width: 28px;
+    height: 15px;
+  }
+
+  .resumen-icono {
+    width: 46px;
+    height: 46px;
+  }
+
+  .resumen-icono img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .resumen-item h3 {
+    font-size: 16px;
+  }
+}

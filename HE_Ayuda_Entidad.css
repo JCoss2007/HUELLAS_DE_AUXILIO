@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbfaf7;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #082f3d;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.ayuda-entidad-page {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 45px 12px;
+}
+
+.hero-ayuda-entidad {
+  width: 100%;
+  height: 158px;
+  background-color: #e5f1f0;
+  border-radius: 0 0 14px 14px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.hero-img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img img {
+  width: 245px;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  color: #263b3b;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.hero-text p {
+  font-size: 15px;
+  color: #263b3b;
+  font-weight: 500;
+}
+
+.bloque-ayuda {
+  margin-bottom: 14px;
+}
+
+.bloque-ayuda h2 {
+  font-size: 20px;
+  color: #005d60;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.accesos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+}
+
+.acceso-card {
+  height: 128px;
+  background-color: #ffffff;
+  border: 2px solid #d9dddd;
+  border-radius: 9px;
+  padding: 22px 38px 22px 48px;
+  display: grid;
+  grid-template-columns: 82px 1fr 28px;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.acceso-card:hover {
+  background-color: #f7fbfa;
+  border-color: #1b746f;
+}
+
+.acceso-icono {
+  width: 82px;
+  height: 82px;
+  background-color: #dcebdd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acceso-icono img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.acceso-info h3 {
+  font-size: 17px;
+  color: #005d60;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.acceso-info p {
+  font-size: 15px;
+  color: #676d68;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.flecha-acceso {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.tutorial-card {
+  min-height: 146px;
+  background-color: #ffffff;
+  border: 2px solid #d9dddd;
+  border-radius: 9px;
+  padding: 12px 16px;
+  display: grid;
+  grid-template-columns: 528px 1fr;
+  gap: 46px;
+  align-items: center;
+}
+
+.video-box {
+  width: 100%;
+  height: 118px;
+  background-color: #dcebdd;
+  overflow: hidden;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.tutorial-info h3 {
+  font-size: 19px;
+  color: #005d60;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.tutorial-info p {
+  font-size: 15px;
+  color: #676d68;
+  font-weight: 500;
+  line-height: 1.35;
+  max-width: 650px;
+}
+
+.duracion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.duracion img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.duracion span {
+  font-size: 15px;
+  color: #676d68;
+  font-weight: 500;
+}
+
+.faq-lista {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  background-color: #ffffff;
+  border: 2px solid #d9dddd;
+  border-radius: 9px;
+  padding: 0 28px;
+  overflow: hidden;
+}
+
+.faq-item + .faq-item {
+  margin-top: -2px;
+}
+
+.faq-item summary {
+  height: 42px;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary span {
+  font-size: 15px;
+  color: #005d60;
+  font-weight: 700;
+}
+
+.faq-item summary img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.faq-item p {
+  font-size: 13px;
+  color: #676d68;
+  font-weight: 500;
+  line-height: 1.35;
+  padding: 0 0 13px;
+}
+
+.btn-campana-mobile {
+  display: none;
+}
+
+.btn-campana-mobile img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+@media (max-width: 960px) {
+  .ayuda-entidad-page {
+    padding: 0 24px 0;
+  }
+
+  .btn-campana-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .hero-ayuda-entidad {
+    height: auto;
+    grid-template-columns: 1fr;
+    padding: 24px;
+    text-align: center;
+    border-radius: 0 0 14px 14px;
+  }
+
+  .hero-img img {
+    width: 190px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .accesos-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .acceso-card {
+    height: auto;
+    min-height: 116px;
+    padding: 20px 22px;
+    grid-template-columns: 74px 1fr 24px;
+  }
+
+  .acceso-icono {
+    width: 74px;
+    height: 74px;
+  }
+
+  .acceso-icono img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .tutorial-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 16px;
+  }
+
+  .video-box {
+    height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ayuda-entidad-page {
+    padding: 0 18px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .bloque-ayuda h2 {
+    font-size: 18px;
+  }
+
+  .acceso-card {
+    grid-template-columns: 62px 1fr 20px;
+    gap: 14px;
+  }
+
+  .acceso-icono {
+    width: 62px;
+    height: 62px;
+  }
+
+  .acceso-icono img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .acceso-info h3 {
+    font-size: 16px;
+  }
+
+  .acceso-info p {
+    font-size: 13px;
+  }
+
+  .video-box {
+    height: 190px;
+  }
+
+  .tutorial-info h3 {
+    font-size: 17px;
+  }
+
+  .tutorial-info p {
+    font-size: 13px;
+  }
+
+  .faq-item {
+    padding: 0 18px;
+  }
+
+  .faq-item summary {
+    height: auto;
+    min-height: 48px;
+    gap: 12px;
+  }
+
+  .faq-item summary span {
+    font-size: 14px;
+  }
+
+  .faq-item p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-img img {
+    width: 160px;
+  }
+
+  .hero-text h1 {
+    font-size: 25px;
+  }
+
+  .acceso-card {
+    padding: 16px;
+  }
+
+  .video-box {
+    height: 170px;
+  }
+}
