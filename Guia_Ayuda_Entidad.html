@@ -1,186 +1,234 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Uso | Huellas de Auxilio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Guía de ayuda entidad</title>
 
-    <link rel="stylesheet" href="HE_Home_Entidad.css">
-    <link rel="stylesheet" href="HE_GuiaAyuda.css">
-    <link rel="stylesheet" href="HE_Footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="HE_Header_Entidad.css" />
+    <link rel="stylesheet" href="HE_Menu_Entidad.css" />
+    <link rel="stylesheet" href="HE_Guia_Ayuda_Entidad.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
 
-<body>
+  <body>
+    <header class="header-entidad">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-<!-- NAVBAR -->
-<header class="navbar container-fluid">
-    <div class="navbar-content max-width-container">
-
-        <div class="logo">
-            <img src="Imagenes/Logo.png" alt="logo" class="logo-img">
-        </div>
-
-        <nav class="nav-links">
-            <a href="Home_Entidad.html">Inicio</a>
-            <a href="#">Reportes</a>
-            <a href="Adopciones.html">Adopciones</a>
-            <a href="#">Red de apoyo</a>
-            <a href="Centro_Ayuda_Entidad.html" class="active">Ayuda</a>
-        </nav>
-
-        <div class="user-actions">
-            <span class="notification-icon">
-                <img src="IMG/Vector.png" alt="campanita">
-            </span>
-
-            <button class="btn-account">
-                <img src="IMG/CUENTA.png" alt="Cuenta">
-                Mi Cuenta
-            </button>
-        </div>
-
-    </div>
-</header>
-
-<main class="main-guia">
-
-    <section class="hero-guia">
-
-        <h1>Guía de uso</h1>
-
-        <p>
-            Aprende paso a paso cómo utilizar el panel de entidades
-            para gestionar reportes, actualizar estados y administrar
-            solicitudes de adopción.
-        </p>
-
-    </section>
-
-    <section class="contenedor-guia">
-
-        <a href="Centro_Ayuda_Entidad.html" class="volver">
-            <i class="fa-solid fa-arrow-left"></i>
-            Volver al Centro de Ayuda
+        <a href="Home_Entidad.html" class="logo">
+          <img src="img/logo.png" alt="Huellas de Auxilio" />
         </a>
 
-        <div class="guia-card">
+        <a href="Notificaciones_Entidad.html" class="btn-campana-mobile">
+          <img src="icons/campana.png" alt="Notificaciones" />
+        </a>
 
-            <h2>1. Revisar reportes</h2>
+        <ul class="nav-links">
+          <li><a href="Home_Entidad.html" class="nav-link">Inicio</a></li>
+          <li><a href="Reportes_Entidad.html" class="nav-link">Reportes</a></li>
+          <li><a href="Adopciones_Entidad.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Red_Apoyo.html" class="nav-link">Red de apoyo</a></li>
+          <li><a href="Ayuda_Entidad.html" class="nav-link activo">Ayuda</a></li>
+        </ul>
 
-            <p>
-                Ingresa al menú <strong>Reportes</strong> para visualizar
-                todos los casos asignados a tu entidad. Desde allí podrás
-                consultar la información enviada por el ciudadano.
-            </p>
+        <div class="header-actions">
+          <a href="Notificaciones_Entidad.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
 
+          <a href="Mi_Cuenta_Entidad.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>Refugio Patitas</h3>
+              <a href="Mi_Cuenta_Entidad.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
         </div>
 
-        <div class="guia-card">
-
-            <h2>2. Actualizar el estado</h2>
-
-            <p>
-                Abre el reporte correspondiente y selecciona el nuevo
-                estado del caso para mantener informado al ciudadano.
-            </p>
-
+        <div class="menu-mobile-links">
+          <a href="Home_Entidad.html">Inicio</a>
+          <a href="Reportes_Entidad.html">Reportes</a>
+          <a href="Adopciones_Entidad.html">Adopciones</a>
+          <a href="Red_Apoyo.html">Red de apoyo</a>
+          <a href="Ayuda_Entidad.html">Ayuda</a>
         </div>
+      </div>
+    </header>
 
-        <div class="guia-card">
+    <main class="guia-entidad-page">
+      <section class="titulo-guia">
+        <a href="Ayuda_Entidad.html" class="btn-volver">
+          <img src="icons/flecha-volver.png" alt="Volver" />
+        </a>
 
-            <h2>3. Gestionar adopciones</h2>
-
-            <p>
-                Desde el módulo <strong>Adopciones</strong> podrás revisar
-                solicitudes, aceptar postulantes y hacer seguimiento al
-                proceso.
-            </p>
-
+        <div>
+          <h1>Guía completa</h1>
+          <p>Consulta los pasos para usar cada sección del panel de entidad.</p>
         </div>
+      </section>
 
-        <div class="guia-card">
+      <section class="guia-layout">
+        <aside class="menu-guia">
+          <h2>Secciones de la guía</h2>
 
-            <h2>4. Derivar un caso</h2>
+          <button type="button" class="btn-tema activo" data-tema="inicio">
+            <div class="tema-icono">
+              <img src="icons/home-verde.png" alt="Inicio" />
+            </div>
+            <span>Inicio y panel</span>
+          </button>
 
-            <p>
-                Si el caso corresponde a otra entidad, utiliza la opción
-                <strong>Derivar</strong> para enviarlo al responsable
-                correspondiente.
-            </p>
+          <button type="button" class="btn-tema" data-tema="reportes">
+            <div class="tema-icono">
+              <img src="icons/reportes.png" alt="Reportes" />
+            </div>
+            <span>Reportes recibidos</span>
+          </button>
 
-        </div>
+          <button type="button" class="btn-tema" data-tema="adopciones">
+            <div class="tema-icono">
+              <img src="icons/adopcion2.png" alt="Adopciones" />
+            </div>
+            <span>Adopciones</span>
+          </button>
 
-        <div class="guia-card">
+          <button type="button" class="btn-tema" data-tema="red">
+            <div class="tema-icono">
+              <img src="icons/red-apoyo.png" alt="Red de apoyo" />
+            </div>
+            <span>Red de apoyo</span>
+          </button>
 
-            <h2>5. Contactar soporte</h2>
+          <button type="button" class="btn-tema" data-tema="preguntas">
+            <div class="tema-icono">
+              <img src="icons/red-apoyo-.png" alt="Preguntas" />
+            </div>
+            <span>Preguntas</span>
+          </button>
+        </aside>
 
-            <p>
-                Si tienes inconvenientes con la plataforma, accede al
-                <strong>Chat de Ayuda</strong> desde el Centro de Ayuda
-                para comunicarte con un asesor.
-            </p>
-
-        </div>
-
-    </section>
-
-</main>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-container">
-
-        <div class="footer-brand">
-
-            <img src="Imagenes/Logo2.png" alt="Logo">
-
-            <p>
-                © 2026 Huellas de Auxilio.<br>
-                Todos los derechos reservados.
-            </p>
-
-            <div class="footer-social">
-                <a href="#"><img src="Iconos/facebook.png" alt=""></a>
-                <a href="#"><img src="Iconos/twiter.png" alt=""></a>
-                <a href="#"><img src="Iconos/instagram.png" alt=""></a>
+        <section class="contenido-guia">
+          <article class="video-card">
+            <div class="video-info">
+              <h2>Video tutorial</h2>
+              <p id="videoTexto">Mira cómo usar el panel principal paso a paso.</p>
             </div>
 
+            <div class="video-preview">
+              <img src="icons/play-verde.png" alt="Reproducir" />
+            </div>
+          </article>
+
+          <article class="tema-contenido">
+            <h2 id="tituloTema">Inicio y panel</h2>
+            <p id="descripcionTema">
+              Aprende a ubicar las secciones principales del panel de entidad.
+            </p>
+
+            <div class="pasos-lista" id="pasosLista">
+              <div class="paso-item">
+                <span>1</span>
+                <div>
+                  <h3>Ingresa con tu cuenta de entidad</h3>
+                  <p>Accede desde el login usando tus datos registrados.</p>
+                </div>
+              </div>
+
+              <div class="paso-item">
+                <span>2</span>
+                <div>
+                  <h3>Revisa el menú principal</h3>
+                  <p>Desde ahí puedes entrar a reportes, adopciones, red de apoyo y ayuda.</p>
+                </div>
+              </div>
+
+              <div class="paso-item">
+                <span>3</span>
+                <div>
+                  <h3>Abre tu cuenta</h3>
+                  <p>En “Mi cuenta” puedes consultar o editar la información de la entidad.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div class="acciones-guia">
+            <button type="button" class="btn-nav-guia" id="btnAnterior">
+              <span>←</span>
+              Tema anterior
+            </button>
+
+            <a href="Chat_Ayuda_Entidad.html" class="btn-chat-guia">
+              <img src="icons/chat-blanco.png" alt="Chat" />
+              Abrir chat
+            </a>
+
+            <button type="button" class="btn-nav-guia siguiente" id="btnSiguiente">
+              Siguiente tema
+              <span>→</span>
+            </button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
         </div>
 
-        <div class="footer-links">
-            <h4>Legal</h4>
-
-            <a href="documentos/politica-privacidad.pdf">Política de privacidad</a>
-
-            <a href="documentos/terminos-condiciones.pdf">Términos y condiciones</a>
-
-            <a href="documentos/libro-reclamaciones.pdf">Libro de Reclamaciones</a>
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
         </div>
 
-        <div class="footer-contacto">
+        <div class="footer-social">
+          <a href="#">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
 
-            <h4>Contáctanos</h4>
+          <a href="#">
+            <img src="icons/x.png" alt="X" />
+          </a>
 
-            <div class="contacto-item">
-                <img src="Iconos/email.png" alt="">
-                <span>hola@huellasdeauxilio.pe</span>
-            </div>
-
-            <div class="contacto-item">
-                <img src="Iconos/llamar.png" alt="">
-                <span>+51 987 654 321</span>
-            </div>
-
-            <div class="contacto-item">
-                <img src="Iconos/map.png" alt="">
-                <span>Lima, Perú</span>
-            </div>
-
+          <a href="#">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
         </div>
+      </div>
+    </footer>
 
-    </div>
-</footer>
-
-</body>
+    <script src="menu-entidad.js"></script>
+    <script src="guia-ayuda-entidad.js"></script>
+  </body>
 </html>

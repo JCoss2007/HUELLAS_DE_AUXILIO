@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaf3f2;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #082f3d;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.guia-entidad-page {
+  width: 100%;
+  max-width: 1360px;
+  min-height: calc(100vh - 170px);
+  margin: 0 auto;
+  padding: 24px 45px 42px;
+}
+
+.titulo-guia {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  margin-bottom: 34px;
+}
+
+.btn-volver {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #d9dddd;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-volver img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.titulo-guia h1 {
+  font-size: 38px;
+  color: #1b746f;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.titulo-guia p {
+  font-size: 15px;
+  color: #263b3b;
+  font-weight: 500;
+}
+
+.guia-layout {
+  display: grid;
+  grid-template-columns: 390px 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.menu-guia {
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 9px;
+  padding: 24px;
+  min-height: 560px;
+}
+
+.menu-guia h2 {
+  font-size: 17px;
+  color: #005d60;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.btn-tema {
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff;
+  border: 1.8px solid #d9dddd;
+  border-radius: 9px;
+  padding: 10px 14px;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  margin-bottom: 14px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.btn-tema:hover,
+.btn-tema.activo {
+  background-color: #e5f1ec;
+  border-color: #1b746f;
+}
+
+.tema-icono {
+  width: 48px;
+  height: 48px;
+  background-color: #dcebdd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.tema-icono img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.btn-tema span {
+  text-align: left;
+  color: #263b3b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contenido-guia {
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 9px;
+  padding: 28px 30px;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-card {
+  background-color: #eef7f6;
+  border: 2px solid #d9dddd;
+  border-radius: 9px;
+  padding: 22px 24px;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.video-info h2 {
+  font-size: 26px;
+  color: #263b3b;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.video-info p {
+  font-size: 15px;
+  color: #263b3b;
+  line-height: 1.45;
+}
+
+.video-preview {
+  height: 110px;
+  background: linear-gradient(120deg, #eaf3f2, #dcebdd);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-preview img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.tema-contenido h2 {
+  font-size: 30px;
+  color: #1b746f;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.tema-contenido > p {
+  font-size: 15px;
+  color: #263b3b;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.pasos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.paso-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 16px;
+  align-items: flex-start;
+  border-bottom: 1.5px solid #d9dddd;
+  padding-bottom: 14px;
+}
+
+.paso-item:last-child {
+  border-bottom: none;
+}
+
+.paso-item span {
+  width: 42px;
+  height: 42px;
+  background-color: #dcebdd;
+  color: #1b746f;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paso-item h3 {
+  font-size: 16px;
+  color: #263b3b;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.paso-item p {
+  font-size: 13px;
+  color: #676d68;
+  line-height: 1.4;
+}
+
+.acciones-guia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: auto;
+  padding-top: 26px;
+}
+
+.btn-nav-guia,
+.btn-chat-guia {
+  height: 42px;
+  border-radius: 8px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-nav-guia {
+  min-width: 190px;
+  background-color: #ffffff;
+  border: 2px solid #1b746f;
+  color: #1b746f;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.btn-nav-guia.siguiente {
+  background-color: #0b5559;
+  color: #ffffff;
+}
+
+.btn-chat-guia {
+  min-width: 160px;
+  background-color: #007476;
+  border: 2px solid #007476;
+  color: #ffffff;
+  gap: 10px;
+}
+
+.btn-chat-guia img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.btn-campana-mobile {
+  display: none;
+}
+
+.btn-campana-mobile img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+@media (max-width: 960px) {
+  .guia-entidad-page {
+    padding: 24px 24px 42px;
+  }
+
+  .btn-campana-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .guia-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-guia {
+    min-height: auto;
+  }
+
+  .video-card {
+    grid-template-columns: 1fr;
+  }
+
+  .video-preview {
+    height: 180px;
+  }
+
+  .acciones-guia {
+    flex-direction: column;
+  }
+
+  .btn-nav-guia,
+  .btn-chat-guia {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .guia-entidad-page {
+    padding: 22px 18px 42px;
+  }
+
+  .titulo-guia {
+    gap: 14px;
+  }
+
+  .btn-volver {
+    width: 44px;
+    height: 44px;
+  }
+
+  .btn-volver img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .titulo-guia h1 {
+    font-size: 30px;
+  }
+
+  .titulo-guia p {
+    font-size: 14px;
+  }
+
+  .contenido-guia {
+    padding: 22px 20px;
+  }
+
+  .video-info h2 {
+    font-size: 22px;
+  }
+
+  .tema-contenido h2 {
+    font-size: 25px;
+  }
+
+  .paso-item {
+    grid-template-columns: 42px 1fr;
+  }
+
+  .paso-item span {
+    width: 38px;
+    height: 38px;
+    font-size: 19px;
+  }
+}

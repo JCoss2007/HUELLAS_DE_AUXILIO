@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaf3f2;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #082f3d;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.llamada-page {
+  width: 100%;
+  max-width: 1360px;
+  min-height: calc(100vh - 215px);
+  margin: 0 auto;
+  padding: 70px 40px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.llamada-card {
+  width: 600px;
+  min-height: 520px;
+  background-color: #ffffff;
+  border: 3px solid #d9dddd;
+  border-radius: 16px;
+  padding: 34px 44px 42px;
+  text-align: center;
+  position: relative;
+}
+
+.btn-volver {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #d9dddd;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 28px;
+  left: 28px;
+}
+
+.btn-volver img {
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+}
+
+.btn-volver:hover {
+  background-color: #f7fbfa;
+}
+
+.icono-llamada {
+  width: 120px;
+  height: 120px;
+  background-color: #007476;
+  border-radius: 50%;
+  margin: 42px auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono-llamada img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.estado-llamada {
+  font-size: 18px;
+  color: #1b746f;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.llamada-card h1 {
+  font-size: 30px;
+  color: #082f3d;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.numero-llamada {
+  font-size: 22px;
+  color: #1b746f;
+  font-weight: 600;
+  margin-bottom: 34px;
+}
+
+.detalle-llamada {
+  background-color: #eef5f4;
+  border: 1.5px solid #ccd8d7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 34px;
+}
+
+.detalle-llamada p {
+  font-size: 17px;
+  color: #263b3b;
+  font-weight: 700;
+}
+
+.acciones-llamada {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-finalizar {
+  width: 260px;
+  height: 52px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #ed1c24;
+  color: #ffffff;
+  border: 2px solid #ed1c24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-finalizar:hover {
+  background-color: #cf151c;
+}
+
+.btn-reporte-mobile {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .llamada-page {
+    padding: 34px 24px 50px;
+  }
+
+  .btn-reporte-mobile {
+    display: flex;
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90px;
+    height: 38px;
+    background-color: #007476;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .llamada-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 32px 26px 38px;
+  }
+
+  .icono-llamada {
+    width: 108px;
+    height: 108px;
+  }
+
+  .icono-llamada img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .btn-finalizar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .llamada-page {
+    padding: 28px 18px 44px;
+  }
+
+  .llamada-card {
+    min-height: auto;
+    padding: 30px 20px 34px;
+  }
+
+  .btn-volver {
+    width: 42px;
+    height: 42px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .btn-volver img {
+    width: 19px;
+    height: 19px;
+  }
+
+  .icono-llamada {
+    width: 96px;
+    height: 96px;
+    margin-top: 50px;
+  }
+
+  .icono-llamada img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .estado-llamada {
+    font-size: 16px;
+  }
+
+  .llamada-card h1 {
+    font-size: 24px;
+  }
+
+  .numero-llamada {
+    font-size: 19px;
+  }
+
+  .detalle-llamada p {
+    font-size: 14px;
+  }
+
+  .btn-finalizar {
+    height: 48px;
+    font-size: 16px;
+  }
+}

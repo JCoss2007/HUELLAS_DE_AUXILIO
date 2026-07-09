@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas de Auxilio - Reporte enviado</title>
+
+    <link rel="stylesheet" href="HE_Header_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Menu_Ciudadano.css" />
+    <link rel="stylesheet" href="HE_Confirmacion_Reporte_Problema.css" />
+    <link rel="stylesheet" href="HE_Footer.css" />
+  </head>
+
+  <body>
+    <header class="header-ciudadano">
+      <nav class="navbar">
+        <button class="btn-menu" id="btnMenu" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="Home_Ciudadano.html" class="logo">
+          <img src="img/logo.png" alt="Huellas de Auxilio" />
+        </a>
+
+        <a href="Reportar_Problema.html" class="btn-reporte-mobile">
+          Reporte
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="Home_Ciudadano.html" class="nav-link">Inicio</a></li>
+          <li><a href="Mis_Solicitudes.html" class="nav-link">Mis reportes</a></li>
+          <li><a href="Directorio.html" class="nav-link">Directorio</a></li>
+          <li><a href="Adopciones.html" class="nav-link">Adopciones</a></li>
+          <li><a href="Ayuda_Ciudadano.html" class="nav-link">Ayuda</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="Reportar_Problema.html" class="btn-reportar">
+            Reportar
+          </a>
+
+          <a href="Notificaciones_Ciudadano.html" class="btn-campana">
+            <img src="icons/campana.png" alt="Notificaciones" />
+          </a>
+
+          <a href="Mi_Cuenta_Ciudadano.html" class="btn-cuenta">
+            <img src="icons/user-circle.png" alt="Mi cuenta" />
+            <span>Mi cuenta</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="menu-mobile" id="menuMobile">
+        <div class="menu-mobile-top">
+          <div class="menu-user">
+            <div class="menu-avatar"></div>
+
+            <div>
+              <h3>HuellaAmiga247</h3>
+              <a href="Mi_Cuenta_Ciudadano.html">Ver mi perfil</a>
+            </div>
+          </div>
+
+          <button class="btn-cerrar-menu" id="btnCerrarMenu" aria-label="Cerrar menú">
+            ×
+          </button>
+        </div>
+
+        <div class="menu-mobile-links">
+          <a href="Home_Ciudadano.html">Inicio</a>
+          <a href="Mis_Solicitudes.html">Mis reportes</a>
+          <a href="Directorio.html">Directorio</a>
+          <a href="Adopciones.html">Adopciones</a>
+          <a href="Ayuda_Ciudadano.html">Ayuda</a>
+          <a href="Notificaciones_Ciudadano.html">Notificaciones</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="confirmacion-reporte-page">
+      <aside class="panel-lateral">
+        <div class="saludo-box">
+          <h2>¡Hola,</h2>
+          <p>HuellaAmiga247!</p>
+        </div>
+
+        <div class="linea"></div>
+
+        <nav class="menu-cuenta">
+          <a href="Mi_Cuenta_Ciudadano.html" class="opcion-cuenta">
+            <img src="icons/perfil.png" alt="Perfil" class="icono-opcion" />
+            Perfil
+          </a>
+
+          <a href="Reportar_Problema.html" class="opcion-cuenta activa">
+            <img src="icons/reportar.png" alt="Reportar problema" class="icono-opcion" />
+            Reportar un problema
+          </a>
+
+          <a href="Login.html" class="opcion-cuenta">
+            <img src="icons/cerrar-sesion.png" alt="Cerrar sesión" class="icono-opcion" />
+            Cerrar sesión
+          </a>
+        </nav>
+
+        <div class="linea"></div>
+
+        <a href="Eliminar_cuenta.html" class="opcion-cuenta eliminar">
+          <img src="icons/eliminar-rojo.png" alt="Eliminar cuenta" class="icono-opcion" />
+          Eliminar cuenta
+        </a>
+      </aside>
+
+      <section class="contenido-confirmacion">
+        <div class="titulo-confirmacion">
+          <a href="Reportar_Problema.html" class="btn-volver">
+            <img src="icons/flecha-volver.png" alt="Volver" />
+          </a>
+
+          <div>
+            <h1>Reporte enviado</h1>
+            <p>Tu reporte fue registrado correctamente.</p>
+          </div>
+        </div>
+
+        <section class="confirmacion-card">
+          <div class="check-principal">
+            <span></span>
+          </div>
+
+          <h2>¡Gracias por avisarnos!</h2>
+
+          <p class="mensaje-confirmacion">
+            Hemos recibido tu reporte. El equipo de Huellas de Auxilio revisará
+            la información enviada para mejorar la plataforma.
+          </p>
+
+          <div class="resumen-confirmacion">
+            <div class="resumen-item">
+              <div class="resumen-icono">
+                <img src="icons/documento-verde.png" alt="Código" />
+              </div>
+
+              <div>
+                <p>Código de reporte</p>
+                <h3>REP-2026-0018</h3>
+              </div>
+            </div>
+
+            <div class="resumen-item">
+              <div class="resumen-icono">
+                <img src="icons/calendario.png" alt="Fecha" />
+              </div>
+
+              <div>
+                <p>Fecha de envío</p>
+                <h3>26 may 2026</h3>
+              </div>
+            </div>
+
+            <div class="resumen-item">
+              <div class="resumen-icono">
+                <img src="icons/reloj-azul.png" alt="Estado" />
+              </div>
+
+              <div>
+                <p>Estado actual</p>
+                <span class="estado">Registrado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="aviso-confirmacion">
+            <div class="aviso-icono">!</div>
+
+            <p>
+              Tu reporte será revisado internamente. No es necesario volver a enviarlo.
+            </p>
+          </div>
+
+          <div class="acciones-confirmacion">
+            <a href="Mi_Cuenta_Ciudadano.html" class="btn-principal">
+              Volver a mi cuenta
+            </a>
+
+            <a href="Reportar_Problema.html" class="btn-secundario">
+              Enviar otro reporte
+            </a>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer-compacto">
+      <div class="footer-compacto-container">
+        <div class="footer-compacto-brand">
+          <img src="img/logo-blanco.png" alt="Logo Huellas de Auxilio" />
+
+          <p>
+            © 2026 Huellas de Auxilio. Todos<br />
+            los derechos reservados.
+          </p>
+        </div>
+
+        <div class="footer-compacto-links">
+          <a href="#">Soporte</a>
+          <a href="documentos/politica-privacidad.pdf" target="_blank">
+            Política de Privacidad
+          </a>
+          <a href="documentos/terminos-condiciones.pdf" target="_blank">
+            Términos y condiciones
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#">
+            <img src="icons/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="#">
+            <img src="icons/x.png" alt="X" />
+          </a>
+
+          <a href="#">
+            <img src="icons/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="menu-ciudadano.js"></script>
+  </body>
+</html>
